@@ -32,6 +32,17 @@ button {
     justify-content: center;
     background-color: rgb(120, 193, 242);  
     flex-direction: column;
-
+    
 }
 
+.grupo {
+    float: left;
+    border: white;
+   
+}
+
+img {
+    cursor: pointer;
+    float: left;
+    outline: revert;
+}
