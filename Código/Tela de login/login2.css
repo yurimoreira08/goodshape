@@ -1,10 +1,19 @@
-
-
 .profissional{
     background-color: #76c2af;
     border-color: #76c2af;
     align-items: center;
     text-align: center;
+    padding: 8px;
+    margin: 20px;
+}
+
+ion-icon{
+    font-size: 25px;
+    margin: 2px;
+}
+
+.profissional b{
+    margin: 12px;
 }
 
 .cliente{
@@ -13,6 +22,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.flex-centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .voltar{
@@ -25,14 +40,13 @@
 h1{
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
+    margin: 40px;
 }
 
 button{
     border-radius: 8px;
     width: 250px;
     justify-content: center;
-    flex-direction: column;
     margin: 43px;
     padding: 13px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
