@@ -22,6 +22,12 @@ ion-icon{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 8px;
+    margin: 20px;
+}
+
+.cliente b{
+    margin: 12px;
 }
 
 .flex-centro{
@@ -45,7 +51,7 @@ h1{
 
 button{
     border-radius: 8px;
-    width: 250px;
+    width: 207px;
     justify-content: center;
     margin: 43px;
     padding: 13px;
