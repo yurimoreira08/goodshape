@@ -1,0 +1,68 @@
+main{
+    text-align: center;
+}
+
+header button{
+    background-color: white;
+    border: none;
+    border-radius: 19px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+ion-icon{
+    text-align: left;
+    font-size: 25px;
+}
+
+header button:hover{
+    background-color: #999b9e;
+}
+
+header h1, h4{
+    text-align: center;
+}
+
+main h1{
+    font-size: 50px;
+    display: inline;
+}
+
+main button{
+    border-radius: 8px;
+    padding: 10px;
+    width: 85px;
+    margin-bottom: 24px;
+}
+
+.basico{
+    background-color: #c7d0d8;
+    border-color: #c7d0d8;
+}
+
+.premium{
+    background-color:#ff5757;
+    border-color: #ff5757;
+}
+
+.familia{
+    background-color: #fac832;
+    border-color: #fac832;
+}
+
+.basico:hover{
+    background-color:#999b9e;
+}
+
+.premium:hover{
+    background-color:#eb2727;
+}
+
+.familia:hover{
+    background-color:#f0b504;
+}
+
+main p{
+    font-size: 19px;
+}
