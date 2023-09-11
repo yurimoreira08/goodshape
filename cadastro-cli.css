@@ -60,4 +60,5 @@ a button{
 
 a button:hover{
     background-color:#096a97;
+    border-color: #096a97;
 }
