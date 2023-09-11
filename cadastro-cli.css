@@ -49,3 +49,15 @@ footer input {
     width: 120px;
     background-color: #1498d5;
 }
+
+a button{
+    background-color: #1498d5;
+    border-color: #0cc0df;
+    padding: 1px;
+    width: 84px;  
+    border-radius: 8px;
+}
+
+a button:hover{
+    background-color:#096a97;
+}
