@@ -39,6 +39,7 @@ h1 {
     margin-top: 14px;
 }
 
-a button:hover{
+.salvar button:hover{
     background-color:#096a97;
+    border-color: #096a97;
 }
