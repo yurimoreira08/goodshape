@@ -43,18 +43,6 @@
     border-color: #096a97;
 }
 
-@media (min-width: 480px) {
-    .main-termos {
-      width: 45%;
-    }
-  }    
-  
-  @media (min-width: 768px) {
-    .main-termos {
-      width: 30%;
-    }
-  }
-
 /* Tela de menu do profissional: */
 .h1-menu-pro {
     text-align: left;
