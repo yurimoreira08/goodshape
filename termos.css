@@ -1,16 +1,16 @@
-header{
+.header-termos {
     text-align: center;
     margin-bottom: 40px;
 }
 
-main p{
+.main-termos p {
     text-align: justify;
     font-size: 19px;
     margin-bottom: 50px;
     margin-left: 20px;
 }
 
-main button{
+.main-termos button {
     background-color: #1498d5;
     border-color: #0cc0df;
     padding: 12px;
@@ -21,7 +21,7 @@ main button{
     margin-left: 643px;
 }
 
-main button:hover{
+.main-termos button:hover {
     background-color:#096a97;
     border-color: #096a97;
 }

@@ -1,0 +1,133 @@
+/* Primeira tela do aplicativo: */
+
+
+
+/* Tela de login 2: */
+
+
+
+/* Tela de cadastro do profissional: */
+
+
+
+/* Tela de cadastro do cliente: */
+
+
+
+/* Tela de termos de uso: */
+.header-termos {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-termos p {
+    text-align: justify;
+    font-size: 19px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.main-termos button {
+    background-color: #1498d5;
+    border-color: #0cc0df;
+    padding: 12px;
+    width: 68px;  
+    border-radius: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 643px;
+}
+
+.main-termos button:hover {
+    background-color:#096a97;
+    border-color: #096a97;
+}
+
+/* Tela de menu do profissional: */
+.h1-menu-pro {
+    text-align: left;
+}
+
+.body-menu-pro {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--primary-color);   
+}
+
+.main-menu-pro,
+.h1-menu-pro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.main-menu-pro button {
+    width: 200px;
+    padding: 10px;
+    margin: 30px;
+    justify-content: center;
+    background-color: rgb(120, 193, 242);
+    flex-direction: column;
+
+}
+
+.grupo button {
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 480px) {
+    .main-menu-pro {
+      width: 45%;
+    }
+  }    
+  
+  @media (min-width: 768px) {
+    .main-menu-pro {
+      width: 30%;
+    }
+  }
+
+/* Tela de menu do cliente: */
+.main-menu-cli{
+    text-align: center;
+}
+
+
+.header-menu-cli {
+    padding-bottom: 39px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.main-menu-cli button{
+    width: 200px;
+    padding: 10px;
+    margin: 30px;
+    background-color: rgb(120, 193, 242);
+    border-color: rgb(120, 193, 242);
+}
+
+@media (min-width: 480px) {
+    .main-menu-cli {
+      width: 45%;
+    }
+  }    
+  
+  @media (min-width: 768px) {
+    .main-menu-cli {
+      width: 30%;
+    }
+  }
+
+/* Tela dos planos: */
+
+
