@@ -1,11 +1,11 @@
-body {
+.body-cadastro-cli {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #f5f3f3;
 }
   
-main {
+.main-cadastro-cli {
     display: flex;
     justify-content: left;
     flex-direction: column;
@@ -14,12 +14,12 @@ main {
     margin: 0 auto;
 }
 
-input {
+.main-cadastro-cli input {
     width: 260px;
     background-color: #ccc;
 }
 
-h1 {
+.h1-cadastro-cli {
     text-align: center;
 }
 
@@ -31,26 +31,26 @@ h1 {
     height: 100px;
 }
 
-footer {
+.footer-cadastro-cli {
     display: flex;
     justify-content: center;
     padding-top: 30px;
 }
   
-footer span {
+.footer-cadastro-cli span {
     padding: 0 1rem;
 }
   
-footer span:last-child {
+.footer-cadastro-cli span:last-child {
     border: none;
 }
 
-footer input {
+.footer-cadastro-cli input {
     width: 120px;
     background-color: #1498d5;
 }
 
-a button{
+.footer-cadastro-cli a button{
     background-color: #1498d5;
     border-color: #0cc0df;
     padding: 1px;
