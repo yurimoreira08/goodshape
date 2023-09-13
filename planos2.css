@@ -1,8 +1,8 @@
-main{
+.planos2_main{
     text-align: center;
 }
 
-header button{
+.planos2_header button{
     background-color: white;
     border: none;
     border-radius: 19px;
@@ -11,25 +11,25 @@ header button{
 }
 
 
-ion-icon{
+.planos2_ion{
     text-align: left;
     font-size: 25px;
 }
 
-header button:hover{
+.planos2_header button:hover{
     background-color: #999b9e;
 }
 
-header h1, h4{
+.planos2_header h1, h4{
     text-align: center;
 }
 
-main h1{
+.planos2_main h1{
     font-size: 50px;
     display: inline;
 }
 
-main button{
+.planos2_main button{
     border-radius: 8px;
     padding: 10px;
     width: 85px;
@@ -63,6 +63,6 @@ main button{
     background-color:#f0b504;
 }
 
-main p{
+.planos2_main p{
     font-size: 19px;
 }
