@@ -1,3 +1,24 @@
+/* Primeira tela do aplicativo: */
+
+
+
+/* Tela de login 2: */
+
+
+
+/* Tela de cadastro do profissional: */
+
+
+
+/* Tela de cadastro do cliente: */
+
+
+
+/* Tela de termos de uso: */
+
+
+
+/* Tela de menu do profissional: */
 .h1-menu-pro {
     text-align: left;
 }
@@ -60,3 +81,39 @@ ion-menu-pro {
       width: 30%;
     }
   }
+
+/* Tela de menu do cliente: */
+.main-menu-cli{
+    text-align: center;
+}
+
+
+.header-menu-cli {
+    padding-bottom: 39px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.main-menu-cli button{
+    width: 200px;
+    padding: 10px;
+    margin: 30px;
+    background-color: rgb(120, 193, 242);
+    border-color: rgb(120, 193, 242);
+}
+
+@media (min-width: 480px) {
+    .main-menu-cli {
+      width: 45%;
+    }
+  }    
+  
+  @media (min-width: 768px) {
+    .main-menu-cli {
+      width: 30%;
+    }
+  }
+
+/* Tela dos planos: */
+
+

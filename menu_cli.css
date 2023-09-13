@@ -1,15 +1,15 @@
-main{
+.main-menu-cli{
     text-align: center;
 }
 
 
-header{
+.header-menu-cli {
     padding-bottom: 39px;
     padding-left: 10px;
     padding-top: 10px;
 }
 
-main button{
+.main-menu-cli button{
     width: 200px;
     padding: 10px;
     margin: 30px;
