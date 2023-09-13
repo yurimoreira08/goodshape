@@ -1,5 +1,60 @@
 /* Primeira tela do aplicativo: */
+.index_body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.index_main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.index_main img {
+  max-width: 300px;
+  background-color: #f4dfd4;
+  border: 5px solid var(--primary-color);
+}
+
+.index_footer {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.index_footer span {
+  border-right: 2px solid var(--primary-color);
+  padding: 0 2rem;
+}
+
+.index_footer span:last-child {
+  border: none;
+}
+
+.index_main button, p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 30px;
+  border: 2px solid #ffffff;
+  margin: 10px auto;
+}
+
+.cor {
+  color: #1441d5;
+}
+
+.index_body a {
+  color: #1441d5;
+  text-decoration: none;
+}
 
 
 /* Tela de login 2: */
@@ -74,7 +129,51 @@
 
 
 /* Tela de cadastro do profissional: */
+.cadastro-pro_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.cadastro-pro_main {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cadastro-pro_main input {
+  width: 260px;
+  background-color: #ccc;
+}
+
+.cadastro-pro_header h1 {
+  text-align: center;
+}
+
+.diploma {
+  background-color: rgb(255, 255, 255)
+}
+
+.bio {
+  height: 100px;
+}
+
+.salvar button{
+  background-color: #1498d5;
+  border-color: #0cc0df;
+  padding: 1px;
+  width: 84px;  
+  border-radius: 8px;
+  margin-top: 14px;
+}
+
+.salvar button:hover{
+  background-color:#096a97;
+  border-color: #096a97;
+}
 
 
 /* Tela de cadastro do cliente: */
