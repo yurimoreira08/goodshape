@@ -58,7 +58,7 @@
     border-radius: 8px;
 }
 
-a button:hover{
+.footer-cadastro-cli a button:hover{
     background-color:#096a97;
     border-color: #096a97;
 }
