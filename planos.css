@@ -1,4 +1,4 @@
-body{
+.planos{
     text-align: center;
 }
 
@@ -17,7 +17,7 @@ body{
     border-color: #fac832;
 }
 
-main button{
+.planos_main button{
     border-radius: 8px;
     padding: 10px;
     width: 85px;

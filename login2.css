@@ -7,7 +7,7 @@
     margin: 20px;
 }
 
-ion-icon{
+.login2_ion{
     font-size: 25px;
     margin: 2px;
 }
@@ -36,20 +36,15 @@ ion-icon{
     align-items: center;
 }
 
-.voltar{
-    background-color: #0cc0df;
-    border-color: #0cc0df;
-    padding: 1px;
-    width: 91px;    
-}
 
-h1{
+
+.quem{
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 40px;
 }
 
-button{
+.botoes button{
     border-radius: 8px;
     width: 207px;
     justify-content: center;
@@ -59,7 +54,7 @@ button{
     
 }
 
-body{
+.login_2{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -68,6 +63,6 @@ body{
     margin: 0 auto;
 }
 
-a{
+.login_2 a{
     text-decoration: none;  
 }
