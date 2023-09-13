@@ -15,8 +15,45 @@
 
 
 /* Tela de termos de uso: */
+.header-termos {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
+.main-termos p {
+    text-align: justify;
+    font-size: 19px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
 
+.main-termos button {
+    background-color: #1498d5;
+    border-color: #0cc0df;
+    padding: 12px;
+    width: 68px;  
+    border-radius: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 643px;
+}
+
+.main-termos button:hover {
+    background-color:#096a97;
+    border-color: #096a97;
+}
+
+@media (min-width: 480px) {
+    .main-termos {
+      width: 45%;
+    }
+  }    
+  
+  @media (min-width: 768px) {
+    .main-termos {
+      width: 30%;
+    }
+  }
 
 /* Tela de menu do profissional: */
 .h1-menu-pro {
@@ -30,8 +67,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--primary-color);
-    
+    background-color: var(--primary-color);   
 }
 
 .main-menu-pro,
