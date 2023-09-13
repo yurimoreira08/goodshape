@@ -3,7 +3,74 @@
 
 
 /* Tela de login 2: */
+.profissional{
+  background-color: #76c2af;
+  border-color: #76c2af;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+  margin: 20px;
+}
 
+.login2_ion{
+  font-size: 25px;
+  margin: 2px;
+}
+
+.profissional b{
+  margin: 12px;
+}
+
+.cliente{
+  background-color: #5ce1e6;
+  border-color: #5ce1e6;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+  margin: 20px;
+}
+
+.cliente b{
+  margin: 12px;
+}
+
+.flex-centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.quem{
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 40px;
+}
+
+.botoes button{
+  border-radius: 8px;
+  width: 207px;
+  justify-content: center;
+  margin: 43px;
+  padding: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.login_2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.login_2 a{
+  text-decoration: none;  
+}
 
 
 /* Tela de cadastro do profissional: */
@@ -129,5 +196,110 @@
   }
 
 /* Tela dos planos: */
+.planos{
+  text-align: center;
+}
 
+.basico button{
+  background-color: #c7d0d8;
+  border-color: #c7d0d8;
+}
+
+.premium button{
+  background-color:#ff5757;
+  border-color: #ff5757;
+}
+
+.familia button{
+  background-color: #fac832;
+  border-color: #fac832;
+}
+
+.planos_main button{
+  border-radius: 8px;
+  padding: 10px;
+  width: 85px;
+  margin-bottom: 24px;
+}
+
+.basico button:hover{
+  background-color:#999b9e;
+}
+
+.premium button:hover{
+  background-color:#eb2727;
+}
+
+.familia button:hover{
+  background-color:#f0b504;
+}
+
+.planos2_main{
+  text-align: center;
+}
+
+.planos2_header button{
+  background-color: white;
+  border: none;
+  border-radius: 19px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+.planos2_ion{
+  text-align: left;
+  font-size: 25px;
+}
+
+.planos2_header button:hover{
+  background-color: #999b9e;
+}
+
+.planos2_header h1, h4{
+  text-align: center;
+}
+
+.planos2_main h1{
+  font-size: 50px;
+  display: inline;
+}
+
+.planos2_main button{
+  border-radius: 8px;
+  padding: 10px;
+  width: 85px;
+  margin-bottom: 24px;
+}
+
+.basico{
+  background-color: #c7d0d8;
+  border-color: #c7d0d8;
+}
+
+.premium{
+  background-color:#ff5757;
+  border-color: #ff5757;
+}
+
+.familia{
+  background-color: #fac832;
+  border-color: #fac832;
+}
+
+.basico:hover{
+  background-color:#999b9e;
+}
+
+.premium:hover{
+  background-color:#eb2727;
+}
+
+.familia:hover{
+  background-color:#f0b504;
+}
+
+.planos2_main p{
+  font-size: 19px;
+}
 
