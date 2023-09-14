@@ -570,3 +570,23 @@ h4 {
 .planos2_main p {
   font-size: 19px;
 }
+
+/* Tela do perfil do profissional */
+.alinhar-ion-header-perfil-pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sino-header-perfil-pro {
+  size: large;
+  font-size: 190%;
+}
+
+.alinhar-ion-main-perfil-pro {
+
+}
+
+.person-main-perfil-pro {
+
+}
