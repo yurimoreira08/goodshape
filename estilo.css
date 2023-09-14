@@ -434,30 +434,30 @@
   margin-bottom: 24px;
 }
 
-.basico{
+.planos2_basico{
   background-color: #c7d0d8;
   border-color: #c7d0d8;
 }
 
-.premium{
+.planos2_premium{
   background-color:#ff5757;
   border-color: #ff5757;
 }
 
-.familia{
+.planos2_familia{
   background-color: #fac832;
   border-color: #fac832;
 }
 
-.basico:hover{
+.planos2_basico:hover{
   background-color:#999b9e;
 }
 
-.premium:hover{
+.planos2_premium:hover{
   background-color:#eb2727;
 }
 
-.familia:hover{
+.planos2_familia:hover{
   background-color:#f0b504;
 }
 
