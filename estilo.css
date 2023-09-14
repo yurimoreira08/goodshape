@@ -148,6 +148,9 @@ p {
 .cadastro-pro_main input {
   width: 260px;
   background-color: #ccc;
+  border-radius: 20px;
+  border-style: solid;
+  margin-left: 7%;
 }
 
 .cadastro-pro_header h1 {
@@ -155,7 +158,8 @@ p {
 }
 
 .diploma {
-  background-color: rgb(255, 255, 255)
+  background-color: rgb(255, 255, 255);
+  border-style: none;
 }
 
 .bio {
@@ -222,6 +226,8 @@ p {
   width: 260px;
   height: 22px;
   background-color: #ccc;
+  border-radius: 20px;
+  border-style: solid;
 }
 
 .h1-cadastro-cli {
@@ -291,6 +297,8 @@ p {
     background-color: #c7d0d8;
     width: 150px;
     height: 22px;
+    border-radius: 20px;
+    border-style: solid;
 }
 
 .footer-cadastro-cli {
@@ -445,35 +453,27 @@ p {
   text-align: center;
 }
 
-.planos_main{
-  display: flex;
-  justify-content: center;
-  margin-left: -25%;
-  margin-top:11%;
-}
-
-.basico, .premium, .familia{
-margin-left: 19%;
-}
-
 .basico button {
   background-color: #c7d0d8;
   border-color: #c7d0d8;
+  border-style: solid;
 }
 
 .premium button {
   background-color: #ff5757;
   border-color: #ff5757;
+  border-style: solid;
 }
 
 .familia button {
   background-color: #fac832;
   border-color: #fac832;
+  border-style: solid;
 }
 
 .planos_main button {
   border-radius: 8px;
-  padding: 8px;
+  padding: 10px;
   width: 85px;
   margin-bottom: 24px;
 }
@@ -529,7 +529,7 @@ h4 {
   margin-bottom: 24px;
 }
 
-.planos2_basico    {
+.planos2_basico {
   background-color: #c7d0d8;
   border-color: #c7d0d8;
 }
