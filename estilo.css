@@ -37,7 +37,8 @@
   border: none;
 }
 
-.index_main button, p {
+.index_main button,
+p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +59,7 @@
 
 
 /* Tela de login 2: */
-.profissional{
+.profissional {
   background-color: #76c2af;
   border-color: #76c2af;
   align-items: center;
@@ -67,16 +68,16 @@
   margin: 20px;
 }
 
-.login2_ion{
+.login2_ion {
   font-size: 25px;
   margin: 2px;
 }
 
-.profissional b{
+.profissional b {
   margin: 12px;
 }
 
-.cliente{
+.cliente {
   background-color: #5ce1e6;
   border-color: #5ce1e6;
   justify-content: center;
@@ -86,11 +87,11 @@
   margin: 20px;
 }
 
-.cliente b{
+.cliente b {
   margin: 12px;
 }
 
-.flex-centro{
+.flex-centro {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,23 +99,23 @@
 
 
 
-.quem{
+.quem {
   text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 40px;
 }
 
-.botoes button{
+.botoes button {
   border-radius: 8px;
   width: 207px;
   justify-content: center;
   margin: 43px;
   padding: 13px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+
 }
 
-.login_2{
+.login_2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -123,8 +124,8 @@
   margin: 0 auto;
 }
 
-.login_2 a{
-  text-decoration: none;  
+.login_2 a {
+  text-decoration: none;
 }
 
 
@@ -161,53 +162,135 @@
   height: 100px;
 }
 
-.salvar button{
+.salvar button {
   background-color: #1498d5;
   border-color: #0cc0df;
   padding: 1px;
-  width: 84px;  
+  width: 84px;
   border-radius: 8px;
   margin-top: 14px;
 }
 
-.salvar button:hover{
-  background-color:#096a97;
+.salvar button:hover {
+  background-color: #096a97;
   border-color: #096a97;
 }
 
+.pagamento {
+  display: flex;
+  width: 300px;
+}
+
+.pix {
+  margin-left: 40%;
+}
+
+.ladoD {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.ladoD h4 {
+  margin-right: 50%;
+}
+
+.pagar input {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
 
 /* Tela de cadastro do cliente: */
 .body-cadastro-cli {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #f5f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f5f3f3;
 }
-  
+
 .main-cadastro-cli {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    align-items: left;
-    max-width: 500px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: left;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .main-cadastro-cli input {
-    width: 260px;
-    background-color: #ccc;
+  width: 260px;
+  height: 22px;
+  background-color: #ccc;
 }
 
 .h1-cadastro-cli {
-    text-align: center;
+  text-align: center;
 }
 
 .diploma {
-    background-color: rgb(255, 255, 255)
+  background-color: rgb(255, 255, 255)
 }
 
 .bio {
-    height: 100px;
+  height: 100px;
+}
+
+.footer-cadastro-cli {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.footer-cadastro-cli span {
+  padding: 0 1rem;
+}
+
+.footer-cadastro-cli span:last-child {
+  border: none;
+}
+
+.footer-cadastro-cli input {
+  width: 120px;
+  background-color: #1498d5;
+}
+
+.footer-cadastro-cli a button {
+  background-color: #1498d5;
+  border-color: #0cc0df;
+  padding: 1px;
+  width: 84px;
+  border-radius: 8px;
+}
+
+.footer-cadastro-cli a button:hover {
+  background-color: #096a97;
+  border-color: #096a97;
+}
+
+/*Tela das medidas dos clientes*/
+.body-cadastro-cli-medidas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 50%;
+    margin: 0 25%;
+}
+
+.main-cadastro-cli-medidas {
+    width: 300px;
+}
+
+.main-cadastro-cli-medidas h2 {
+  font-size: 120%;
+}
+
+.main-cadastro-cli-medidas input {
+    background-color: #c7d0d8;
+    width: 150px;
+    height: 22px;
 }
 
 .footer-cadastro-cli {
@@ -215,11 +298,11 @@
     justify-content: center;
     padding-top: 30px;
 }
-  
+
 .footer-cadastro-cli span {
     padding: 0 1rem;
 }
-  
+
 .footer-cadastro-cli span:last-child {
     border: none;
 }
@@ -229,178 +312,189 @@
     background-color: #1498d5;
 }
 
-.footer-cadastro-cli a button{
+.footer-cadastro-cli a button {
     background-color: #1498d5;
     border-color: #0cc0df;
     padding: 1px;
-    width: 84px;  
+    width: 84px;
     border-radius: 8px;
 }
 
-.footer-cadastro-cli a button:hover{
-    background-color:#096a97;
+.footer-cadastro-cli a button:hover {
+    background-color: #096a97;
     border-color: #096a97;
 }
 
+@media (min-width: 480px) {
+    .body-cadastro-cli-medidas {
+        width: 45%;
+    }
+}
+
+@media (min-width: 768px) {
+    .body-cadastro-cli-medidas {
+        width: 50%;
+    }
+}
 
 /* Tela de termos de uso: */
 .header-termos {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .main-termos p {
-    text-align: justify;
-    font-size: 19px;
-    margin-bottom: 50px;
-    margin-left: 20px;
+  text-align: justify;
+  font-size: 19px;
+  margin-bottom: 50px;
+  margin-left: 20px;
 }
 
 .main-termos button {
-    background-color: #1498d5;
-    border-color: #0cc0df;
-    padding: 12px;
-    width: 68px;  
-    border-radius: 16px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: 643px;
+  background-color: #1498d5;
+  border-color: #0cc0df;
+  padding: 12px;
+  width: 68px;
+  border-radius: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 643px;
 }
 
 .main-termos button:hover {
-    background-color:#096a97;
-    border-color: #096a97;
+  background-color: #096a97;
+  border-color: #096a97;
 }
 
 /* Tela de menu do profissional: */
 .h1-menu-pro {
-    text-align: left;
+  text-align: left;
 }
 
 .body-menu-pro {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--primary-color);   
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-color);
 }
 
 .main-menu-pro,
 .h1-menu-pro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .main-menu-pro button {
-    width: 200px;
-    padding: 10px;
-    margin: 30px;
-    justify-content: center;
-    background-color: rgb(120, 193, 242);
-    flex-direction: column;
+  width: 200px;
+  padding: 10px;
+  margin: 30px;
+  justify-content: center;
+  background-color: rgb(120, 193, 242);
+  flex-direction: column;
 
 }
 
 .grupo button {
-    background-color: var(--primary-color);
-    align-items: center;
-    justify-content: space-between;
+  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: 480px) {
-    .main-menu-pro {
-      width: 45%;
-    }
-  }    
-  
-  @media (min-width: 768px) {
-    .main-menu-pro {
-      width: 30%;
-    }
+  .main-menu-pro {
+    width: 45%;
   }
+}
+
+@media (min-width: 768px) {
+  .main-menu-pro {
+    width: 30%;
+  }
+}
 
 /* Tela de menu do cliente: */
-.main-menu-cli{
-    text-align: center;
+.main-menu-cli {
+  text-align: center;
 }
 
 
 .header-menu-cli {
-    padding-bottom: 39px;
-    padding-left: 10px;
-    padding-top: 10px;
+  padding-bottom: 39px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-.main-menu-cli button{
-    width: 200px;
-    padding: 10px;
-    margin: 30px;
-    background-color: rgb(120, 193, 242);
-    border-color: rgb(120, 193, 242);
+.main-menu-cli button {
+  width: 200px;
+  padding: 10px;
+  margin: 30px;
+  background-color: rgb(120, 193, 242);
+  border-color: rgb(120, 193, 242);
 }
 
 @media (min-width: 480px) {
-    .main-menu-cli {
-      width: 45%;
-    }
-  }    
-  
-  @media (min-width: 768px) {
-    .main-menu-cli {
-      width: 30%;
-    }
+  .main-menu-cli {
+    width: 45%;
   }
+}
+
+@media (min-width: 768px) {
+  .main-menu-cli {
+    width: 30%;
+  }
+}
 
 /* Tela dos planos: */
-.planos{
+.planos {
   text-align: center;
 }
 
-.basico button{
+.basico button {
   background-color: #c7d0d8;
   border-color: #c7d0d8;
 }
 
-.premium button{
-  background-color:#ff5757;
+.premium button {
+  background-color: #ff5757;
   border-color: #ff5757;
 }
 
-.familia button{
+.familia button {
   background-color: #fac832;
   border-color: #fac832;
 }
 
-.planos_main button{
+.planos_main button {
   border-radius: 8px;
   padding: 10px;
   width: 85px;
   margin-bottom: 24px;
 }
 
-.basico button:hover{
-  background-color:#999b9e;
+.basico button:hover {
+  background-color: #999b9e;
 }
 
-.premium button:hover{
-  background-color:#eb2727;
+.premium button:hover {
+  background-color: #eb2727;
 }
 
-.familia button:hover{
-  background-color:#f0b504;
+.familia button:hover {
+  background-color: #f0b504;
 }
 
-.planos2_main{
+.planos2_main {
   text-align: center;
 }
 
-.planos2_header button{
+.planos2_header button {
   background-color: white;
   border: none;
   border-radius: 19px;
@@ -409,59 +503,59 @@
 }
 
 
-.planos2_ion{
+.planos2_ion {
   text-align: left;
   font-size: 25px;
 }
 
-.planos2_header button:hover{
+.planos2_header button:hover {
   background-color: #999b9e;
 }
 
-.planos2_header h1, h4{
+.planos2_header h1,
+h4 {
   text-align: center;
 }
 
-.planos2_main h1{
+.planos2_main h1 {
   font-size: 50px;
   display: inline;
 }
 
-.planos2_main button{
+.planos2_main button {
   border-radius: 8px;
   padding: 10px;
   width: 85px;
   margin-bottom: 24px;
 }
 
-.planos2_basico{
+.planos2_basico {
   background-color: #c7d0d8;
   border-color: #c7d0d8;
 }
 
-.planos2_premium{
-  background-color:#ff5757;
+.planos2_premium {
+  background-color: #ff5757;
   border-color: #ff5757;
 }
 
-.planos2_familia{
+.planos2_familia {
   background-color: #fac832;
   border-color: #fac832;
 }
 
-.planos2_basico:hover{
-  background-color:#999b9e;
+.planos2_basico:hover {
+  background-color: #999b9e;
 }
 
-.planos2_premium:hover{
-  background-color:#eb2727;
+.planos2_premium:hover {
+  background-color: #eb2727;
 }
 
-.planos2_familia:hover{
-  background-color:#f0b504;
+.planos2_familia:hover {
+  background-color: #f0b504;
 }
 
-.planos2_main p{
+.planos2_main p {
   font-size: 19px;
 }
-
