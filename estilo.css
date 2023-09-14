@@ -439,17 +439,6 @@ p {
   border-color: rgb(120, 193, 242);
 }
 
-@media (min-width: 480px) {
-  .main-menu-cli {
-    width: 45%;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-menu-cli {
-    width: 30%;
-  }
-}
 
 /* Tela dos planos: */
 .planos {
