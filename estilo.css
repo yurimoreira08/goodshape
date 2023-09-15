@@ -4,7 +4,6 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .index_main {
@@ -543,4 +542,136 @@ h4 {
   border-radius: 40px;
   width: 30%;
   height: 30%;
+}
+
+/*Tela do perfil do cliente*/
+.h1-perfil-cli {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 5%;
+}
+
+.alinhar-ion-header-perfil-cli {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.sino-header-perfil-cli {
+  font-size: larger;
+  font-size: 190%;
+}
+
+.alinhar-ion-main-perfil-cli {
+  margin: 3% 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person-main-perfil-cli {
+  font-size: larger;
+  font-size: 600%;
+}
+
+.alinhar-main-perfil-cli {
+  display: block;
+  margin: 0 0 0 3%;
+}
+
+.h2-main-perifl-cli {
+  margin: 0;
+}
+
+.p-main-perifl-cli {
+  margin: 0;
+  border: 0;
+  display: flex;
+  justify-content: left;
+}
+
+.informacoes-perfil-cli {
+  display: flex;
+  justify-content: center;
+  margin: 1% 0 0 10%;
+}
+
+.alinhar-option-perfil-cli1 {
+  background-color: rgb(120, 193, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  width: 50%;
+}
+
+.alinhar-option-perfil-cli2 {
+  background-color: rgb(120, 193, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  width: 50%;
+}
+
+.alinhar-option-perfil-cli3 {
+  background-color: rgb(120, 193, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  width: 50%;
+}
+
+.alinhar-option-perfil-cli4 {
+  background-color: rgb(120, 193, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  width: 50%;
+}
+
+.arrumar-informacoes-perfil-cli1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0 10% -23%;
+}
+
+.arrumar-informacoes-perfil-cli2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0 10% -23%;
+}
+
+.arrumar-informacoes-perfil-cli3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0 10% -23%;
+}
+
+.arrumar-informacoes-perfil-cli4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0 10% -23%;
+}
+
+.h3-img-perfil-cli {
+   display: block;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.h3-perfil-cli {
+  text-align: center;
+}
+
+.calendario-perfil-cli {
+  width: 20%;
 }
