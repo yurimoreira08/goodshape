@@ -675,3 +675,75 @@ h4 {
 .calendario-perfil-cli {
   width: 20%;
 }
+
+/*Tela de adicionar dica*/
+.h1-adicionar-dicas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 5%;
+}
+
+.alinhar-ion-header-adicionar-dicas {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.sino-header-adicionar-dicas {
+  font-size: larger;
+  font-size: 190%;
+  margin: 5px 0 0 1%;
+}
+
+.body-adicionar-dicas {
+  background-color: #999b9e;
+  margin: 0;
+}
+
+.header-adicionar-dicas {
+  background-color: white;
+}
+
+.main-adicionar-dicas {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #999b9e;
+  margin: 5% 0 0 0;
+}
+
+.alinhar-option-adicionar-dicas {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: rgb(120, 193, 242);
+  border-radius: 40px;
+  width: 40%;
+  height: 35%;
+}
+
+.alinhar-option-adicionar-dicas2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: rgb(120, 193, 242);
+  border-radius: 40px;
+  width: 40%;
+  height: 50%;
+  margin: 2% 0 0 0;
+}
+
+.h2-adicionar-dicas {
+  display: block;
+}
+
+.h2-adicionar-dicas2 {
+  display: block;
+}
+
+.p-adicionar-dicas {
+  display: block;
+}
