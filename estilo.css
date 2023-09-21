@@ -622,10 +622,9 @@ h4 {
 }
 
 .h3-img-perfil-cli {
-   display: block;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
+  text-align: center;
+  display: flow-root;
+  margin: 0 0 0 5%;
 }
 
 .h3-perfil-cli {
@@ -716,4 +715,17 @@ h4 {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%  ;
+  }
 }
