@@ -24,7 +24,7 @@
 .index_footer {
   display: flex;
   justify-content: center;
-  padding-top: 9%;
+  padding-top: 13%;
 }
 
 .index_footer span {
@@ -377,7 +377,7 @@ p {
   display: flex;
   justify-content: center;
   margin-left: -25%;
-  margin-top: 11%;
+  margin-top: 5%;
 }
 
 .basico,
@@ -395,6 +395,30 @@ p {
 .premium button {
   background-color: #ff5757;
   border-color: #ff5757;
+}
+
+.conteudo{
+  display: none;
+}
+
+.oculta {
+  display: block;
+}
+
+.conteudo1{
+  display: none;
+}
+
+.oculta1 {
+  display: block;
+}
+
+.conteudo2{
+  display: none;
+}
+
+.oculta2 {
+  display: block;
 }
 
 .familia button {
@@ -420,6 +444,7 @@ p {
 .familia button:hover {
   background-color: #f0b504;
 }
+
 
 .planos2_main {
   text-align: center;
