@@ -286,60 +286,9 @@ p {
   border-color: #096a97;
 }
 
-/* Tela de menu do profissional: */
-.h1-menu-pro {
-  text-align: left;
-}
 
-.body-menu-pro {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--primary-color);
-}
 
-.main-menu-pro,
-.h1-menu-pro {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-  margin: 0 auto;
-}
-
-.main-menu-pro button {
-  width: 200px;
-  padding: 10px;
-  margin: 30px;
-  justify-content: center;
-  background-color: rgb(120, 193, 242);
-  flex-direction: column;
-
-}
-
-.grupo button {
-  background-color: var(--primary-color);
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media (min-width: 480px) {
-  .main-menu-pro {
-    width: 45%;
-  }
-}
-
-@media (min-width: 768px) {
-  .main-menu-pro {
-    width: 30%;
-  }
-}
-
-/* Tela de menu do cliente: */
+/* Telas do menu: */
 .main-menu-cli {
   text-align: center;
 }
@@ -576,8 +525,8 @@ h4 {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  width: 30%;
-  height: 30%;
+  width: 50%;
+
 }
 
 /*Tela do perfil do cliente*/
@@ -639,7 +588,7 @@ h4 {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  width: 50%;
+  width: 75%;
 }
 
 .alinhar-option-perfil-cli2 {
@@ -648,7 +597,7 @@ h4 {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  width: 50%;
+  width: 75%;
 }
 
 .alinhar-option-perfil-cli3 {
@@ -657,7 +606,7 @@ h4 {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  width: 50%;
+  width: 75%;
 }
 
 .alinhar-option-perfil-cli4 {
@@ -666,7 +615,7 @@ h4 {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  width: 50%;
+  width: 75%;
 }
 
 .arrumar-informacoes-perfil-cli1 {
@@ -698,10 +647,9 @@ h4 {
 }
 
 .h3-img-perfil-cli {
-   display: block;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
+  text-align: center;
+  display: flow-root;
+  margin: 0 0 0 5%;
 }
 
 .h3-perfil-cli {
@@ -735,6 +683,9 @@ h4 {
 .body-adicionar-dicas {
   background-color: #999b9e;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-adicionar-dicas {
@@ -757,7 +708,7 @@ h4 {
   background-color: rgb(120, 193, 242);
   border-radius: 40px;
   width: 40%;
-  height: 35%;
+  
 }
 
 .alinhar-option-adicionar-dicas2 {
@@ -782,4 +733,24 @@ h4 {
 
 .p-adicionar-dicas {
   display: block;
+}
+
+.footer-adicionar-dicas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%  ;
+  }
 }
