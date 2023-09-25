@@ -969,6 +969,7 @@ h4 {
   }
 }
 
+<<<<<<< HEAD
 /*Tela de Cadastro do Cliente Responsiva*/
 @media (max-width: 480px) {
   .body-cadastro-cli {
@@ -1109,5 +1110,43 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
+=======
+/*Tela de ver dicas*/
+.bloco_verDicas{
+  background-color: #1498d5;
+  padding: 16px;
+  margin-top: 40px;
+  margin-left: 11px;
+  height: 67px;
+  width: 421px;
+  border-radius: 15px;
+  display: flex;
 }
 
+.bloco_verDicas p{
+  color: black;
+  border: none;
+}
+
+.bloco_verDicas strong{
+  color: white; 
+}
+
+.ion_verDicas{
+  font-size: 300%;
+  color: #1498d5;
+>>>>>>> 75bd7dc15c325a32ec6495d95bb3d40e49e88625
+}
+
+.buttonAdicionar{
+  border-radius: 20px;
+  border-color: white;
+  padding: 0%;
+  background-color: white;
+  border:none; 
+}
+
+.adicionar_verDicas{
+  margin-top: 29%;
+  margin-left: 94%;
+}
