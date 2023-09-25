@@ -756,4 +756,40 @@ h4 {
 }
 
 /*Tela de ver dicas*/
+.bloco_verDicas{
+  background-color: #1498d5;
+  padding: 16px;
+  margin-top: 40px;
+  margin-left: 11px;
+  height: 67px;
+  width: 421px;
+  border-radius: 15px;
+  display: flex;
+}
 
+.bloco_verDicas p{
+  color: black;
+  border: none;
+}
+
+.bloco_verDicas strong{
+  color: white; 
+}
+
+.ion_verDicas{
+  font-size: 300%;
+  color: #1498d5;
+}
+
+.buttonAdicionar{
+  border-radius: 20px;
+  border-color: white;
+  padding: 0%;
+  background-color: white;
+  border:none; 
+}
+
+.adicionar_verDicas{
+  margin-top: 29%;
+  margin-left: 94%;
+}
