@@ -813,7 +813,7 @@ h4 {
 
 .calendario-perfil-cli {
   text-align: center;
-  width: 20%;
+  max-width: 100%;
 }
 
 /*Tela de adicionar dica*/
