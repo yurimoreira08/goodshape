@@ -24,7 +24,7 @@
 .index_footer {
   display: flex;
   justify-content: center;
-  padding-top: 13%;
+  padding-top: 21%;
 }
 
 .index_footer span {
@@ -895,6 +895,7 @@ h4 {
   font-size: 25px;
   font-style: italic;
   border: none;
+  border-radius: 22px;
 }
 
 
