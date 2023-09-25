@@ -812,6 +812,7 @@ h4 {
 }
 
 .calendario-perfil-cli {
+  text-align: center;
   width: 20%;
 }
 
@@ -897,18 +898,216 @@ h4 {
   justify-content: space-between;
 }
 
-@media (max-width: 480px) {
-  body {
-    width: 100%;
-    position: relative;
+/*Tela de ver dicas*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Primeira Tela Responsiva */
+@media (min-width: 480px) {
+  .index_body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (min-width: 768px) {
+  .index_body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }
+
+/*Tela de Login2 Responsiva*/
+@media (max-width: 480px) {
+  .login_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
 
 @media (max-width: 768px) {
-  body {
-    width: 100%  ;
+  .login_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }
 
-/*Tela de ver dicas*/
+/* Tela de Cadastro do Profissional Responsiva*/
+@media (max-width: 480px) {
+  .cadastro-pro_body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (max-width: 768px) {
+  .cadastro-pro_body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/*Tela de Cadastro do Cliente Responsiva*/
+@media (max-width: 480px) {
+  .body-cadastro-cli {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (max-width: 768px) {
+  .body-cadastro-cli {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/*Tela do Menu do Profissional Responsiva*/
+@media (max-width: 480px) {
+  .body-menu-cli {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (max-width: 768px) {
+  .body-menu-cli {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/*Tela do Menu do Cliente Responsiva*/
+@media (max-width: 480px) {
+  .body-menu-cli {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (max-width: 768px) {
+  .body-menu-cli {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/*Tela do Perfil do Profissional Responsiva*/
+@media (max-width: 480px) {
+  .body-perfil-pro {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (max-width: 768px) {
+  .body-perfil-pro {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/*Tela do Perfil do Cliente Responsiva*/
+@media (min-width: 480px) {
+  .body-perfil-cli {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (min-width: 768px) {
+  .body-perfil-cli {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/*Tela de Medidas Responsiva*/
+@media (max-width: 480px) {
+  .body-cadastro-cli-medidas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (max-width: 768px) {
+  .body-cadastro-cli-medidas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/*Tela de Termos Responsiva*/
+@media (max-width: 480px) {
+  .body-termos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (max-width: 768px) {
+  .body-termos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/*Tela de Adicionar Dicas Responsiva*/
+
+
+/*Tela de Ver Dicas Responsiva*/
+
+
+/* Tela de Planos Respopsiva */
+@media (max-width: 480px) {
+  .planos_main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
+
+@media (max-width: 768px) {
+  .planos_main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
 
