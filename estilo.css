@@ -147,13 +147,14 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
 }
 
 .cadastro-pro_main {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -161,10 +162,15 @@ p {
 .cadastro-pro_main input {
   width: 260px;
   background-color: #ccc;
+  border-radius: 22px;
 }
 
 .cadastro-pro_header h1 {
   text-align: center;
+}
+
+.cadastro-pro_main-h4 {
+  display: flex;
 }
 
 .diploma {
@@ -189,6 +195,37 @@ p {
   border-color: #096a97;
 }
 
+h4 {
+  text-align: left;
+}
+
+.pagar p {
+  display: flex;
+  justify-content: left;
+}
+
+.pagar input {
+  display: flex;
+  justify-content: left;
+  width: auto;
+  margin-right: 3.5rem;
+}
+
+.pasgamento {
+  display: flex;
+}
+
+.pasgamento input {
+  width: 20px;
+}
+
+#Conta {
+  margin: 0 1rem;
+}
+
+#pix {
+  margin: 0 1rem;
+}
 
 /* Tela de cadastro do cliente: */
 .body-cadastro-cli {
@@ -210,6 +247,7 @@ p {
 .main-cadastro-cli input {
   width: 260px;
   background-color: #ccc;
+  border-radius: 22px;
 }
 
 .h1-cadastro-cli {
@@ -256,6 +294,72 @@ p {
   border-color: #096a97;
 }
 
+/* Tela de Suas Medidas*/
+.body-cadastro-cli-medidas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f5f3f3;
+}
+
+.main-cadastro-cli-medidas {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.main-cadastro-cli-medidas input {
+  width: 260px;
+  background-color: #ccc;
+  border-radius: 22px;
+}
+
+.h1-cadastro-cli-medidas {
+  text-align: center;
+}
+
+.diploma {
+  background-color: rgb(255, 255, 255)
+}
+
+.bio {
+  height: 100px;
+}
+
+.footer-cadastro-cli {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.footer-cadastro-cli span {
+  padding: 0 1rem;
+}
+
+.footer-cadastro-cli span:last-child {
+  border: none;
+}
+
+.footer-cadastro-cli input {
+  width: 120px;
+  background-color: #1498d5;
+}
+
+.footer-cadastro-cli a button {
+  background-color: #1498d5;
+  border-color: #0cc0df;
+  padding: 1px;
+  width: 84px;
+  border-radius: 8px;
+}
+
+.footer-cadastro-cli a button:hover {
+  background-color: #096a97;
+  border-color: #096a97;
+}
 
 /* Tela de termos de uso: */
 .header-termos {
@@ -286,9 +390,60 @@ p {
   border-color: #096a97;
 }
 
+/* Tela de menu do profissional: */
+.h1-menu-pro {
+  text-align: left;
+}
 
+.body-menu-pro {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
 
-/* Telas do menu: */
+.main-menu-pro,
+.h1-menu-pro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.main-menu-pro button {
+  width: 200px;
+  padding: 10px;
+  margin: 30px;
+  justify-content: center;
+  background-color: rgb(120, 193, 242);
+  flex-direction: column;
+
+}
+
+.grupo button {
+  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 480px) {
+  .main-menu-pro {
+    width: 45%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-menu-pro {
+    width: 30%;
+  }
+}
+
+/* Tela de menu do cliente: */
 .main-menu-cli {
   text-align: center;
 }
