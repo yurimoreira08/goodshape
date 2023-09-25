@@ -24,7 +24,7 @@
 .index_footer {
   display: flex;
   justify-content: center;
-  padding-top: 9%;
+  padding-top: 13%;
 }
 
 .index_footer span {
@@ -481,7 +481,7 @@ h4 {
   display: flex;
   justify-content: center;
   margin-left: -25%;
-  margin-top: 11%;
+  margin-top: 5%;
 }
 
 .basico,
@@ -499,6 +499,30 @@ h4 {
 .premium button {
   background-color: #ff5757;
   border-color: #ff5757;
+}
+
+.conteudo{
+  display: none;
+}
+
+.oculta {
+  display: block;
+}
+
+.conteudo1{
+  display: none;
+}
+
+.oculta1 {
+  display: block;
+}
+
+.conteudo2{
+  display: none;
+}
+
+.oculta2 {
+  display: block;
 }
 
 .familia button {
@@ -524,6 +548,7 @@ h4 {
 .familia button:hover {
   background-color: #f0b504;
 }
+
 
 .planos2_main {
   text-align: center;
@@ -777,10 +802,9 @@ h4 {
 }
 
 .h3-img-perfil-cli {
-   display: block;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
+  text-align: center;
+  display: flow-root;
+  margin: 0 0 0 5%;
 }
 
 .h3-perfil-cli {
@@ -872,3 +896,19 @@ h4 {
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%  ;
+  }
+}
+
+/*Tela de ver dicas*/
+
