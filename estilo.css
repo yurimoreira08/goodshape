@@ -144,6 +144,8 @@ p {
 
 /* Tela de cadastro do profissional: */
 .cadastro-pro_body {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -461,14 +463,6 @@ h4 {
   margin: 30px;
   background-color: rgb(120, 193, 242);
   border-color: rgb(120, 193, 242);
-}
-
-
-
-@media (min-width: 768px) {
-  .main-menu-cli {
-    width: 100%;
-  }
 }
 
 /* Tela dos planos: */
@@ -956,7 +950,7 @@ h4 {
 }
 
 /*Tela de Login2 Responsiva*/
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .login_2 {
     display: flex;
     justify-content: space-between;
@@ -964,7 +958,7 @@ h4 {
   }
 }  
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .login_2 {
     display: flex;
     justify-content: space-between;
@@ -973,24 +967,28 @@ h4 {
 }
 
 /* Tela de Cadastro do Profissional Responsiva*/
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .cadastro-pro_body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
   }
 }  
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .cadastro-pro_body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
   }
 }
 
 /*Tela de Cadastro do Cliente Responsiva*/
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .body-cadastro-cli {
     display: flex;
     justify-content: space-between;
@@ -998,7 +996,7 @@ h4 {
   }
 }  
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .body-cadastro-cli {
     display: flex;
     justify-content: space-between;
@@ -1007,7 +1005,7 @@ h4 {
 }
 
 /*Tela do Menu do Profissional Responsiva*/
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .body-menu-cli {
     display: flex;
     justify-content: space-between;
@@ -1015,7 +1013,7 @@ h4 {
   }
 }  
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .body-menu-cli {
     display: flex;
     justify-content: space-between;
@@ -1024,7 +1022,7 @@ h4 {
 }
 
 /*Tela do Menu do Cliente Responsiva*/
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .body-menu-cli {
     display: flex;
     justify-content: space-between;
@@ -1032,7 +1030,7 @@ h4 {
   }
 }  
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .body-menu-cli {
     display: flex;
     justify-content: space-between;
@@ -1041,7 +1039,7 @@ h4 {
 }
 
 /*Tela do Perfil do Profissional Responsiva*/
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .body-perfil-pro {
     display: flex;
     justify-content: space-between;
@@ -1049,7 +1047,7 @@ h4 {
   }
 }  
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .body-perfil-pro {
     display: flex;
     justify-content: space-between;
@@ -1075,7 +1073,7 @@ h4 {
 }
 
 /*Tela de Medidas Responsiva*/
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .body-cadastro-cli-medidas {
     display: flex;
     justify-content: space-between;
@@ -1083,7 +1081,7 @@ h4 {
   }
 }  
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .body-cadastro-cli-medidas {
     display: flex;
     justify-content: space-between;
@@ -1092,7 +1090,7 @@ h4 {
 }
 
 /*Tela de Termos Responsiva*/
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .body-termos {
     display: flex;
     justify-content: space-between;
@@ -1100,7 +1098,7 @@ h4 {
   }
 }  
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .body-termos {
     display: flex;
     justify-content: space-between;
@@ -1109,10 +1107,38 @@ h4 {
 }
 
 /*Tela de Adicionar Dicas Responsiva*/
+@media (min-width: 480px) {
+  .body-adicionar-dicas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
 
+@media (min-width: 768px) {
+  .body-adicionar-dicas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
 
 /*Tela de Ver Dicas Responsiva*/
+@media (min-width: 480px) {
+  .body_verDicas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}  
 
+@media (min-width: 768px) {
+  .body_verDicas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
 
 /* Tela de Planos Respopsiva */
 @media (max-width: 480px) {
