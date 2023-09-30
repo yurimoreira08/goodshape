@@ -36,8 +36,7 @@
   border: none;
 }
 
-.index_main button,
-p {
+.index_main button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -917,6 +916,155 @@ h4 {
   margin-left: 92%;
 }
 
+/*Tela de Treinos*/
+.grupo_treino button {
+  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4%;
+  border-radius: 6%;
+  border: solid;
+  border-color: black;
+}
+
+.grupo_treino{
+  margin-left: 40%;
+}
+
+.ion-icon_treino {
+  font-size: 40px;
+}
+
+.grupo_treino button:hover{
+  background-color: #c7d0d8;
+}
+
+/*Tela de Buscar Profissionais*/
+.html-buscar-profissionais {
+  width: 100%;
+  height: 100%;
+}
+
+.body-buscar-profissionais {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-buscar-profissionais {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-buscar-profissionais{
+  width: 100%;
+  height: 100%;
+  margin: 50px 0 0 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 25px;
+}
+
+.caixa-de-texto {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.botao-pesquisar {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resultados {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profissional-buscar {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profissional-buscar h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profissional-buscar p {
+  margin: 5px 0;
+}
+
+.h1-buscar-profissionais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 5%;
+}
+
+.alinhar-ion-header-busca {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.sino-header-busca {
+  font-size: larger;
+  font-size: 190%;
+}
+
+.footer_buscar-profissionais {
+  margin: 90px 0 0 0;
+}
+
+.grupo_buscar button {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4%;
+  border-radius: 6%;
+  border: solid;
+  border-color: black;
+}
+
+.grupo_buscar {
+  text-align: center;
+}
+
+.ion-icon_buscar {
+  font-size: 40px;
+}
+
+.grupo_buscar button:hover {
+  background-color: #c7d0d8;
+} 
+
+.profissional-buscar {
+  display: flex;
+  align-items: center;
+}
+
+.aumentar-person-buscar {
+  font-size: 50px;
+  margin: 0 30px 0 0;
+}
 
 /* Primeira Tela Responsiva */
 @media (min-width: 480px) {
@@ -1141,27 +1289,4 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}
-
-/*Tela de Treinos*/
-.grupo_treino button {
-  background-color: var(--primary-color);
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 4%;
-  border-radius: 6%;
-  border: solid;
-  border-color: black;
-}
-
-.grupo_treino{
-  margin-left: 40%;
-}
-
-.ion-icon_treino {
-  font-size: 40px;
-}
-
-.grupo_treino button:hover{
-  background-color: #c7d0d8;
 }
