@@ -448,7 +448,7 @@ h4 {
 .main-menu-cli button {
   width: 200px;
   padding: 10px;
-  margin: 30px;
+  margin: 25px;
   background-color: rgb(120, 193, 242);
   border-color: rgb(120, 193, 242);
 }
@@ -1143,4 +1143,27 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
+}
+
+/*Tela de Treinos*/
+.grupo_treino button {
+  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4%;
+  border-radius: 6%;
+  border: solid;
+  border-color: black;
+}
+
+.grupo_treino{
+  margin-left: 40%;
+}
+
+.ion-icon_treino {
+  font-size: 40px;
+}
+
+.grupo_treino button:hover{
+  background-color: #c7d0d8;
 }
