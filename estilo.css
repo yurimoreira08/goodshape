@@ -71,13 +71,11 @@
   border-radius: 19px;
   margin-top: 10px;
   margin-left: 10px;
-  background-color: #ccc;
-  border-color: #ccc;
+  border: none;
 }
 
 .login2_footer button:hover {
-  background-color: #999b9e;
-  border-color: #999b9e;
+  background-color:#c7d0d8;
 }
 
 .login2_ion {
@@ -1325,9 +1323,12 @@ h4 {
   border-radius:15px;
   width:300px;
   align-items: center;
-  margin-left: 39%;
+  
   margin-top: 1%;
   margin-bottom: 3%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 25px;
 }
 
 .procurar{
@@ -1352,4 +1353,8 @@ h4 {
 
 .exercicios_voltar:hover{
   background-color: #c7d0d8;
+}
+
+.tabela_exercicios{
+  text-align: center;
 }
