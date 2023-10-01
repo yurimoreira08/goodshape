@@ -36,8 +36,7 @@
   border: none;
 }
 
-.index_main button,
-p {
+.index_main button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,16 +66,16 @@ p {
   margin: 20px;
 }
 
-.login2_footer button{
+.login2_footer button {
   background-color: white;
   border-radius: 19px;
   margin-top: 10px;
   margin-left: 10px;
   background-color: #ccc;
-  border-color:#ccc;
+  border-color: #ccc;
 }
 
-.login2_footer button:hover{
+.login2_footer button:hover {
   background-color: #999b9e;
   border-color: #999b9e;
 }
@@ -483,7 +482,7 @@ h4 {
   border-color: #ff5757;
 }
 
-.conteudo{
+.conteudo {
   display: none;
 }
 
@@ -491,7 +490,7 @@ h4 {
   display: block;
 }
 
-.conteudo1{
+.conteudo1 {
   display: none;
 }
 
@@ -499,7 +498,7 @@ h4 {
   display: block;
 }
 
-.conteudo2{
+.conteudo2 {
   display: none;
 }
 
@@ -882,7 +881,7 @@ h4 {
 }
 
 /*Tela de ver dicas*/
-.bloco_verDicas{
+.bloco_verDicas {
   background-color: #1498d5;
   padding: 16px;
   margin-top: 40px;
@@ -893,30 +892,230 @@ h4 {
   display: flex;
 }
 
-.bloco_verDicas p{
+.bloco_verDicas p {
   color: black;
   border: none;
 }
 
-.bloco_verDicas strong{
-  color: white; 
+.bloco_verDicas strong {
+  color: white;
 }
 
-.ion_verDicas{
+.ion_verDicas {
   font-size: 300%;
   color: #1498d5;
 }
 
-.main_verDicas button{
+.main_verDicas button {
   border-radius: 20px;
   border-color: white;
   padding: 0%;
   background-color: white;
-  border:none; 
+  border: none;
   margin-top: 20%;
   margin-left: 92%;
 }
 
+/*Tela de Treinos*/
+.grupo_treino button {
+  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4%;
+  border-radius: 6%;
+  border: solid;
+  border-color: black;
+}
+
+.grupo_treino {
+  margin-left: 40%;
+}
+
+.ion-icon_treino {
+  font-size: 40px;
+}
+
+.grupo_treino button:hover {
+  background-color: #c7d0d8;
+}
+
+/*Tela de Buscar Profissionais*/
+.html-buscar-profissionais {
+  width: 100%;
+  height: 100%;
+}
+
+.body-buscar-profissionais {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-buscar-profissionais {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-buscar-profissionais {
+  width: 100%;
+  height: 100%;
+  margin: 50px 0 0 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 25px;
+}
+
+.caixa-de-texto {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.botao-pesquisar {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resultados {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profissional-buscar {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profissional-buscar h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profissional-buscar p {
+  margin: 5px 0;
+}
+
+.h1-buscar-profissionais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 5%;
+}
+
+.alinhar-ion-header-busca {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.sino-header-busca {
+  font-size: larger;
+  font-size: 190%;
+}
+
+.footer_buscar-profissionais {
+  margin: 90px 0 0 0;
+}
+
+.grupo_buscar button {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4%;
+  border-radius: 6%;
+  border: solid;
+  border-color: black;
+}
+
+.grupo_buscar {
+  text-align: center;
+}
+
+.ion-icon_buscar {
+  font-size: 40px;
+}
+
+.grupo_buscar button:hover {
+  background-color: #c7d0d8;
+}
+
+.profissional-buscar {
+  display: flex;
+  align-items: center;
+}
+
+.aumentar-person-buscar {
+  font-size: 50px;
+  margin: 0 30px 0 0;
+}
+
+/*Tela de Treinos*/
+.grupo_treino button {
+  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4%;
+  border-radius: 6%;
+  border: solid;
+  border-color: black;
+}
+
+.grupo_treino {
+  margin-left: 40%;
+}
+
+.ion-icon_treino {
+  font-size: 40px;
+}
+
+.grupo_treino button:hover {
+  background-color: #c7d0d8;
+}
+
+/*Tela de Exercícios*/
+.main_exercicios {
+  text-align: center;
+}
+
+.main_exercicios button {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(120, 193, 242);
+  border-color: rgb(120, 193, 242);
+}
+
+.main_exercicios table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 18%;
+  font-size: 112%;
+}
+
+.main_exercicios table {
+  margin-left: 41%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
 
 /* Primeira Tela Responsiva */
 @media (min-width: 480px) {
@@ -925,7 +1124,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .index_body {
@@ -942,7 +1141,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .login_2 {
@@ -961,7 +1160,7 @@ h4 {
     justify-content: space-evenly;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .cadastro-pro_body {
@@ -980,7 +1179,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .body-cadastro-cli {
@@ -997,7 +1196,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .body-menu-cli {
@@ -1014,7 +1213,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .body-menu-cli {
@@ -1031,7 +1230,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .body-perfil-pro {
@@ -1048,7 +1247,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .body-perfil-cli {
@@ -1065,7 +1264,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .body-cadastro-cli-medidas {
@@ -1082,7 +1281,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .body-termos {
@@ -1099,7 +1298,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .body-adicionar-dicas {
@@ -1116,7 +1315,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (min-width: 768px) {
   .body_verDicas {
@@ -1133,7 +1332,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
-}  
+}
 
 @media (max-width: 768px) {
   .planos_main {
@@ -1141,6 +1340,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
   }
+<<<<<<< HEAD
 }
 
 /*Tela de Treinos*/
@@ -1226,4 +1426,6 @@ h4 {
 
 .exercicios_voltar:hover{
   background-color: #c7d0d8;
+=======
+>>>>>>> 78259fd7a0659c84a10bf6a77116b1b900e1d72e
 }
