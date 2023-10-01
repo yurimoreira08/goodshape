@@ -916,29 +916,6 @@ h4 {
   margin-left: 92%;
 }
 
-/*Tela de Treinos*/
-.grupo_treino button {
-  background-color: var(--primary-color);
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 4%;
-  border-radius: 6%;
-  border: solid;
-  border-color: black;
-}
-
-.grupo_treino {
-  margin-left: 40%;
-}
-
-.ion-icon_treino {
-  font-size: 40px;
-}
-
-.grupo_treino button:hover {
-  background-color: #c7d0d8;
-}
-
 /*Tela de Buscar Profissionais*/
 .html-buscar-profissionais {
   width: 100%;
@@ -1064,57 +1041,6 @@ h4 {
 .aumentar-person-buscar {
   font-size: 50px;
   margin: 0 30px 0 0;
-}
-
-/*Tela de Treinos*/
-.grupo_treino button {
-  background-color: var(--primary-color);
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 4%;
-  border-radius: 6%;
-  border: solid;
-  border-color: black;
-}
-
-.grupo_treino {
-  margin-left: 40%;
-}
-
-.ion-icon_treino {
-  font-size: 40px;
-}
-
-.grupo_treino button:hover {
-  background-color: #c7d0d8;
-}
-
-/*Tela de Exercícios*/
-.main_exercicios {
-  text-align: center;
-}
-
-.main_exercicios button {
-  width: 200px;
-  padding: 10px;
-  margin: 10px;
-  background-color: rgb(120, 193, 242);
-  border-color: rgb(120, 193, 242);
-}
-
-.main_exercicios table,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  width: 18%;
-  font-size: 112%;
-}
-
-.main_exercicios table {
-  margin-left: 41%;
-  margin-top: 3%;
-  margin-bottom: 3%;
 }
 
 /* Primeira Tela Responsiva */
@@ -1340,7 +1266,6 @@ td {
     justify-content: space-between;
     flex-direction: column;
   }
-<<<<<<< HEAD
 }
 
 /*Tela de Treinos*/
@@ -1355,7 +1280,7 @@ td {
 }
 
 .grupo_treino{
-  margin-left: 40%;
+  text-align: center;
 }
 
 .ion-icon_treino {
@@ -1412,6 +1337,7 @@ td {
   border:none;
   height:26px;
   width:260px;
+  outline: 0;
 }
 
 .ion-icon_procurar{
@@ -1426,6 +1352,4 @@ td {
 
 .exercicios_voltar:hover{
   background-color: #c7d0d8;
-=======
->>>>>>> 78259fd7a0659c84a10bf6a77116b1b900e1d72e
 }
