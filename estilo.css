@@ -1310,6 +1310,10 @@ h4 {
   font-size: 112%;
 }
 
+.main_exercicios table{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
 
 .barraPesquisa{
   display: flex;
@@ -1319,8 +1323,7 @@ h4 {
   width:300px;
   margin-top: 3%;
   margin-bottom: 3%;
-  text-align: center;
-  margin-left: 40%;
+  margin-left: 38%;
 }
 
 .procurar{
@@ -1335,6 +1338,7 @@ h4 {
 
 .ion-icon_procurar{
   font-size: 20px;
+  padding-top: 4px;
 }
 
 .exercicios_voltar{
@@ -1349,7 +1353,5 @@ h4 {
 
 .tabela_exercicios{
   text-align: center;
-  margin-left: 40%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin: 40%;
 }
