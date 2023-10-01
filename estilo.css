@@ -1192,3 +1192,38 @@ h4 {
   margin-top: 3%;
   margin-bottom: 3%;
 }
+
+.barraPesquisa{
+  display: flex;
+  background-color:#fff;
+  border:solid 1px;
+  border-radius:15px;
+  width:300px;
+  align-items: center;
+  margin-left: 39%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
+.procurar{
+  background-color:transparent;
+  padding-left:5px;
+  font-size:15px;
+  border:none;
+  height:26px;
+  width:260px;
+}
+
+.ion-icon_procurar{
+  font-size: 20px;
+}
+
+.exercicios_voltar{
+  border: none;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.exercicios_voltar:hover{
+  background-color: #c7d0d8;
+}
