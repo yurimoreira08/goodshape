@@ -1377,3 +1377,18 @@ td {
     flex-direction: column;
   }
 }
+
+/*Tela de Dieta*/
+.h1-tela-dieta{
+  margin-left: 1rem;
+}
+
+.ion-icon_dieta{
+  font-size: 40px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.garfo-dieta{
+  display: flex;
+}
