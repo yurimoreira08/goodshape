@@ -401,7 +401,6 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--primary-color);
 }
 
 .main-menu-pro,
@@ -425,7 +424,6 @@ h4 {
 }
 
 .grupo button {
-  background-color: var(--primary-color);
   align-items: center;
   justify-content: space-between;
 }
@@ -915,11 +913,6 @@ h4 {
 }
 
 /*Tela de Buscar Profissionais*/
-.html-buscar-profissionais {
-  width: 100%;
-  height: 100%;
-}
-
 .body-buscar-profissionais {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -1043,7 +1036,6 @@ h4 {
 
 /*Tela de Treinos*/
 .grupo_treino button {
-  background-color: var(--primary-color);
   align-items: center;
   justify-content: space-between;
   margin-top: 4%;
@@ -1356,6 +1348,36 @@ h4 {
   }
 }
 
-/* Tela de Buscar Profissionais*/
+/* Tela de Buscar Profissionais Responsiva*/
+@media (max-width: 480px) {
+  .body-buscar-profissionais {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
 
+@media (max-width: 768px) {
+  .body-buscar-profissionais {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
 
+/*Tela de Treinos Responsiva*/
+@media (max-width: 480px) {
+  .body_verDicas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .body_verDicas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
