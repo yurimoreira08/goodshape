@@ -1398,3 +1398,9 @@ td {
 .garfo-dieta{
   display: flex;
 }
+
+.footer-telaDieta {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+}
