@@ -1404,3 +1404,11 @@ td {
   bottom: 1rem;
   width: 100%;
 }
+
+.tabela-tela-dieta {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 600px;
+  margin-left: 28%;
+}
