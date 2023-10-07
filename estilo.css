@@ -612,7 +612,7 @@ h4 {
 }
 
 .alinhar-ion-main-perfil-pro {
-  margin: 5% 0 0 0;
+  margin: 2% 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1026,6 +1026,7 @@ h4 {
   border-radius: 6%;
   border: solid;
   border-color: black;
+  background-color: white;
 }
 
 .grupo_buscar {
@@ -1058,6 +1059,7 @@ h4 {
   border-radius: 6%;
   border: solid;
   border-color: black;
+  background-color: white;
 }
 
 .grupo_treino {
