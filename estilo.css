@@ -1149,6 +1149,35 @@ td {
   margin: 40%;
 }
 
+/*Tela de Dieta*/
+.h1-tela-dieta{
+  margin-left: 1rem;
+}
+
+.ion-icon_dieta{
+  font-size: 40px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.garfo-dieta{
+  display: flex;
+}
+
+.footer-telaDieta {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+}
+
+.tabela-tela-dieta {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 600px;
+  margin-left: 28%;
+}
+
 /* Primeira Tela Responsiva */
 @media (min-width: 480px) {
   .index_body {
@@ -1408,31 +1437,18 @@ td {
   }
 }
 
-/*Tela de Dieta*/
-.h1-tela-dieta{
-  margin-left: 1rem;
+@media (max-width: 480px) {
+  .main_verDicas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 
-.ion-icon_dieta{
-  font-size: 40px;
-  margin-top: 1rem;
-  margin-left: 2rem;
-}
-
-.garfo-dieta{
-  display: flex;
-}
-
-.footer-telaDieta {
-  position: fixed;
-  bottom: 1rem;
-  width: 100%;
-}
-
-.tabela-tela-dieta {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 600px;
-  margin-left: 28%;
+@media (max-width: 768px) {
+  .main_verDicas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
