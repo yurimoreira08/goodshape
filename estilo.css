@@ -1017,7 +1017,7 @@ h4 {
 }
 
 .footer_buscar-profissionais {
-  position: fixed;
+  position: absolute;
   bottom: 1rem;
   width: 100%;
 }
@@ -1076,7 +1076,7 @@ h4 {
 }
 
 .footer_treino {
-  position: fixed;
+  position: absolute;
   bottom: 1rem;
   width: 100%;
 }
@@ -1166,7 +1166,7 @@ td {
 }
 
 .footer-telaDieta {
-  position: fixed;
+  position: absolute;
   bottom: 1rem;
   width: 100%;
 }
