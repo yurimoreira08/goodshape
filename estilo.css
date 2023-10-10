@@ -1076,7 +1076,6 @@ h4 {
 }
 
 .footer_treino {
-  position: absolute;
   bottom: 1rem;
   width: 100%;
 }
@@ -1452,4 +1451,61 @@ td {
     justify-content: space-between;
     flex-direction: column;
   }
+}
+
+/*Tela de Ver Chamadas*/
+.red {
+  padding: 5px 5px 5px 5px;
+  margin: 10px 0 0 0;
+  width: 30%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yellow {
+  padding: 5px 5px 5px 5px;
+  margin: 10px 0 0 0;
+  width: 30%;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green {
+  padding: 5px 5px 5px 5px;
+  margin: 10px 0 0 0;
+  width: 30%;
+  background-color: rgb(67, 190, 67);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-chamadas {
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-chamadas {
+  margin: 0 0 0 10px;
+}
+
+/*Tela de Diploma*/
+.main-diploma {
+  margin: 10% 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-diploma {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
 }
