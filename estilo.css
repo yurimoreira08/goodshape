@@ -1579,4 +1579,12 @@ td {
 }
 
 /*Tela de Dicas e Sugestões*/
+.p_sugestoes b{
+  display: flex;
+}
+
+.b_sugestoes, a{
+  color: white;
+  
+}
 
