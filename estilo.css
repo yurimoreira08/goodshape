@@ -982,6 +982,11 @@ h4 {
   align-items: center;
 }
 
+.resultados a{
+  text-decoration: none;
+  color: black;
+}
+
 .profissional-buscar {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -1572,3 +1577,6 @@ td {
 .footer_chat{
   margin: 12%;
 }
+
+/*Tela de Dicas e Sugestões*/
+
