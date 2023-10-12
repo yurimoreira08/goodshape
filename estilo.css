@@ -987,6 +987,13 @@ h4 {
   color: black;
 }
 
+.button_buscar-profissionais{
+  padding: 0;
+  margin: 5px 0 0 0;
+  background-color: white;
+  border: white;
+}
+
 .profissional-buscar {
   border: 1px solid #ccc;
   border-radius: 5px;
