@@ -1541,3 +1541,25 @@ td {
     flex-direction: column;
   }
 }
+
+/* Tela de Chat*/
+.ion-icon_chat{
+  font-size: x-large;
+}
+
+.button_clientes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body_chat a{
+  text-decoration: none;
+}
+
+.main_chat{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
