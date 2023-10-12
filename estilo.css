@@ -1563,3 +1563,12 @@ td {
   flex-direction: column;
   align-items: center;
 }
+
+.main_chat button{
+  margin: 11px;
+  width: 212px;
+}
+
+.footer_chat{
+  margin: 12%;
+}
