@@ -1590,12 +1590,24 @@ td {
 }
 
 /*Tela de Dicas e Sugestões*/
-.p_sugestoes b{
+.header_sugestoes{
   display: flex;
 }
 
-.b_sugestoes a{
-  color: white;
+.reto_sugestoes{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: baseline;
+}
+
+.ion_sugestoes{
+  font-size: xx-large;
+}
+
+.header_sugestoes button{
+  border: none;
+  margin-right: 47px;
 }
 
 /*Tela de Vídeos de Execução*/
