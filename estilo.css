@@ -1779,3 +1779,28 @@ align-items: baseline;
 .proximos-videos h5 {
   margin-left: 170%;
 }
+
+/*Tela de chat do cliente*/
+.body_chat-cli{
+  background-color:#007bff;
+}
+
+.header_chat-cli{
+  display: flex;
+  background-color: #e8ebee;
+}
+
+.header_chat-cli button{
+  border: none;
+  margin-right: 47px;
+  background-color: white;
+}
+
+.header_chat-cli button:hover{
+  background-color: #ccc;
+  border-radius: 18px;
+}
+
+.ion_chat-cli{
+  font-size: xx-large;
+}
