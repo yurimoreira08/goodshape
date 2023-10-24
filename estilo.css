@@ -592,7 +592,7 @@ h4 {
   font-size: 19px;
 }
 
-/*Tela do perfil do profissional*/
+/*Tela do  do profissional*/
 .h1-perfil-pro {
   display: flex;
   justify-content: center;
@@ -652,7 +652,7 @@ h4 {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  width: 50%;
+  width: 25%;
 }
 
 /*Tela do perfil do cliente*/
