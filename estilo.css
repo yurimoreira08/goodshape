@@ -821,7 +821,7 @@ h4 {
 }
 
 .header-adicionar-dicas {
-  background-color: white;
+  background-color: white; padding: 15px;
 }
 
 .tela-add-Dicas {
@@ -836,6 +836,7 @@ h4 {
   flex-direction: column;
   width: 30%;
   height: 100px;
+  margin-left: 30px;
 }
 
 .tela-add-Dicas2 {
@@ -846,6 +847,7 @@ h4 {
   height: 150px;
   display: flex;
   justify-content: left;
+  margin-left: 30px;
 }
 
 .crescer {
