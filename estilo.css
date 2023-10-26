@@ -1804,3 +1804,33 @@ align-items: baseline;
 .ion_chat-cli{
   font-size: xx-large;
 }
+
+/*Tela Marcar consultas*/
+
+
+.header-marcar-consulta {
+  display: flex;
+  justify-content: left;
+}
+
+.main-marcar-consulta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horario-marcar-consulta {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.horario-marcar-consulta ion-icon {
+  margin-right: 30px;
+}
+
+.escurecer-botao {
+  background-color: #ccc;
+  border-radius: 22px;
+}
