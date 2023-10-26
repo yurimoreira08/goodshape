@@ -1704,7 +1704,6 @@ align-items: baseline;
 
 .video {
   border-style: solid;
-  width: 90px;
   display: flex;
   justify-content: center;
   width: 420px;
