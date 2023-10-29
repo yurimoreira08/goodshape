@@ -1613,8 +1613,6 @@ align-items: baseline;
 }
 
 /*Tela Marcar consultas*/
-
-
 .header-marcar-consulta {
   display: flex;
   justify-content: left;
@@ -1640,6 +1638,51 @@ align-items: baseline;
 .escurecer-botao {
   background-color: #ccc;
   border-radius: 22px;
+}
+
+/* Tela de Chamadas */
+.div-chamadas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-bottom: solid;
+  margin: 0;
+}
+
+.icon-div-chamadas {
+  font-size: 250px;
+  margin-top: 3rem;
+}
+
+.icon-div2-chamadas {
+  font-size: 84px;
+  background-color: #ccc;
+}
+
+.div-person1 {
+  margin: 0;
+} 
+
+.div-person2 {
+  position: absolute;
+  margin-left: 13rem;
+  margin-bottom: 1rem;
+}
+
+.div-icons-btn {
+  display: flex;
+  justify-content: space-around;  
+  margin-top: 2rem;
+}
+
+.icons-chamadas {
+  font-size: 50px;
+}
+
+.icons-telefone {
+  font-size: 50px;
+  background-color: red;
+  border-radius: 50%;
 }
 
 /* Primeira Tela Responsiva */
