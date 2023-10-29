@@ -1364,6 +1364,284 @@ td {
   padding: 10px;
 }
 
+/* Tela de Chat*/
+.ion-icon_chat{
+  font-size: x-large;
+}
+
+.button_clientes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body_chat a{
+  text-decoration: none;
+}
+
+.main_chat{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_chat button{
+  margin: 11px;
+  width: 212px;
+}
+
+.footer_chat{
+  position: fixed;
+  width: 100%;
+  bottom: 1rem;
+}
+
+/*Tela de Dicas e Sugestões*/
+.header_sugestoes{
+  display: flex;
+}
+
+.reto_sugestoes{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: baseline;
+}
+
+.ion_sugestoes{
+  font-size: xx-large;
+}
+
+.header_sugestoes button{
+  border: none;
+  margin-right: 47px;
+  background-color: white;
+}
+
+.header_sugestoes button:hover{
+  background-color: #ccc;
+  border-radius: 18px;
+}
+
+.balao1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid;
+  padding: 23px;
+  width: 46%;
+  margin-bottom: 2%;
+  border-radius: 16px;
+  background-color: #1498d5;
+  border-color: #1498d5;
+}
+
+.balao2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid;
+  padding: 23px;
+  width: 46%;
+  margin-bottom: 2%;
+  border-radius: 16px;
+  background-color: #1498d5;
+  border-color: #1498d5;
+}
+
+.balao2 a{
+  color: white;
+}
+
+.balao3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid;
+  padding: 23px;
+  width: 46%;
+  margin-bottom: 2%;
+  border-radius: 16px;
+  background-color: #1498d5;
+  border-color: #1498d5;
+}
+
+.balao4{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid;
+  padding: 23px;
+  width: 46%;
+  margin-bottom: 2%;
+  border-radius: 16px;
+  background-color: #1498d5;
+  border-color: #1498d5;
+}
+
+.main_sugestoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 21%;
+}
+
+.branco_sugestoes{
+  color: white;
+}
+
+/*Tela de Vídeos de Execução*/
+.icones {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  margin-top: 43%;
+  margin-right: 53%;
+  border: #eb2727;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-right: 30%;
+  padding-left: 2%;
+}
+
+.video {
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  width: 420px;
+  height: 220px;
+}
+
+.centralizar {
+  display: flex;
+  justify-content: center;
+}
+
+.sumir-embaixo {
+  text-decoration: none;
+}
+
+.descer-texto-videos {
+  margin-right: 6%;
+  margin-left: 3%;
+}
+
+.deixar-no-meio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.sumir-tudo {
+  display: none;
+}
+
+.proximos-videos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.leg-press {
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 130px;
+  height: 80px;
+  margin-right: 20%;
+  margin-top: 3%;
+}
+
+.bulgaro {
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 130px;
+  height: 80px;
+  margin-right: 20%;
+  margin-top: 3%;
+}
+
+.flexora {
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 130px;
+  height: 80px;
+  margin-right: 20%;
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+
+.proximos-videos h5 {
+  margin-left: 170%;
+}
+
+/*Tela de chat do cliente*/
+.body_chat-cli{
+  background-color:#007bff;
+}
+
+.header_chat-cli{
+  display: flex;
+  background-color: #e8ebee;
+}
+
+.header_chat-cli button{
+  border: none;
+  margin-right: 47px;
+  background-color: white;
+}
+
+.header_chat-cli button:hover{
+  background-color: #ccc;
+  border-radius: 18px;
+}
+
+.ion_chat-cli{
+  font-size: xx-large;
+}
+
+/*Tela Marcar consultas*/
+
+
+.header-marcar-consulta {
+  display: flex;
+  justify-content: left;
+}
+
+.main-marcar-consulta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horario-marcar-consulta {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.horario-marcar-consulta ion-icon {
+  margin-right: 30px;
+}
+
+.escurecer-botao {
+  background-color: #ccc;
+  border-radius: 22px;
+}
+
 /* Primeira Tela Responsiva */
 @media (min-width: 480px) {
   .index_body {
@@ -1637,280 +1915,4 @@ td {
     justify-content: space-between;
     flex-direction: column;
   }
-}
-
-/* Tela de Chat*/
-.ion-icon_chat{
-  font-size: x-large;
-}
-
-.button_clientes{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.body_chat a{
-  text-decoration: none;
-}
-
-.main_chat{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main_chat button{
-  margin: 11px;
-  width: 212px;
-}
-
-.footer_chat{
-  margin: 12%;
-}
-
-/*Tela de Dicas e Sugestões*/
-.header_sugestoes{
-  display: flex;
-}
-
-.reto_sugestoes{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: baseline;
-}
-
-.ion_sugestoes{
-  font-size: xx-large;
-}
-
-.header_sugestoes button{
-  border: none;
-  margin-right: 47px;
-  background-color: white;
-}
-
-.header_sugestoes button:hover{
-  background-color: #ccc;
-  border-radius: 18px;
-}
-
-.balao1{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: solid;
-  padding: 23px;
-  width: 46%;
-  margin-bottom: 2%;
-  border-radius: 16px;
-  background-color: #1498d5;
-  border-color: #1498d5;
-}
-
-.balao2{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: solid;
-  padding: 23px;
-  width: 46%;
-  margin-bottom: 2%;
-  border-radius: 16px;
-  background-color: #1498d5;
-  border-color: #1498d5;
-}
-
-.balao2 a{
-  color: white;
-}
-
-.balao3{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: solid;
-  padding: 23px;
-  width: 46%;
-  margin-bottom: 2%;
-  border-radius: 16px;
-  background-color: #1498d5;
-  border-color: #1498d5;
-}
-
-.balao4{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: solid;
-  padding: 23px;
-  width: 46%;
-  margin-bottom: 2%;
-  border-radius: 16px;
-  background-color: #1498d5;
-  border-color: #1498d5;
-}
-
-.main_sugestoes{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 21%;
-}
-
-.branco_sugestoes{
-  color: white;
-}
-
-/*Tela de Vídeos de Execução*/
-.icones {
-  display: flex;
-  justify-content: center;
-  font-size: 32px;
-  margin-top: 43%;
-  margin-right: 53%;
-  border: #eb2727;
-  border-style: solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  padding-right: 30%;
-  padding-left: 2%;
-}
-
-.video {
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  width: 420px;
-  height: 220px;
-}
-
-.centralizar {
-  display: flex;
-  justify-content: center;
-}
-
-.sumir-embaixo {
-  text-decoration: none;
-}
-
-.descer-texto-videos {
-  margin-right: 6%;
-  margin-left: 3%;
-}
-
-.deixar-no-meio {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 5%;
-}
-
-.sumir-tudo {
-  display: none;
-}
-
-.proximos-videos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-.leg-press {
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 130px;
-  height: 80px;
-  margin-right: 20%;
-  margin-top: 3%;
-}
-
-.bulgaro {
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 130px;
-  height: 80px;
-  margin-right: 20%;
-  margin-top: 3%;
-}
-
-.flexora {
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 130px;
-  height: 80px;
-  margin-right: 20%;
-  margin-top: 3%;
-  margin-bottom: 7%;
-}
-
-.proximos-videos h5 {
-  margin-left: 170%;
-}
-
-/*Tela de chat do cliente*/
-.body_chat-cli{
-  background-color:#007bff;
-}
-
-.header_chat-cli{
-  display: flex;
-  background-color: #e8ebee;
-}
-
-.header_chat-cli button{
-  border: none;
-  margin-right: 47px;
-  background-color: white;
-}
-
-.header_chat-cli button:hover{
-  background-color: #ccc;
-  border-radius: 18px;
-}
-
-.ion_chat-cli{
-  font-size: xx-large;
-}
-
-/*Tela Marcar consultas*/
-
-
-.header-marcar-consulta {
-  display: flex;
-  justify-content: left;
-}
-
-.main-marcar-consulta {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.horario-marcar-consulta {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-}
-
-.horario-marcar-consulta ion-icon {
-  margin-right: 30px;
-}
-
-.escurecer-botao {
-  background-color: #ccc;
-  border-radius: 22px;
 }
