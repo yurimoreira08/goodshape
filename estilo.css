@@ -813,7 +813,7 @@ h4 {
 }
 
 .body-adicionar-dicas {
-  background-color: #999b9e;
+  background-color: #ffffff;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -821,7 +821,7 @@ h4 {
 }
 
 .header-adicionar-dicas {
-  background-color: white; padding: 15px;
+  background-color: rgb(198, 191, 191); padding: 15px;
 }
 
 .tela-add-Dicas {
@@ -860,7 +860,7 @@ h4 {
 }
 
 .footer-tela-add-dicas {
-  background-color: #999b9e;
+  background-color: #ffffff;
   display: flex;
   justify-content: right;
   height: 50px;
@@ -1115,9 +1115,20 @@ h4 {
   border-color: rgb(120, 193, 242);
 }
 
-.main_exercicios table,
-th,
-td {
+.main_exercicios table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 27%;
+  font-size: 112%;
+}
+
+.th-tabela-exercicios {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 27%;
+  font-size: 112%;
+}
+.td-tela-exercicios {
   border: 1px solid black;
   border-collapse: collapse;
   width: 27%;
@@ -1194,9 +1205,44 @@ td {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 600px;
-  margin-left: 28%;
-  margin-bottom: 6rem;
+  width: 700px;
+  margin-left: 26%;
+  margin-bottom: 5rem;
+  border-style: solid;
+  padding-bottom: 1%;
+}
+
+.th-tabela-dieta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.td-tabela-dieta {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  font-size: large;
+}
+
+.td-tabela-dieta1 {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  font-size: large;
+  border-bottom: solid;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+}
+
+
+.cor-titulo-tabela-dieta {
+  font-size: x-large;
+  color: rgb(246, 5, 5);
+  padding-bottom: 5%;
+}
+
+.dia-da-semana {
+  font-size: larger;
 }
 
 /*Tela de Ver Chamadas*/
