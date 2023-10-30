@@ -1589,28 +1589,70 @@ align-items: baseline;
 }
 
 /*Tela de chat do cliente*/
-.body_chat-cli{
-  background-color:#007bff;
-}
-
-.header_chat-cli{
+.h1-chatCli {
   display: flex;
-  background-color: #e8ebee;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 5%;
 }
 
-.header_chat-cli button{
-  border: none;
-  margin-right: 47px;
+.alinhar-ion-chatCli {
+  display: flex;
+  justify-content: left;
+}
+
+.voltar-chatCli {
+  font-size: larger;
+  font-size: 190%;
+  margin: 5px 0 0 1%;
+}
+
+.body-chatCli {
+  background-color: #c7f2c8;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-chatCli {
+  background-color: white; padding: 15px;
+}
+
+.main_chat-cli p{
   background-color: white;
+  padding: 6px;
+  border-radius: 20px;
+  margin: 5px ;
 }
 
-.header_chat-cli button:hover{
-  background-color: #ccc;
-  border-radius: 18px;
+.main_chat-cli {
+  margin-top: 30px;
 }
 
-.ion_chat-cli{
+.footer-chatCli{
+  position: fixed;
+  bottom: 1rem;
+  width: 100%; 
+}
+
+.ion_mic{
   font-size: xx-large;
+}
+
+.url_chatCli{
+  font-size: 20px;
+  border-radius: 20px;
+  width: 25%;
+  outline: 0;
+  height: 30px;
+  background: white;
+  border: none;
+}
+
+.digitar-chat{
+  display: flex;
+  justify-content: center;
 }
 
 /*Tela Marcar consultas*/
