@@ -1,0 +1,20 @@
+/* HtML Footer do Profissional */
+
+<footer class="footer">
+        <ion-icon name="person" class="ion-footer"></ion-icon>
+        <ion-icon name="restaurant" class="ion-footer"></ion-icon>
+        <ion-icon name="home" class="ion-footer"></ion-icon>
+        <ion-icon name="barbell" class="ion-footer"></ion-icon>
+        <ion-icon name="pulse" class="ion-footer"></ion-icon>
+</footer>
+
+
+
+/* HtML Footer do Cliente */
+<footer class="footer">
+        <ion-icon name="person" class="ion-footer"></ion-icon>
+        <ion-icon name="bulb-outline" class="ion-footer"></ion-icon>
+        <ion-icon name="home" class="ion-footer"></ion-icon>
+        <ion-icon name="barbell" class="ion-footer"></ion-icon>
+        <ion-icon name="pulse" class="ion-footer"></ion-icon>
+</footer>
