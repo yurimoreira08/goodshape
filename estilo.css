@@ -1185,7 +1185,7 @@ td {
 }
 
 .footer-telaDieta {
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   width: 100%;
 }
@@ -1196,6 +1196,7 @@ td {
   text-align: center;
   width: 600px;
   margin-left: 28%;
+  margin-bottom: 6rem;
 }
 
 /*Tela de Ver Chamadas*/
