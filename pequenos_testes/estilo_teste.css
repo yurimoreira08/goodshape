@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0rem;
+    position: fixed;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ccc;
+}
+
+.ion-footer {
+    font-size: 40px;
+}
