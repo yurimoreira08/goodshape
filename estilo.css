@@ -1796,6 +1796,9 @@ align-items: baseline;
   border-radius: 50%;
 }
 
+/* Tela de Solicitar Chamadas */
+
+
 /* Primeira Tela Responsiva */
 @media (min-width: 480px) {
   .index_body {
