@@ -1,8 +1,23 @@
-/* footer {
-  position: fixed;
-  bottom: 1rem;
+/*Footer*/
+body {
+  margin: 0;
+}
+
+.footer {
   width: 100%;
-} */
+  bottom: 0rem;
+  position: fixed;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.ion-footer {
+  font-size: 40px;
+  color: black;
+}
 
 /* Primeira tela do aplicativo: */
 .index_body {
@@ -1651,6 +1666,7 @@ align-items: baseline;
   font-size: larger;
   font-size: 190%;
   margin: 5px 0 0 1%;
+  color: black;
 }
 
 .body-chatCli {
@@ -1699,6 +1715,7 @@ align-items: baseline;
 .digitar-chat{
   display: flex;
   justify-content: center;
+  margin-top: 22%;
 }
 
 /*Tela Marcar consultas*/

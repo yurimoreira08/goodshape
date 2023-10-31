@@ -11,10 +11,10 @@
 
 
 /* HtML Footer do Cliente */
-<footer class="footer">
-        <ion-icon name="person" class="ion-footer"></ion-icon>
-        <ion-icon name="bulb-outline" class="ion-footer"></ion-icon>
-        <ion-icon name="home" class="ion-footer"></ion-icon>
-        <ion-icon name="barbell" class="ion-footer"></ion-icon>
-        <ion-icon name="pulse" class="ion-footer"></ion-icon>
-</footer>
+ <footer class="footer">
+    <a href="perfil-cli.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
+    <a href="dieta.html"><ion-icon name="restaurant" class="ion-footer"></ion-icon></a>
+    <a href="menu_cli.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
+    <a href="treinos.html"><ion-icon name="barbell" class="ion-footer"></ion-icon></a>
+    <a href="buscar_profissionais.html"><ion-icon name="search-outline" class="ion-footer"></ion-icon></a>
+ </footer>
