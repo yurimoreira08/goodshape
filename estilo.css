@@ -1,13 +1,14 @@
 /*Footer*/
 body {
   margin: 0;
+  margin-bottom: 100px;
 }
 
 .footer {
   width: 100%;
   bottom: 0rem;
   position: fixed;
-  padding: 20px;
+  height: 90px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
