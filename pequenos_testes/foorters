@@ -1,11 +1,11 @@
 /* HtML Footer do Profissional */
 
 <footer class="footer">
-        <ion-icon name="person" class="ion-footer"></ion-icon>
-        <ion-icon name="restaurant" class="ion-footer"></ion-icon>
-        <ion-icon name="home" class="ion-footer"></ion-icon>
-        <ion-icon name="barbell" class="ion-footer"></ion-icon>
-        <ion-icon name="pulse" class="ion-footer"></ion-icon>
+        <a href="perfil-pro.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
+        <a href="conteudo.html"><ion-icon name="bulb-outline" class="ion-footer"></ion-icon></a>
+        <a href="menu.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
+        <a href="chamadas.html"><ion-icon name="videocam" class="ion-footer"></ion-icon></a>
+        <a href="chat.html"><ion-icon name="chatbubble-ellipses-outline" class="ion-footer"></ion-icon></a>
 </footer>
 
 

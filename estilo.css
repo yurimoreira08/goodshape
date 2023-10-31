@@ -1649,7 +1649,7 @@ align-items: baseline;
   margin-left: 170%;
 }
 
-/*Tela de chat do cliente*/
+/*Tela de chat do cliente e Profissional*/
 .h1-chatCli {
   display: flex;
   justify-content: center;
