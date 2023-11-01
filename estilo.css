@@ -1,8 +1,24 @@
-/* footer {
-  position: fixed;
-  bottom: 1rem;
+/*Footer*/
+body {
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.footer {
   width: 100%;
-} */
+  bottom: 0rem;
+  position: fixed;
+  height: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.ion-footer {
+  font-size: 40px;
+  color: black;
+}
 
 /* Primeira tela do aplicativo: */
 .index_body {
@@ -813,7 +829,7 @@ h4 {
 }
 
 .body-adicionar-dicas {
-  background-color: #999b9e;
+  background-color: #ffffff;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -821,7 +837,11 @@ h4 {
 }
 
 .header-adicionar-dicas {
-  background-color: white;
+  background-color: rgb(198, 191, 191); padding: 15px;
+}
+
+.header-adicionar-dicas1 {
+  background-color: rgb(255, 255, 255); padding: 15px;
 }
 
 .tela-add-Dicas {
@@ -836,6 +856,7 @@ h4 {
   flex-direction: column;
   width: 30%;
   height: 100px;
+  margin-left: 30px;
 }
 
 .tela-add-Dicas2 {
@@ -846,6 +867,7 @@ h4 {
   height: 150px;
   display: flex;
   justify-content: left;
+  margin-left: 30px;
 }
 
 .crescer {
@@ -858,7 +880,7 @@ h4 {
 }
 
 .footer-tela-add-dicas {
-  background-color: #999b9e;
+  background-color: #ffffff;
   display: flex;
   justify-content: right;
   height: 50px;
@@ -1113,9 +1135,20 @@ h4 {
   border-color: rgb(120, 193, 242);
 }
 
-.main_exercicios table,
-th,
-td {
+.main_exercicios table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 27%;
+  font-size: 112%;
+}
+
+.th-tabela-exercicios {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 27%;
+  font-size: 112%;
+}
+.td-tela-exercicios {
   border: 1px solid black;
   border-collapse: collapse;
   width: 27%;
@@ -1183,7 +1216,7 @@ td {
 }
 
 .footer-telaDieta {
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   width: 100%;
 }
@@ -1192,8 +1225,44 @@ td {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 600px;
-  margin-left: 28%;
+  width: 700px;
+  margin-left: 26%;
+  margin-bottom: 5rem;
+  border-style: solid;
+  padding-bottom: 1%;
+}
+
+.th-tabela-dieta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.td-tabela-dieta {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  font-size: large;
+}
+
+.td-tabela-dieta1 {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  font-size: large;
+  border-bottom: solid;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+}
+
+
+.cor-titulo-tabela-dieta {
+  font-size: x-large;
+  color: rgb(242, 10, 10);
+  padding-bottom: 5%;
+}
+
+.dia-da-semana {
+  font-size: larger;
 }
 
 /*Tela de Ver Chamadas*/
@@ -1282,6 +1351,453 @@ td {
   justify-content: left;
   align-items: center;
 }
+
+/*Tela de Solicitar chamada*/
+.section-solicitar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.h2-solicitar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1498d5;
+  border-radius: 40px;
+  width: 50%;
+  padding: 10px;
+}
+
+.lista-solicitar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.section2-solicitar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.div1, .div2, .div3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-solicitar-red {
+  font-size: 30px;
+  background-color: red;
+  color: red;
+  border-radius: 40px;
+}
+
+.icon-solicitar-yellow {
+  font-size: 30px;
+  background-color: yellow;
+  color: yellow;
+  border-radius: 40px;
+}
+
+.icon-solicitar-green {
+  font-size: 30px;
+  background-color: green;
+  color: green;
+  border-radius: 40px;
+}
+
+.section3-solicitar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.h22-solicitar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: greenyellow;
+  border-radius: 40px;
+  width: 15%;
+  padding: 10px;
+}
+
+/* Tela de Chat*/
+.ion-icon_chat{
+  font-size: x-large;
+}
+
+.button_clientes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body_chat a{
+  text-decoration: none;
+}
+
+.main_chat{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_chat button{
+  margin: 11px;
+  width: 212px;
+}
+
+.footer_chat{
+  position: fixed;
+  width: 100%;
+  bottom: 1rem;
+}
+
+/*Tela de Dicas e Sugestões*/
+.header_sugestoes{
+  display: flex;
+}
+
+.reto_sugestoes{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: baseline;
+}
+
+.ion_sugestoes{
+  font-size: xx-large;
+}
+
+.header_sugestoes button{
+  border: none;
+  margin-right: 47px;
+  background-color: white;
+}
+
+.header_sugestoes button:hover{
+  background-color: #ccc;
+  border-radius: 18px;
+}
+
+.balao1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid;
+  padding: 23px;
+  width: 46%;
+  margin-bottom: 2%;
+  border-radius: 16px;
+  background-color: #1498d5;
+  border-color: #1498d5;
+}
+
+.balao2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid;
+  padding: 23px;
+  width: 46%;
+  margin-bottom: 2%;
+  border-radius: 16px;
+  background-color: #1498d5;
+  border-color: #1498d5;
+}
+
+.balao2 a{
+  color: white;
+}
+
+.balao3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid;
+  padding: 23px;
+  width: 46%;
+  margin-bottom: 2%;
+  border-radius: 16px;
+  background-color: #1498d5;
+  border-color: #1498d5;
+}
+
+.balao4{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid;
+  padding: 23px;
+  width: 46%;
+  margin-bottom: 2%;
+  border-radius: 16px;
+  background-color: #1498d5;
+  border-color: #1498d5;
+}
+
+.main_sugestoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 21%;
+}
+
+.branco_sugestoes{
+  color: white;
+}
+
+/*Tela de Vídeos de Execução*/
+.icones {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  margin-top: 43%;
+  margin-right: 53%;
+  border: #eb2727;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-right: 30%;
+  padding-left: 2%;
+}
+
+.video {
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  width: 420px;
+  height: 220px;
+}
+
+.centralizar {
+  display: flex;
+  justify-content: center;
+}
+
+.sumir-embaixo {
+  text-decoration: none;
+}
+
+.descer-texto-videos {
+  margin-right: 6%;
+  margin-left: 3%;
+}
+
+.deixar-no-meio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.sumir-tudo {
+  display: none;
+}
+
+.proximos-videos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.leg-press {
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 130px;
+  height: 80px;
+  margin-right: 20%;
+  margin-top: 3%;
+}
+
+.bulgaro {
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 130px;
+  height: 80px;
+  margin-right: 20%;
+  margin-top: 3%;
+}
+
+.flexora {
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 130px;
+  height: 80px;
+  margin-right: 20%;
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+
+.proximos-videos h5 {
+  margin-left: 170%;
+}
+
+/*Tela de chat do cliente e Profissional*/
+.h1-chatCli {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 5%;
+}
+
+.alinhar-ion-chatCli {
+  display: flex;
+  justify-content: left;
+}
+
+.voltar-chatCli {
+  font-size: larger;
+  font-size: 190%;
+  margin: 5px 0 0 1%;
+  color: black;
+}
+
+.body-chatCli {
+  background-color: #c7f2c8;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-chatCli {
+  background-color: white; padding: 15px;
+}
+
+.main_chat-cli p{
+  background-color: white;
+  padding: 6px;
+  border-radius: 20px;
+  margin: 5px ;
+}
+
+.main_chat-cli {
+  margin-top: 30px;
+}
+
+.footer-chatCli{
+  position: fixed;
+  bottom: 1rem;
+  width: 100%; 
+}
+
+.ion_mic{
+  font-size: xx-large;
+}
+
+.url_chatCli{
+  font-size: 20px;
+  border-radius: 20px;
+  width: 25%;
+  outline: 0;
+  height: 30px;
+  background: white;
+  border: none;
+}
+
+.digitar-chat{
+  display: flex;
+  justify-content: center;
+  margin-top: 22%;
+}
+
+/*Tela Marcar consultas*/
+.header-marcar-consulta {
+  display: flex;
+  justify-content: left;
+}
+
+.main-marcar-consulta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horario-marcar-consulta {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.horario-marcar-consulta ion-icon {
+  margin-right: 30px;
+}
+
+.escurecer-botao {
+  background-color: #ccc;
+  border-radius: 22px;
+}
+
+/* Tela de Chamadas */
+.div-chamadas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-bottom: solid;
+  margin: 0;
+}
+
+.icon-div-chamadas {
+  font-size: 250px;
+  margin-top: 3rem;
+}
+
+.icon-div2-chamadas {
+  font-size: 84px;
+  background-color: #ccc;
+}
+
+.div-person1 {
+  margin: 0;
+} 
+
+.div-person2 {
+  position: absolute;
+  margin-left: 13rem;
+  margin-bottom: 1rem;
+}
+
+.div-icons-btn {
+  display: flex;
+  justify-content: space-around;  
+  margin-top: 2rem;
+}
+
+.icons-chamadas {
+  font-size: 50px;
+}
+
+.icons-telefone {
+  font-size: 50px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* Tela de Solicitar Chamadas */
+
 
 /* Primeira Tela Responsiva */
 @media (min-width: 480px) {
@@ -1556,251 +2072,4 @@ td {
     justify-content: space-between;
     flex-direction: column;
   }
-}
-
-/* Tela de Chat*/
-.ion-icon_chat{
-  font-size: x-large;
-}
-
-.button_clientes{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.body_chat a{
-  text-decoration: none;
-}
-
-.main_chat{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main_chat button{
-  margin: 11px;
-  width: 212px;
-}
-
-.footer_chat{
-  margin: 12%;
-}
-
-/*Tela de Dicas e Sugestões*/
-.header_sugestoes{
-  display: flex;
-}
-
-.reto_sugestoes{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: baseline;
-}
-
-.ion_sugestoes{
-  font-size: xx-large;
-}
-
-.header_sugestoes button{
-  border: none;
-  margin-right: 47px;
-  background-color: white;
-}
-
-.header_sugestoes button:hover{
-  background-color: #ccc;
-  border-radius: 18px;
-}
-
-.balao1{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: solid;
-  padding: 23px;
-  width: 46%;
-  margin-bottom: 2%;
-  border-radius: 16px;
-  background-color: #1498d5;
-  border-color: #1498d5;
-}
-
-.balao2{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: solid;
-  padding: 23px;
-  width: 46%;
-  margin-bottom: 2%;
-  border-radius: 16px;
-  background-color: #1498d5;
-  border-color: #1498d5;
-}
-
-.balao2 a{
-  color: white;
-}
-
-.balao3{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: solid;
-  padding: 23px;
-  width: 46%;
-  margin-bottom: 2%;
-  border-radius: 16px;
-  background-color: #1498d5;
-  border-color: #1498d5;
-}
-
-.balao4{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: solid;
-  padding: 23px;
-  width: 46%;
-  margin-bottom: 2%;
-  border-radius: 16px;
-  background-color: #1498d5;
-  border-color: #1498d5;
-}
-
-.main_sugestoes{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 21%;
-}
-
-.branco_sugestoes{
-  color: white;
-}
-
-/*Tela de Vídeos de Execução*/
-.icones {
-  display: flex;
-  justify-content: center;
-  font-size: 32px;
-  margin-top: 43%;
-  margin-right: 53%;
-  border: #eb2727;
-  border-style: solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  padding-right: 30%;
-  padding-left: 2%;
-}
-
-.video {
-  border-style: solid;
-  width: 90px;
-  display: flex;
-  justify-content: center;
-  width: 420px;
-  height: 220px;
-}
-
-.centralizar {
-  display: flex;
-  justify-content: center;
-}
-
-.sumir-embaixo {
-  text-decoration: none;
-}
-
-.descer-texto-videos {
-  margin-right: 6%;
-  margin-left: 3%;
-}
-
-.deixar-no-meio {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 5%;
-}
-
-.sumir-tudo {
-  display: none;
-}
-
-.proximos-videos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-.leg-press {
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 130px;
-  height: 80px;
-  margin-right: 20%;
-  margin-top: 3%;
-}
-
-.bulgaro {
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 130px;
-  height: 80px;
-  margin-right: 20%;
-  margin-top: 3%;
-}
-
-.flexora {
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 130px;
-  height: 80px;
-  margin-right: 20%;
-  margin-top: 3%;
-  margin-bottom: 7%;
-}
-
-.proximos-videos h5 {
-  margin-left: 170%;
-}
-
-/*Tela de chat do cliente*/
-.body_chat-cli{
-  background-color:#007bff;
-}
-
-.header_chat-cli{
-  display: flex;
-  background-color: #e8ebee;
-}
-
-.header_chat-cli button{
-  border: none;
-  margin-right: 47px;
-  background-color: white;
-}
-
-.header_chat-cli button:hover{
-  background-color: #ccc;
-  border-radius: 18px;
-}
-
-.ion_chat-cli{
-  font-size: xx-large;
 }
