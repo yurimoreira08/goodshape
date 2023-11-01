@@ -20,3 +20,6 @@
  </footer>
 
  :see_no_evil:
+
+/*icone de X*/
+ <ion-icon name="close-outline"></ion-icon>
