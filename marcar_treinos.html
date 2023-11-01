@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/good.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo.css">
-    <title>DIPLOMA</title>
+    <title>Marcar Treino</title>
 </head>
-<body>
-    <header>
-        <div class="alinhar-ion-header-perfil-cli">
-            <h1 class="h1-perfil-cli">Diplomas - @TiagoAlves</h1>
-        </div>
+<body class="body-marcar-consulta">
+    <header class="header-marcar-consulta">
+        <a href="buscar_profissionais.html"><button class="exercicios_voltar"><ion-icon class="sino-header-adicionar-dicas" name="arrow-back-outline"></ion-icon></button></a>
+        <h1 class="h1-adicionar-dicas">Marcar Treino</h1>
     </header>
-    <main class="main-diploma">
-    <img src="imagens/diploma_personal.jpg" alt="diploma" style="width: 300px;">
+
+    <main class="main-marcar-consulta">
+        <h1>Escolher Dias:</h1>
+        <img class="calendario-perfil-cli" src="imagens/calendario-perfil-cli.jpg" alt="calendário">
+        <h2>Escolher horário:</h2>
+        <div class="horario-marcar-consulta">
+            <ion-icon name="alarm-outline"></ion-icon>
+            <input type="number" class="escurecer-botao">
+        </div>
     </main>
-    
+
     <footer class="footer">
         <a href="perfil_cli.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
         <a href="dieta.html"><ion-icon name="restaurant" class="ion-footer"></ion-icon></a>
