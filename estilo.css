@@ -8,7 +8,7 @@ body {
   width: 100%;
   bottom: 0rem;
   position: fixed;
-  height: 90px;
+  height: 60px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -1797,7 +1797,21 @@ align-items: baseline;
 }
 
 /* Tela de Solicitar Chamadas */
+.main-solicitar-chamadas {
+  display: flex;
+}
 
+.btn-minhas-consultas {
+  margin-top: 3%;
+  flex-direction: row-reverse;
+}
+
+.minhas-consultas {
+  width: 15rem;
+  border-radius: 40px;
+  background-color: #096a97;
+  padding: 10px;
+}
 
 /* Primeira Tela Responsiva */
 @media (min-width: 480px) {
