@@ -20,3 +20,7 @@ botao2.addEventListener('click', () => {
     divConteudo2.classList.toggle('oculta2');
 })
 
+//alert tela das chamadas
+function confirmCall() {
+    alert("Consulta agendada!")
+}
