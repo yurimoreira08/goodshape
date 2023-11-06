@@ -55,7 +55,6 @@ body {
 /* Primeira tela do aplicativo: */
 .index_body {
   margin: 0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -65,20 +64,19 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  max-width: 500px;
+  max-width: 100px;
   margin: 0 auto;
 }
 
 .index_main img {
   max-width: 300px;
   background-color: #f4dfd4;
-  border: 5px solid var(--primary-color);
 }
 
 .index_footer {
   display: flex;
   justify-content: center;
-  padding-top: 10%;
+  align-items: center;
 }
 
 .index_footer span {
@@ -86,9 +84,6 @@ body {
   padding: 0 2rem;
 }
 
-.index_footer span:last-child {
-  border: none;
-}
 
 .index_main button {
   display: flex;
@@ -190,8 +185,6 @@ body {
 
 /* Tela de cadastro do profissional: */
 .cadastro-pro_body {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -203,7 +196,6 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -1937,6 +1929,58 @@ align-items: baseline;
   margin-top: 3%;
 }
 
+
+/*Tela de Minhas chamadas*/
+.video-call {
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 0 36%;
+}
+
+.video-call-box {
+  width: 130%;
+  height: 210px;
+  padding: 20px;
+  background-color: #007bff;
+  border-radius: 22px;
+}
+
+.horario_consulta {
+  display: flex;
+}
+
+.profissional_consulta {
+  display: flex;
+  margin-top: -30px;
+}
+
+.nome_profissional{
+  font-size: 14px;
+  margin-top: 21.5px;
+}
+
+.timer {
+  font-size: 22px;
+  margin: 0 5px 0 0;
+}
+
+.video-call-button {
+  background-color: #0aca0a;
+  border-radius: 50px;
+  padding: 4% 7%; 
+  border: none;
+  margin-left: 70%;
+  margin-top: -10%;
+}
+
+.lista_tela_chamadas {
+  width: 2000px;
+  font-size: 11px;
+  margin-left: -10%;
+}
+
 /* Primeira Tela Responsiva */
 @media (min-width: 480px) {
   .index_body {
@@ -1974,8 +2018,6 @@ align-items: baseline;
 /* Tela de Cadastro do Profissional Responsiva*/
 @media (min-width: 480px) {
   .cadastro-pro_body {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -1984,11 +2026,21 @@ align-items: baseline;
 
 @media (min-width: 768px) {
   .cadastro-pro_body {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .alinhar-option-perfil-pro {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .alinhar-option-perfil-pro {
+    width: 40%;
   }
 }
 
@@ -2115,7 +2167,6 @@ align-items: baseline;
 @media (min-width: 480px) {
   .body-adicionar-dicas {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
   }
 }
@@ -2123,7 +2174,6 @@ align-items: baseline;
 @media (min-width: 768px) {
   .body-adicionar-dicas {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
   }
 }
@@ -2186,6 +2236,9 @@ align-items: baseline;
     justify-content: space-between;
     flex-direction: column;
   }
+  .bloco_verDicas {
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2193,6 +2246,7 @@ align-items: baseline;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding: 0 0.5rem;
   }
 }
 
@@ -2201,6 +2255,7 @@ align-items: baseline;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding: 0 0.5rem;
   }
 }
 
@@ -2212,53 +2267,20 @@ align-items: baseline;
   }
 }
 
-/*Tela de Minhas chamadas*/
-.video-call {
-  width: 300px;
-  height: 200px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  margin: 0 36%;
+@media (min-width: 768px) {
+  .main_verDicas {
+    padding: 0 1rem;
+  }
 }
 
-.video-call-box {
-  width: 130%;
-  height: 210px;
-  padding: 20px;
-  background-color: #007bff;
-  border-radius: 22px;
+@media (max-width: 480px) {
+  .tela-add-Dicas {
+    width: 50%;
+  }
 }
 
-.horario_consulta {
-  display: flex;
-}
-
-.profissional_consulta {
-  display: flex;
-  margin-top: -30px;
-}
-
-.nome_profissional{
-  font-size: 14px;
-  margin-top: 21.5px;
-}
-
-.timer {
-  font-size: 22px;
-  margin: 0 5px 0 0;
-}
-
-.video-call-button {
-  background-color: #0aca0a;
-  border-radius: 50px;
-  padding: 4% 7%; 
-  border: none;
-  margin-left: 70%;
-  margin-top: -10%;
-}
-
-.lista_tela_chamadas {
-  width: 2000px;
-  font-size: 11px;
-  margin-left: -10%;
+@media (max-width: 768px) {
+  .tela-add-Dicas1 {
+    width: 50%; 
+  }
 }
