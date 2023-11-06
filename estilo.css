@@ -1,3 +1,35 @@
+/*header*/
+.header{
+  display: flex;
+}
+
+.div_header{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+gap: 17px;
+
+}
+
+.ion_voltar{
+  font-size: xx-large;
+}
+
+.header button{
+  border: none;
+  background-color: white;
+}
+
+.header button:hover{
+  background-color: #ccc;
+  border-radius: 18px;
+}
+
+.h1Biografia{
+  margin: 2rem;
+}
+
 /*Footer*/
 body {
   margin: 0;
