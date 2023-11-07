@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="imagens/good.ico" type="image/x-icon">
+    <title>PLANEJAMENTO DE CHAMADAS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="div_header">
+            <a href="ver_profissionais.html"><button>
+                <ion-icon name="arrow-back-outline" class="ion_voltar"></ion-icon>
+            </button></a>
+            <h1>Planejamento de Chamadas</h1>
+        </div>
+    </header> 
+    <main class="main-solicitar-chamadas">
+        <section class="btn-minhas-consultas">
+            <a href="agendamentos.html"><button class="minhas-consultas">Meus Agendamentos</button></a>
+            </section>
+        <div class="div-texto-chamadas">
+            <h2 class="h2-texto-chamadas">Planejamento de Consultas</h2>
+                <hr class="hr-solicitar-chamadas">
+            <div class="div-texto-chamadas">
+            <h2>Selecionar suas datas disponíveis</h2>
+            <br>
+            <h2>Outubro 2023</h2>
+        </div>
+    </div>
+    <section class="section-solicitar-chamadas">
+            <ion-icon name="chevron-back-outline" class="ion-solicitar-chamadas"></ion-icon>
+            <div class="div-calendario"><h3><strong>SEG</strong></h3><p>01</p></div>
+            <div class="div-calendario"><h3><strong>TER</strong></h3><p>02</p></div>
+            <div class="div-calendario"><h3><strong>QUA</strong></h3><p>03</p></div>
+            <div class="div-calendario"><h3><strong>QUI</strong></h3><p>04</p></div>
+            <div class="div-calendario"><h3><strong>SEX</strong></h3><p>05</p></div>
+            <div class="div-calendario-red"><h3><strong>SAB</strong></h3><p>06</p></div>
+            <ion-icon name="chevron-forward-outline" class="ion-solicitar-chamadas"></ion-icon>
+    </section>
+    <hr class="hr-solicitar-chamadas">
+    <section class="section2-solicitar-chamadas">
+        <h2>Definir horários disponíveis</h2>
+        <div class="horario-marcar-consulta">
+            <ion-icon name="alarm-outline"></ion-icon>
+            <input type="number" class="escurecer-botao">
+        </div>
+        <div class="agrupar-horarios-chamadas">
+        <ion-icon name="chevron-back-outline" class="ion-solicitar-chamadas"></ion-icon>
+        <div class="div-horario"><h3><strong>9:00</strong></h3></div>
+        <div class="div-horario"><h3><strong>14:00</strong></h3></div>
+        <ion-icon name="chevron-forward-outline" class="ion-solicitar-chamadas"></ion-icon>
+    </div>
+    </section>
+    <hr class="hr-solicitar-chamadas">
+    <section class="btn-confirmar-planejamento">
+        <a href="ver_profissionais.html"><button onclick="confirmCall()" class="confirmar-planejamento">Confirmar Planejamento</button></a>
+    </section>
+</main>
+<footer class="footer">
+    <a href="perfil_pro.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
+    <a href="conteudo.html"><ion-icon name="bulb-outline" class="ion-footer"></ion-icon></a>
+    <a href="menu_pro.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
+    <a href="ver_chamadas.html"><ion-icon name="videocam" class="ion-footer"></ion-icon></a>
+    <a href="chat.html"><ion-icon name="chatbubble-ellipses-outline" class="ion-footer"></ion-icon></a>
+</footer>
+</body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
