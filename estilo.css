@@ -1376,7 +1376,7 @@ h4 {
   align-items: center;
 }
 
-/*Tela de Solicitar chamada*/
+/*Tela de planejamento de chamadas*/
 .section-solicitar {
   display: flex;
   justify-content: center;
@@ -1453,6 +1453,28 @@ h4 {
   border-radius: 40px;
   width: 15%;
   padding: 10px;
+}
+
+/* Tela de Solicitar Chamadas Cliente */
+
+.selecione-profissional{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-profissional {
+  display: flex;
+  flex-direction: column;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+.div-profissionais {
+  display: flex;
+  flex-direction: column;
+  background-color: #1498d5;
+  border-radius: 4px;
 }
 
 /* Tela de Chat*/
