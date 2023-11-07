@@ -10,7 +10,7 @@
 
 
 
-/* HtML Footer do Cliente */
+/* HTML Footer do Cliente */
  <footer class="footer">
     <a href="perfil_cli.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
     <a href="dieta.html"><ion-icon name="restaurant" class="ion-footer"></ion-icon></a>

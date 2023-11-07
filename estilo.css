@@ -501,12 +501,6 @@ h4 {
   text-align: center;
 }
 
-.header-menu-cli {
-  padding-bottom: 39px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
 .main-menu-cli button {
   width: 200px;
   padding: 10px;
@@ -660,23 +654,12 @@ h4 {
   font-size: 19px;
 }
 
-/*Tela do  do profissional*/
+/*Tela do perfil do profissional*/
 .h1-perfil-pro {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0 0 5%;
-}
-
-.alinhar-ion-header-perfil-pro {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-}
-
-.sino-header-perfil-pro {
-  font-size: larger;
-  font-size: 190%;
 }
 
 .alinhar-ion-main-perfil-pro {
@@ -729,17 +712,6 @@ h4 {
   justify-content: center;
   align-items: center;
   margin: 0 0 0 5%;
-}
-
-.alinhar-ion-header-perfil-cli {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-}
-
-.sino-header-perfil-cli {
-  font-size: larger;
-  font-size: 190%;
 }
 
 .alinhar-ion-main-perfil-cli {
@@ -869,17 +841,6 @@ h4 {
   margin: 0 0 0 5%;
 }
 
-.alinhar-ion-header-adicionar-dicas {
-  display: flex;
-  justify-content: left;
-}
-
-.sino-header-adicionar-dicas {
-  font-size: larger;
-  font-size: 190%;
-  margin: 5px 0 0 1%;
-}
-
 .body-adicionar-dicas {
   background-color: #ffffff;
   margin: 0;
@@ -888,13 +849,6 @@ h4 {
   justify-content: space-between;
 }
 
-.header-adicionar-dicas {
-  background-color: rgb(198, 191, 191); padding: 15px;
-}
-
-.header-adicionar-dicas1 {
-  background-color: rgb(255, 255, 255); padding: 15px;
-}
 
 .tela-add-Dicas {
   margin-top: 2rem;
@@ -929,14 +883,6 @@ h4 {
 
 .descer {
   margin-top: 1rem;
-}
-
-.footer-tela-add-dicas {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: right;
-  height: 50px;
-  margin-top: 20%;
 }
 
 .botao-add-dicas {
@@ -1016,11 +962,6 @@ h4 {
   padding: 0;
 }
 
-.header-buscar-profissionais {
-  text-align: center;
-  padding: 20px 0;
-}
-
 .main-buscar-profissionais {
   width: 100%;
   height: 100%;
@@ -1097,23 +1038,6 @@ h4 {
   margin: 0 0 0 5%;
 }
 
-.alinhar-ion-header-busca {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-}
-
-.sino-header-busca {
-  font-size: larger;
-  font-size: 190%;
-}
-
-.footer_buscar-profissionais {
-  position: absolute;
-  bottom: 1rem;
-  width: 100%;
-}
-
 .grupo_buscar button {
   margin-top: 4%;
   border-radius: 6%;
@@ -1165,11 +1089,6 @@ h4 {
 
 .grupo_treino button:hover {
   background-color: #c7d0d8;
-}
-
-.footer_treino {
-  bottom: 1rem;
-  width: 100%;
 }
 
 /*Tela de Exercícios*/
@@ -1267,12 +1186,6 @@ h4 {
   display: flex;
 }
 
-.footer-telaDieta {
-  position: fixed;
-  bottom: 1rem;
-  width: 100%;
-}
-
 .tabela-tela-dieta {
   display: flex;
   justify-content: center;
@@ -1366,12 +1279,6 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-diploma {
-  position: fixed;
-  bottom: 1rem;
-  width: 100%;
 }
 
 /*Tela de Biografia*/
@@ -1532,39 +1439,7 @@ h4 {
   width: 212px;
 }
 
-.footer_chat{
-  position: fixed;
-  width: 100%;
-  bottom: 1rem;
-}
-
 /*Tela de Dicas e Sugestões*/
-.header_sugestoes{
-  display: flex;
-}
-
-.reto_sugestoes{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: baseline;
-}
-
-.ion_sugestoes{
-  font-size: xx-large;
-}
-
-.header_sugestoes button{
-  border: none;
-  margin-right: 47px;
-  background-color: white;
-}
-
-.header_sugestoes button:hover{
-  background-color: #ccc;
-  border-radius: 18px;
-}
-
 .balao1{
   display: flex;
   flex-direction: row;
@@ -1756,10 +1631,6 @@ align-items: baseline;
   justify-content: space-between;
 }
 
-.header-chatCli {
-  background-color: white; padding: 15px;
-}
-
 .main_chat-cli p{
   background-color: white;
   padding: 6px;
@@ -1769,12 +1640,6 @@ align-items: baseline;
 
 .main_chat-cli {
   margin-top: 30px;
-}
-
-.footer-chatCli{
-  position: fixed;
-  bottom: 1rem;
-  width: 100%; 
 }
 
 .ion_mic{
@@ -1798,11 +1663,6 @@ align-items: baseline;
 }
 
 /*Tela Marcar consultas*/
-.header-marcar-consulta {
-  display: flex;
-  justify-content: left;
-}
-
 .main-marcar-consulta {
   display: flex;
   justify-content: center;
