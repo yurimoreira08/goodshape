@@ -1486,7 +1486,7 @@ h4 {
 .basico,
 .premium,
 .familia {
-    margin-left: 19%;
+    /* margin-left: 19%; */
 }
 
 .basico button {

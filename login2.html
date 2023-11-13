@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/good.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +12,24 @@
     
 </head>
 
-<body class="login_2">
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="imagens/good.png" alt=""></a>
+        </div>
+     </header> 
+
     <h1 class="quem">VOCÊ É PROFISSIONAL OU CLIENTE?</h1>
 
     <div class="botoes">
-        <a href="cadastro_pro.html"> <button type="submit" class="profissional flex-centro">
+        <a class="btn-profissional" href="cadastro_pro.html"> 
                 <ion-icon name="person-outline" class="login2_ion"></ion-icon>
                 <b>PROFISSIONAL</b>
-            </button></a>
-        <a href="cadastro_cli.html"><button class="cliente flex-centro">
+            </a>
+        <a class="btn-cliente" href="cadastro_cli.html">
                 <ion-icon name="person-outline" class="login2_ion">
                 </ion-icon><b>CLIENTE</b>
-            </button></a>
+            </a>
     </div>
 
     <footer class="login2_footer">

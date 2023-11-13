@@ -4,74 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/good.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Cadastro Good Shape</title>
 </head>
 
-<body class="cadastro-pro_body">
+<body>
 
-    <header class="cadastro-pro_header">
-        <h1>Cadastro Do Profissional</h1>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="imagens/good.png" alt=""></a>
+        </div>
     </header>
 
-    <main class="cadastro-pro_main">
-        <span>
-            <h4 class="cadastro-pro_main-h4">Nome:</h4>
-            <input class="nome" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Sobrenome:</h4>
-            <input class="sobreNome" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">CPF:</h4>
-            <input class="cpf" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Email profissional:</h4>
-            <input class="email" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Fale sobre você (Biografia):</h4>
-            <input class="bio" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Anexe seu diploma abaixo:</h4>
-            <input class="diploma" type="file">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Qual a sua profissão:</h4>
-            <input class="" type="text">
-        </span>
+    <main>
+        <form>
+            <div class="form-grupo">
+                <label>Nome:</label>
+                <input type="text">
+            </div>
+            <div class="form-grupo">
+                <label>Sobrenome:</label>
+                <input type="text">
+            </div>
+            <div class="form-grupo">
+                <label>CPF:</label>
+                <input type="text">
+            </div>
+            <span>
+                <h4 class="cadastro-pro_main-h4">Email profissional:</h4>
+                <input class="email" type="input">
+            </span>
+            <span>
+                <h4 class="cadastro-pro_main-h4">Fale sobre você (Biografia):</h4>
+                <input class="bio" type="input">
+            </span>
+            <span>
+                <h4 class="cadastro-pro_main-h4">Anexe seu diploma abaixo:</h4>
+                <input class="diploma" type="file">
+            </span>
+            <span>
+                <h4 class="cadastro-pro_main-h4">Qual a sua profissão:</h4>
+                <input class="" type="text">
+            </span>
 
-        <div class="pagamento">
-            <h4>Forma de pagamento:</h4>
-            <form>
+            <div class="pagamento">
+                <h4>Forma de pagamento:</h4>
                 <span class="pasgamento">
-                    <label for="Conta"> <h4>Conta bancária</h4> </label>
+                    <label for="Conta">
+                        <h4>Conta bancária</h4>
+                    </label>
                     <input type="radio" name="fav_language" id="Conta" value="Conta bancária">
-                    <label for="pix"> <h4>Pix</h4> </label>
+                    <label for="pix">
+                        <h4>Pix</h4>
+                    </label>
                     <input type="radio" name="fav_language" id="pix" value="Pix">
                 </span>
-            </form>
-        </div>
-        <span class="pagar">
-            <p>Nome completo:</p>
-            <input type="text" name="" id="">
-            <p>Código do banco:</p>
-            <input type="text" name="" id="">
-            <p>Agência:</p>
-            <input type="text" name="" id="">
-            <p>Conta:</p>
-            <input type="text" name="" id="">
-        </span>
+            </div>
+            <span class="pagar">
+                <p>Nome completo:</p>
+                <input type="text" name="" id="">
+                <p>Código do banco:</p>
+                <input type="text" name="" id="">
+                <p>Agência:</p>
+                <input type="text" name="" id="">
+                <p>Conta:</p>
+                <input type="text" name="" id="">
+            </span>
 
-        <span class="salvar">
-            <a href="menu_pro.html"><button>Salvar</button></a>
-        </span>
-
+            <a class="btn-salvar" href="menu_pro.html">Salvar</a>
+        </form>
     </main>
 
     <footer class="cadastro-pro_footer">
