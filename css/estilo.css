@@ -1724,7 +1724,7 @@ h4 {
 .div-profissional {
     display: flex;
     flex-direction: column;
-    background-color: #5bbdf0;
+    background-color: #5ce1e6;
     border-radius: 18px;
     width: 5rem;
     padding: 1rem;
@@ -1734,7 +1734,7 @@ h4 {
 .div-profissionais {
     display: flex;
     flex-direction: column;
-    background-color: #5bbdf0;
+    background-color: #5ce1e6;
     border-radius: 18px;
     width: 5rem;
     padding: 1rem;
@@ -2176,3 +2176,46 @@ h4 {
 }
 
 /* Tela de Adicionar Dieta */
+.main_adicionarDieta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #526988;
+    align-items: center;
+}
+
+.quadroDieta{
+    display: flex;
+    border: solid;
+    border-radius: 20px;
+    width: 27rem;
+    background:#1498d5;
+    border-color: #1498d5;
+    margin: 1rem;
+}
+
+.parte2_adicionarDieta{
+    border: solid;
+    border-radius: 20px;
+    width: 27rem;
+    background:#1498d5;
+    border-color: #1498d5;
+    margin-bottom: 1rem;
+}
+
+.texto-input input{
+    width: 40%;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.btn_adicionarDieta{
+    background-color:#1498d5;
+    padding: 1%;
+    width: 10%;
+    border-radius: 18px;
+    font-weight: 500;
+    font-size:larger;
+    border: none;
+    margin-bottom: 5%;
+}
