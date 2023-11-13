@@ -30,6 +30,19 @@
     margin: 2rem;
 }
 
+/* Main */
+.main-center {
+    text-align: center;
+}
+
+.main-center button {
+    width: 200px;
+    padding: 10px;
+    margin: 25px;
+    background-color: rgb(120, 193, 242);
+    border-color: rgb(120, 193, 242);
+}
+
 /* Footer */
 body {
     margin: 0;
@@ -1160,57 +1173,6 @@ h4 {
     border-color: #096a97;
 }
 
-/* Tela de Menu do Profissional */
-.h1-menu-pro {
-    text-align: left;
-}
-
-.body-menu-pro {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.main-menu-pro,
-.h1-menu-pro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    margin: 0 auto;
-}
-
-.main-menu-pro button {
-    width: 200px;
-    padding: 10px;
-    margin: 30px;
-    justify-content: center;
-    background-color: rgb(120, 193, 242);
-    flex-direction: column;
-}
-
-.grupo button {
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Tela de Menu do Cliente */
-.main-menu-cli {
-    text-align: center;
-}
-
-.main-menu-cli button {
-    width: 200px;
-    padding: 10px;
-    margin: 25px;
-    background-color: rgb(120, 193, 242);
-    border-color: rgb(120, 193, 242);
-}
-
 /* Tela do Perfil do Profissional */
 .h1-perfil-pro {
     display: flex;
@@ -1930,255 +1892,7 @@ h4 {
     margin-left: 170%;
 }
 
-/* Primeira Tela Responsiva */
-@media (min-width: 480px) {
-    .index_body {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .index_body {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/*Tela de Login2 Responsiva*/
-@media (min-width: 480px) {
-    .login_2 {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .login_2 {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/* Tela de Cadastro do Profissional Responsiva*/
-@media (min-width: 480px) {
-    .cadastro-pro_body {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .cadastro-pro_body {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .alinhar-option-perfil-pro {
-        width: 50%;
-    }
-}
-
-@media (max-width: 768px) {
-    .alinhar-option-perfil-pro {
-        width: 40%;
-    }
-}
-
-/*Tela de Cadastro do Cliente Responsiva*/
-@media (min-width: 480px) {
-    .body-cadastro-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .body-cadastro-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/*Tela do Menu do Profissional Responsiva*/
-@media (min-width: 480px) {
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/*Tela do Menu do Cliente Responsiva*/
-@media (min-width: 480px) {
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/*Tela do Perfil do Profissional Responsiva*/
-@media (min-width: 480px) {
-    .body-perfil-pro {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .body-perfil-pro {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/*Tela do Perfil do Cliente Responsiva*/
-@media (min-width: 480px) {
-    .body-perfil-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .body-perfil-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/*Tela de Medidas Responsiva*/
-@media (min-width: 480px) {
-    .body-cadastro-cli-medidas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .body-cadastro-cli-medidas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/*Tela de Termos Responsiva*/
-@media (min-width: 480px) {
-    .body-termos {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .body-termos {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/*Tela de Adicionar Dicas Responsiva*/
-@media (min-width: 480px) {
-    .body-adicionar-dicas {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .body-adicionar-dicas {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-/*Tela de Ver Dicas Responsiva*/
-@media (min-width: 480px) {
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/* Tela de Planos Responsiva */
-@media (max-width: 480px) {
-    .planos_main {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .planos_main {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/* Tela de Buscar Profissionais Responsiva*/
-@media (max-width: 480px) {
-    .body-buscar-profissionais {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .body-buscar-profissionais {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-/*Tela de Treinos Responsiva*/
+/* Telas Responsivas */
 @media (max-width: 480px) {
     .body_verDicas {
         display: flex;
@@ -2189,53 +1903,18 @@ h4 {
     .bloco_verDicas {
         width: 90%;
     }
-}
 
-@media (max-width: 768px) {
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 0 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
     .main_verDicas {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         padding: 0 0.5rem;
     }
-}
 
-@media (max-width: 768px) {
-    .main_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .main_verDicas {
-        padding: 0 1rem;
-    }
-}
-
-@media (max-width: 480px) {
     .tela-add-Dicas {
         width: 50%;
     }
-}
 
-@media (max-width: 768px) {
-    .tela-add-Dicas1 {
-        width: 50%;
-    }
-}
-
-@media (max-width: 480px) {
     .div-calendario {
         width: 30%;
     }
@@ -2247,9 +1926,7 @@ h4 {
     .div-calendario-2 {
         width: 30%;
     }
-}
 
-@media (min-width: 480px) {
     .div-calendario {
         width: 15%;
     }
@@ -2261,37 +1938,7 @@ h4 {
     .div-calendario-2 {
         width: 15%;
     }
-}
 
-@media (max-width: 1016px) {
-    .div-calendario {
-        width: 10%;
-    }
-
-    .div-calendario-red {
-        width: 10%;
-    }
-
-    .div-calendario-2 {
-        width: 10%;
-    }
-}
-
-@media (min-width: 1016px) {
-    .div-calendario {
-        width: 6%;
-    }
-
-    .div-calendario-red {
-        width: 6%;
-    }
-
-    .div-calendario-2 {
-        width: 6%;
-    }
-}
-
-@media (max-width: 480px) {
     .video-call {
         margin-left: 0;
         width: 70%;
@@ -2300,9 +1947,7 @@ h4 {
     .lista_tela_chamadas {
         width: 140%;
     }
-}
 
-@media (min-width: 480px) {
     .video-call {
         margin-left: 0;
         width: 50%;
@@ -2311,51 +1956,222 @@ h4 {
     .lista_tela_chamadas {
         width: 140%;
     }
-}
-
-@media (min-width: 768px) {
-    .video-call {
-        width: 40%;
-        margin-left: 25%;
-    }
-}
-
-@media (min-width: 1016px) {
-    .video-call {
-        width: 25%;
-        margin-left: 30%;
-    }
-}
-
-@media (max-width: 480px) {
 
     .tela-add-Dicas1,
     .tela-add-Dicas2 {
         width: 180%;
     }
-}
-
-@media (min-width: 481px) {
 
     .tela-add-Dicas1,
     .tela-add-Dicas2 {
         width: 80%;
     }
+
+    .index_body {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .login_2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .cadastro-pro_body {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .alinhar-option-perfil-pro {
+        width: 50%;
+    }
+
+    .body-cadastro-cli {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-menu-cli {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-menu-cli {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-perfil-pro {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-perfil-cli {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-cadastro-cli-medidas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-termos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-adicionar-dicas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body_verDicas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .planos_main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-buscar-profissionais {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
+    .index_body {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 
     .tela-add-Dicas1,
     .tela-add-Dicas2 {
         width: 40%;
     }
-}
 
-@media (min-width: 1024px) {
+    .login_2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 
-    .tela-add-Dicas1,
-    .tela-add-Dicas2 {
+    .cadastro-pro_body {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .alinhar-option-perfil-pro {
         width: 40%;
+    }
+
+    .body-cadastro-cli {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-menu-cli {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-menu-cli {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-perfil-pro {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-perfil-cli {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-cadastro-cli-medidas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-termos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-adicionar-dicas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body_verDicas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .planos_main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body-buscar-profissionais {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .body_verDicas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 0.5rem;
+    }
+
+    .main_verDicas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .main_verDicas {
+        padding: 0 1rem;
+    }
+
+    .tela-add-Dicas1 {
+        width: 50%;
+    }
+
+    .video-call {
+        width: 40%;
+        margin-left: 25%;
     }
 }
 
