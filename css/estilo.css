@@ -2176,11 +2176,18 @@ h4 {
 }
 
 /* Tela de Adicionar Dieta */
+.body_adicionarDieta{
+    background-color: #526988;
+}
+
+.color_header{
+    background-color: #fff;
+}
+
 .main_adicionarDieta{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #526988;
     align-items: center;
 }
 
@@ -2207,15 +2214,15 @@ h4 {
     width: 40%;
     border-radius: 20px;
     padding: 2%;
+    outline: 0;
 }
 
-.btn_adicionarDieta{
-    background-color:#1498d5;
-    padding: 1%;
-    width: 10%;
-    border-radius: 18px;
-    font-weight: 500;
-    font-size:larger;
-    border: none;
-    margin-bottom: 5%;
+.main_adicionarDieta button{
+    font-size: large;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background: #1498d5;
+    border: #1498d5;
 }
+
