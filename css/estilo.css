@@ -83,14 +83,6 @@ body {
     margin: 0 0 0 5%;
 }
 
-.body-adicionar-dicas {
-    background-color: #ffffff;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .tela-add-Dicas {
     margin-top: 2rem;
 }
