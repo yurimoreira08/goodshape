@@ -1,3 +1,12 @@
+/* Cores Padrões */
+:root {
+    --cor-primaria: #33a483;
+    --cor-secundaria: #021f53;
+    --cor-terciaria: #fff;
+    --quartenaria:  #ccc;
+    
+}
+
 /* Header */
 .header {
     display: flex;
@@ -9,7 +18,6 @@
     justify-content: space-around;
     align-items: center;
     gap: 17px;
-
 }
 
 .ion_voltar {
@@ -39,8 +47,8 @@
     width: 200px;
     padding: 10px;
     margin: 25px;
-    background-color: rgb(120, 193, 242);
-    border-color: rgb(120, 193, 242);
+    border-color: var(--cor-primaria);
+    background-color: var(--cor-primaria);
 }
 
 /* Footer */
@@ -89,8 +97,8 @@ body {
 
 .tela-add-Dicas1 {
     border-radius: 20px;
-    border: #096a97;
-    background-color: #1498d5;
+    border: var(--cor-primaria);
+    background-color: var(--cor-primaria);
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -100,8 +108,8 @@ body {
 
 .tela-add-Dicas2 {
     border-radius: 30px;
-    border: #096a97;
-    background-color: #1498d5;
+    border: var(--cor-primaria);
+    background-color: var(--cor-primaria);
     width: 30%;
     height: 150px;
     display: flex;
@@ -121,7 +129,7 @@ body {
 .botao-add-dicas {
     width: 200px;
     height: 100%;
-    background-color: #1498d5;
+    background-color: var(--cor-primaria);
     margin-right: 3rem;
     font-size: 25px;
     font-style: italic;
@@ -142,7 +150,7 @@ body {
     width: 130%;
     height: 210px;
     padding: 20px;
-    background-color: #5bbdf0;
+    background-color: var(--cor-primaria);
     border-radius: 22px;
 }
 
@@ -166,7 +174,7 @@ body {
 }
 
 .video-call-button {
-    background-color: #0aca0a;
+    background-color: var(--cor-secundaria);
     border-radius: 50px;
     padding: 4% 7%;
     border: none;
@@ -242,7 +250,7 @@ body {
 .botao-pesquisar {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color:var(--cor-primaria);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -362,8 +370,8 @@ body {
 }
 
 .salvar button {
-    background-color: #1498d5;
-    border-color: #0cc0df;
+    background-color: var(--cor-primaria);
+    border-color:var(--cor-primaria);
     padding: 1px;
     width: 84px;
     border-radius: 8px;
@@ -371,8 +379,8 @@ body {
 }
 
 .salvar button:hover {
-    background-color: #096a97;
-    border-color: #096a97;
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
 }
 
 h4 {
@@ -458,20 +466,20 @@ h4 {
 
 .footer-cadastro-cli input {
     width: 120px;
-    background-color: #1498d5;
+    background-color: var(--cor-primaria);
 }
 
 .footer-cadastro-cli a button {
-    background-color: #1498d5;
-    border-color: #0cc0df;
+    background-color: var(--cor-primaria);
+    border-color:var(--cor-primaria);
     padding: 1px;
     width: 84px;
     border-radius: 8px;
 }
 
 .footer-cadastro-cli a button:hover {
-    background-color: #096a97;
-    border-color: #096a97;
+    background-color: var(--cor-primaria);
+    border-color:var(--cor-primaria);
 }
 
 /* Tela de Chamadas */
@@ -650,7 +658,7 @@ h4 {
 
 /*Tela de Conteúdo */
 .bloco_verDicas {
-    background-color: #1498d5;
+    background-color: var(--cor-primaria);
     padding: 16px;
     margin-top: 40px;
     margin-left: 11px;
@@ -672,7 +680,7 @@ h4 {
 
 .ion_verDicas {
     font-size: 300%;
-    color: #1498d5;
+    color: var(--cor-primaria);
 }
 
 .adicionar_conteudo,
@@ -695,8 +703,8 @@ h4 {
 }
 
 .botaoPreto_conteudo {
-    background-color: #1498d5;
-    border-color: #1498d5;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
     border-radius: 20px;
     border: none;
     display: flex;
@@ -717,8 +725,8 @@ h4 {
     width: 46%;
     margin-bottom: 2%;
     border-radius: 16px;
-    background-color: #1498d5;
-    border-color: #1498d5;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
 }
 
 .balao2 {
@@ -730,8 +738,8 @@ h4 {
     width: 46%;
     margin-bottom: 2%;
     border-radius: 16px;
-    background-color: #1498d5;
-    border-color: #1498d5;
+    background-color:var(--cor-primaria);
+    border-color:var(--cor-primaria);
 }
 
 .balao2 a {
@@ -747,8 +755,8 @@ h4 {
     width: 46%;
     margin-bottom: 2%;
     border-radius: 16px;
-    background-color: #1498d5;
-    border-color: #1498d5;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
 }
 
 .balao4 {
@@ -760,8 +768,8 @@ h4 {
     width: 46%;
     margin-bottom: 2%;
     border-radius: 16px;
-    background-color: #1498d5;
-    border-color: #1498d5;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
 }
 
 .main_sugestoes {
@@ -855,8 +863,8 @@ h4 {
     width: 200px;
     padding: 10px;
     margin: 10px;
-    background-color: rgb(120, 193, 242);
-    border-color: rgb(120, 193, 242);
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
 }
 
 .main_exercicios table {
@@ -998,8 +1006,8 @@ h4 {
 
 /* Tela de Login 2 */
 .profissional {
-    background-color: #76c2af;
-    border-color: #76c2af;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
     align-items: center;
     text-align: center;
     padding: 8px;
@@ -1028,8 +1036,8 @@ h4 {
 }
 
 .cliente {
-    background-color: #5ce1e6;
-    border-color: #5ce1e6;
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1149,20 +1157,20 @@ h4 {
 
 .footer-cadastro-cli input {
     width: 120px;
-    background-color: #1498d5;
+    background-color:var(--cor-primaria);
 }
 
 .footer-cadastro-cli a button {
-    background-color: #1498d5;
-    border-color: #0cc0df;
+    background-color: var(--cor-primaria);
+    border-color:var(--cor-primaria);
     padding: 1px;
     width: 84px;
     border-radius: 8px;
 }
 
 .footer-cadastro-cli a button:hover {
-    background-color: #096a97;
-    border-color: #096a97;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
 }
 
 /* Tela do Perfil do Profissional */
@@ -1209,7 +1217,7 @@ h4 {
 }
 
 .alinhar-option-perfil-pro {
-    background-color: rgb(120, 193, 242);
+    background-color: var(--cor-primaria);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1299,7 +1307,7 @@ h4 {
 
 .p-perfil-cli1 {
     width: 100px;
-    background-color: rgb(28, 107, 255);
+    background-color:var(--cor-primaria);
     padding: 10%;
     margin: 40px 0 0 15px;
     border-radius: 12px;
@@ -1307,7 +1315,7 @@ h4 {
 
 .p-perfil-cli2 {
     width: 100px;
-    background-color: rgb(28, 107, 255);
+    background-color:var(--cor-primaria);
     padding: 10%;
     margin: 40px 0 0 15px;
     border-radius: 12px;
@@ -1315,7 +1323,7 @@ h4 {
 
 .p-perfil-cli3 {
     width: 100px;
-    background-color: rgb(28, 107, 255);
+    background-color:var(--cor-primaria);
     padding: 10%;
     margin: 40px 0 0 15px;
     border-radius: 12px;
@@ -1323,7 +1331,7 @@ h4 {
 
 .p-perfil-cli4 {
     width: 100px;
-    background-color: rgb(28, 107, 255);
+    background-color:var(--cor-primaria);
     padding: 7%;
     margin: 15px 0 0 15px;
     border-radius: 12px;
@@ -1357,7 +1365,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5bbdf0;
+    background-color: var(--cor-primaria);
     border-radius: 40px;
     width: 50%;
     padding: 10px;
@@ -1585,7 +1593,7 @@ h4 {
 .minhas-consultas {
     width: 15rem;
     border-radius: 40px;
-    background-color: #5bbdf0;
+    background-color: var(--cor-primaria);
     padding: 10px;
     margin-right: 2%;
 }
@@ -1625,7 +1633,7 @@ h4 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #5bbdf0;
+    background-color: var(--cor-primaria);
     border-radius: 40px;
     margin-right: 1%;
 }
@@ -1655,7 +1663,8 @@ h4 {
 .confirmar-planejamento {
     width: 15rem;
     border-radius: 40px;
-    background-color: rgb(23, 151, 23);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
     padding: 10px;
     margin-right: 2%;
 }
@@ -1665,7 +1674,7 @@ h4 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #5bbdf0;
+    background-color: var(--cor-primaria);
     width: 12rem;
     height: 2rem;
     margin-right: 10%;
@@ -1683,7 +1692,7 @@ h4 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #5bbdf0;
+    background-color:var(--cor-primaria);
     border-radius: 40px;
     margin-right: 1%;
 }
@@ -1693,7 +1702,7 @@ h4 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #5bbdf0;
+    background-color:var(--cor-primaria);
     width: 12rem;
     height: 2rem;
     margin-right: 10%;
@@ -1716,7 +1725,7 @@ h4 {
 .div-profissional {
     display: flex;
     flex-direction: column;
-    background-color: #5ce1e6;
+    background-color: var(--cor-primaria);
     border-radius: 18px;
     width: 5rem;
     padding: 1rem;
@@ -1726,7 +1735,7 @@ h4 {
 .div-profissionais {
     display: flex;
     flex-direction: column;
-    background-color: #5ce1e6;
+    background-color: var(--cor-primaria);
     border-radius: 18px;
     width: 5rem;
     padding: 1rem;
@@ -1751,8 +1760,8 @@ h4 {
 }
 
 .footer-termos button {
-    background-color: #1498d5;
-    border-color: #1498d5;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
     padding: 6px;
     width: 50px;
     border-radius: 16px;
@@ -1762,8 +1771,8 @@ h4 {
 }
 
 .main-termos button:hover {
-    background-color: #096a97;
-    border-color: #096a97;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
 }
 
 /* Tela de Treinos */
@@ -2188,8 +2197,8 @@ h4 {
     border: solid;
     border-radius: 20px;
     width: 27rem;
-    background:#1498d5;
-    border-color: #1498d5;
+    background: var(--cor-primaria);
+    border-color: var(--cor-primaria);
     margin: 1rem;
 }
 
@@ -2197,8 +2206,8 @@ h4 {
     border: solid;
     border-radius: 20px;
     width: 27rem;
-    background:#1498d5;
-    border-color: #1498d5;
+    background:var(--cor-primaria);
+    border-color: var(--cor-primaria);
     margin-bottom: 1rem;
 }
 
@@ -2214,7 +2223,6 @@ h4 {
     width: 9rem;
     height: 3rem;
     border-radius: 1rem;
-    background: #1498d5;
-    border: #1498d5;
+    background:var(--cor-primaria);
+    border: var(--cor-primaria);
 }
-
