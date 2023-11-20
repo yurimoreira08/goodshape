@@ -1,2228 +1,2264 @@
 /* Cores Padrões */
 :root {
-    --cor-primaria: #33a483;
-    --cor-secundaria: #021f53;
-    --cor-terciaria: #fff;
-    --quartenaria:  #ccc;
-    
+ --cor-primaria: #33a483;
+ --cor-secundaria: #021f53;
+ --cor-terciaria: #fff;
+ --quartenaria: #ccc;
+ 
 }
 
 /* Header */
 .header {
-    display: flex;
+ display: flex;
 }
 
 .div_header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 17px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ gap: 17px;
 }
 
 .ion_voltar {
-    font-size: xx-large;
+ font-size: xx-large;
 }
 
 .header button {
-    border: none;
-    background-color: white;
+ border: none;
+ background-color: white;
 }
 
 .header button:hover {
-    background-color: #ccc;
-    border-radius: 18px;
+ background-color: #ccc;
+ border-radius: 18px;
 }
 
 .h1Biografia {
-    margin: 2rem;
+ margin: 2rem;
 }
 
 /* Main */
 .main-center {
-    text-align: center;
+ text-align: center;
 }
 
 .main-center button {
-    width: 200px;
-    padding: 10px;
-    margin: 25px;
-    border-color: var(--cor-primaria);
-    background-color: var(--cor-primaria);
+ width: 200px;
+ padding: 10px;
+ margin: 25px;
+ border-color: var(--cor-primaria);
+ background-color: var(--cor-primaria);
 }
 
 /* Footer */
 body {
-    margin: 0;
-    margin-bottom: 100px;
+ margin: 0;
+ margin-bottom: 100px;
 }
 
 .footer {
-    width: 100%;
-    bottom: 0rem;
-    position: fixed;
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ccc;
+ width: 100%;
+ bottom: 0rem;
+ position: fixed;
+ height: 60px;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ background-color: #ccc;
 }
 
 .footer-termos {
-    width: 100%;
-    bottom: 0rem;
-    position: fixed;
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+ width: 100%;
+ bottom: 0rem;
+ position: fixed;
+ height: 60px;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
 }
 
 .ion-footer {
-    font-size: 40px;
-    color: black;
+ font-size: 40px;
+ color: black;
 }
 
 /* Tela de Adicionar Dicas */
 .h1-adicionar-dicas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 5%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 0 0 5%;
 }
 
 .tela-add-Dicas {
-    margin-top: 2rem;
+ margin-top: 2rem;
 }
 
 .tela-add-Dicas1 {
-    border-radius: 20px;
-    border: var(--cor-primaria);
-    background-color: var(--cor-primaria);
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100px;
-    margin-left: 30px;
+ border-radius: 20px;
+ border: var(--cor-primaria);
+ background-color: var(--cor-primaria);
+ display: flex;
+ flex-direction: column;
+ width: 30%;
+ height: 100px;
+ margin-left: 30px;
 }
 
 .tela-add-Dicas2 {
-    border-radius: 30px;
-    border: var(--cor-primaria);
-    background-color: var(--cor-primaria);
-    width: 30%;
-    height: 150px;
-    display: flex;
-    justify-content: left;
-    margin-left: 30px;
+ border-radius: 30px;
+ border: var(--cor-primaria);
+ background-color: var(--cor-primaria);
+ width: 30%;
+ height: 150px;
+ display: flex;
+ justify-content: left;
+ margin-left: 30px;
 }
 
 .crescer {
-    font-size: 25px;
-    margin-top: 0.5rem;
+ font-size: 25px;
+ margin-top: 0.5rem;
 }
 
 .descer {
-    margin-top: 1rem;
+ margin-top: 1rem;
 }
 
 .botao-add-dicas {
-    width: 200px;
-    height: 100%;
-    background-color: var(--cor-primaria);
-    margin-right: 3rem;
-    font-size: 25px;
-    font-style: italic;
-    border: none;
-    border-radius: 22px;
+ width: 200px;
+ height: 100%;
+ background-color: var(--cor-primaria);
+ margin-right: 3rem;
+ font-size: 25px;
+ font-style: italic;
+ border: none;
+ border-radius: 22px;
 }
 
 /* Tela de Agendamentos Cliente/Profissional */
 .video-call {
-    width: 300px;
-    height: 200px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin: 0 36%;
+ width: 300px;
+ height: 200px;
+ background-color: #ffffff;
+ border-radius: 10px; 
 }
 
 .video-call-box {
-    width: 130%;
-    height: 210px;
-    padding: 20px;
-    background-color: var(--cor-primaria);
-    border-radius: 22px;
+ width: 130%;
+ height: 210px;
+ padding: 20px;
+ background-color: var(--cor-primaria);
+ border-radius: 22px;
+ margin-left: 10%;
 }
 
 .horario_consulta {
-    display: flex;
+ display: flex;
 }
 
 .profissional_consulta {
-    display: flex;
-    margin-top: -30px;
+ display: flex;
+ margin-top: -30px;
 }
 
 .nome_profissional {
-    font-size: 14px;
-    margin-top: 21.5px;
+ font-size: 14px;
+ margin-top: 21.5px;
 }
 
 .timer {
-    font-size: 22px;
-    margin: 0 5px 0 0;
+ font-size: 22px;
+ margin: 0 5px 0 0;
 }
 
 .video-call-button {
-    background-color: var(--cor-secundaria);
-    border-radius: 50px;
-    padding: 4% 7%;
-    border: none;
-    margin-left: 70%;
-    margin-top: -10%;
+ background-color: var(--cor-secundaria);
+ border-radius: 50px;
+ padding: 4% 7%;
+ border: none;
+ margin-left: 70%;
+ margin-top: -10%;
+ color: #ffffff;
 }
 
 .lista_tela_chamadas {
-    width: 2000px;
-    font-size: 11px;
-    margin-left: -10%;
+ width: 150%;
+ font-size: 11px;
+ margin-left: 5%;
 }
 
 /* Tela de Biografia */
 .person-biografia {
-    width: 20%;
-    margin: 5% 0 0 40%;
-    background-color: #ccc;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ width: 20%;
+ margin: 5% 0 0 40%;
+ background-color: #ccc;
+ border-radius: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .options-biografia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5% 0 0 0;
-    flex-direction: column;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 5% 0 0 0;
+ flex-direction: column;
 }
 
 .option-biografia {
-    background-color: #ccc;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 40px;
-    width: 30%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+ background-color: #ccc;
+ margin: 10px;
+ padding: 10px;
+ border-radius: 40px;
+ width: 30%;
+ display: flex;
+ justify-content: left;
+ align-items: center;
 }
 
 /* Tela de Buscar Profissionais */
 .body-buscar-profissionais {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
 }
 
 .main-buscar-profissionais {
-    width: 100%;
-    height: 100%;
-    margin: 50px 0 0 0;
+ width: 100%;
+ height: 100%;
+ margin: 50px 0 0 0;
 }
 
 .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 0 0 25px;
 }
 
 .caixa-de-texto {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-    margin-right: 10px;
+ padding: 10px;
+ font-size: 16px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ width: 300px;
+ margin-right: 10px;
 }
 
 .botao-pesquisar {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color:var(--cor-primaria);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+ padding: 10px 20px;
+ font-size: 16px;
+ background-color:var(--cor-primaria);
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
 }
 
 .resultados {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
 }
 
 .resultados a {
-    text-decoration: none;
-    color: black;
+ text-decoration: none;
+ color: black;
 }
 
 .button_buscar-profissionais {
-    padding: 0;
-    margin: 5px 0 0 0;
-    background-color: white;
-    border: white;
+ padding: 0;
+ margin: 5px 0 0 0;
+ background-color: white;
+ border: white;
 }
 
 .profissional-buscar {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ padding: 10px;
+ margin: 10px;
+ width: 300px;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .profissional-buscar h2 {
-    margin: 0;
-    font-size: 18px;
+ margin: 0;
+ font-size: 18px;
 }
 
 .profissional-buscar p {
-    margin: 5px 0;
+ margin: 5px 0;
 }
 
 .h1-buscar-profissionais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 5%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 0 0 5%;
 }
 
 .grupo_buscar button {
-    margin-top: 4%;
-    border-radius: 6%;
-    border: solid;
-    border-color: black;
-    background-color: white;
+ margin-top: 4%;
+ border-radius: 6%;
+ border: solid;
+ border-color: black;
+ background-color: white;
 }
 
 .grupo_buscar {
-    text-align: center;
+ text-align: center;
 }
 
 .ion-icon_buscar {
-    font-size: 40px;
+ font-size: 40px;
 }
 
 .grupo_buscar button:hover {
-    background-color: #c7d0d8;
+ background-color: #c7d0d8;
 }
 
 .profissional-buscar {
-    display: flex;
-    align-items: center;
+ display: flex;
+ align-items: center;
 }
 
 .aumentar-person-buscar {
-    font-size: 50px;
-    margin: 0 30px 0 0;
+ font-size: 50px;
+ margin: 0 30px 0 0;
 }
 
 /* Tela de Cadastro do Profissional */
 .cadastro-pro_body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ text-align: center;
 }
 
 .cadastro-pro_main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ margin: 0 auto;
 }
 
 .cadastro-pro_main input {
-    width: 260px;
-    background-color: #ccc;
-    border-radius: 22px;
+ width: 260px;
+ background-color: #ccc;
+ border-radius: 22px;
 }
 
 .cadastro-pro_header h1 {
-    text-align: center;
+ text-align: center;
 }
 
 .cadastro-pro_main-h4 {
-    display: flex;
+ display: flex;
 }
 
 .diploma {
-    background-color: rgb(255, 255, 255);
+ background-color: rgb(255, 255, 255);
 }
 
 .bio {
-    height: 100px;
+ height: 100px;
 }
 
 .salvar button {
-    background-color: var(--cor-primaria);
-    border-color:var(--cor-primaria);
-    padding: 1px;
-    width: 84px;
-    border-radius: 8px;
-    margin-top: 14px;
+ background-color: var(--cor-primaria);
+ border-color:var(--cor-primaria);
+ padding: 1px;
+ width: 84px;
+ border-radius: 8px;
+ margin-top: 14px;
 }
 
 .salvar button:hover {
-    background-color: var(--cor-secundaria);
-    border-color: var(--cor-secundaria);
+ background-color: var(--cor-secundaria);
+ border-color: var(--cor-secundaria);
 }
 
 h4 {
-    text-align: left;
+ text-align: left;
 }
 
 .pagar p {
-    display: flex;
-    justify-content: left;
+ display: flex;
+ justify-content: left;
 }
 
 .pagar input {
-    display: flex;
-    justify-content: left;
-    width: auto;
-    margin-right: 3.5rem;
+ display: flex;
+ justify-content: left;
+ width: auto;
+ margin-right: 3.5rem;
 }
 
 .pasgamento {
-    display: flex;
+ display: flex;
 }
 
 .pasgamento input {
-    width: 20px;
+ width: 20px;
 }
 
 #Conta {
-    margin: 0 1rem;
+ margin: 0 1rem;
 }
 
 #pix {
-    margin: 0 1rem;
+ margin: 0 1rem;
 }
 
 /* Tela de Cadastro do Cliente */
 .body-cadastro-cli {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #f5f3f3;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #f5f3f3;
 }
 
 .main-cadastro-cli {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    align-items: left;
-    max-width: 500px;
-    margin: 0 auto;
+ display: flex;
+ justify-content: left;
+ flex-direction: column;
+ align-items: left;
+ max-width: 500px;
+ margin: 0 auto;
 }
 
 .main-cadastro-cli input {
-    width: 260px;
-    background-color: #ccc;
-    border-radius: 22px;
+ width: 260px;
+ background-color: #ccc;
+ border-radius: 22px;
 }
 
 .h1-cadastro-cli {
-    text-align: center;
+ text-align: center;
 }
 
 .diploma {
-    background-color: rgb(255, 255, 255);
+ background-color: rgb(255, 255, 255);
 }
 
 .bio {
-    height: 100px;
+ height: 100px;
 }
 
 .footer-cadastro-cli {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+ display: flex;
+ justify-content: center;
+ padding-top: 30px;
 }
 
 .footer-cadastro-cli span {
-    padding: 0 1rem;
+ padding: 0 1rem;
 }
 
 .footer-cadastro-cli span:last-child {
-    border: none;
+ border: none;
 }
 
 .footer-cadastro-cli input {
-    width: 120px;
-    background-color: var(--cor-primaria);
+ width: 120px;
+ background-color: var(--cor-primaria);
 }
 
 .footer-cadastro-cli a button {
-    background-color: var(--cor-primaria);
-    border-color:var(--cor-primaria);
-    padding: 1px;
-    width: 84px;
-    border-radius: 8px;
+ background-color: var(--cor-primaria);
+ border-color:var(--cor-primaria);
+ padding: 1px;
+ width: 84px;
+ border-radius: 8px;
 }
 
 .footer-cadastro-cli a button:hover {
-    background-color: var(--cor-primaria);
-    border-color:var(--cor-primaria);
+ background-color: var(--cor-primaria);
+ border-color:var(--cor-primaria);
 }
 
 /* Tela de Chamadas */
 .div-chamadas {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    border-bottom: solid;
-    margin: 0;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ border-bottom: solid;
+ margin: 0;
 }
 
 .icon-div-chamadas {
-    font-size: 250px;
-    margin-top: 3rem;
+ font-size: 250px;
+ margin-top: 3rem;
 }
 
 .icon-div2-chamadas {
-    font-size: 84px;
-    background-color: #ccc;
+ font-size: 84px;
+ background-color: #ccc;
 }
 
 .div-person1 {
-    margin: 0;
+ margin: 0;
 }
 
 .div-person2 {
-    position: absolute;
-    margin-left: 13rem;
-    margin-bottom: 1rem;
+ position: absolute;
+ margin-left: 13rem;
+ margin-bottom: 1rem;
 }
 
 .div-icons-btn {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
+ display: flex;
+ justify-content: space-around;
+ margin-top: 2rem;
 }
 
 .icons-chamadas {
-    font-size: 50px;
+ font-size: 50px;
 }
 
 .icons-telefone {
-    font-size: 50px;
-    background-color: red;
-    border-radius: 50%;
+ font-size: 50px;
+ background-color: red;
+ border-radius: 50%;
 }
 
 /*Tela de Ver Chamadas*/
 .red {
-    padding: 5px 5px 5px 5px;
-    margin: 10px 0 0 0;
-    width: 30%;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ padding: 5px 5px 5px 5px;
+ margin: 10px 0 0 0;
+ width: 30%;
+ background-color: red;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .yellow {
-    padding: 5px 5px 5px 5px;
-    margin: 10px 0 0 0;
-    width: 30%;
-    background-color: yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ padding: 5px 5px 5px 5px;
+ margin: 10px 0 0 0;
+ width: 30%;
+ background-color: yellow;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .green {
-    padding: 5px 5px 5px 5px;
-    margin: 10px 0 0 0;
-    width: 30%;
-    background-color: rgb(67, 190, 67);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ padding: 5px 5px 5px 5px;
+ margin: 10px 0 0 0;
+ width: 30%;
+ background-color: rgb(67, 190, 67);
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .main-chamadas {
-    margin: 20px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+ margin: 20px 0 0 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
 
 .p-chamadas {
-    margin: 0 0 0 10px;
+ margin: 0 0 0 10px;
 }
 
 /* Tela de Chat */
 .ion-icon_chat {
-    font-size: x-large;
+ font-size: x-large;
 }
 
 .button_clientes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .body_chat a {
-    text-decoration: none;
+ text-decoration: none;
 }
 
 .main_chat {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
 }
 
 .main_chat button {
-    margin: 11px;
-    width: 212px;
+ margin: 11px;
+ width: 212px;
 }
 
 /* Tela de Chat do Cliente e Profissional */
 .h1-chatCli {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 5%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 0 0 5%;
 }
 
 .alinhar-ion-chatCli {
-    display: flex;
-    justify-content: left;
+ display: flex;
+ justify-content: left;
 }
 
 .voltar-chatCli {
-    font-size: larger;
-    font-size: 190%;
-    margin: 5px 0 0 1%;
-    color: black;
+ font-size: larger;
+ font-size: 190%;
+ margin: 5px 0 0 1%;
+ color: black;
 }
 
 .body-chatCli {
-    background-color: #c7f2c8;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+ background-color: #c7f2c8;
+ margin: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
 }
 
 .main_chat-cli p {
-    background-color: white;
-    padding: 6px;
-    border-radius: 20px;
-    margin: 5px;
+ background-color: white;
+ padding: 6px;
+ border-radius: 20px;
+ margin: 5px;
 }
 
 .main_chat-cli {
-    margin-top: 30px;
+ margin-top: 30px;
 }
 
 .ion_mic {
-    font-size: xx-large;
+ font-size: xx-large;
 }
 
 .url_chatCli {
-    font-size: 20px;
-    border-radius: 20px;
-    width: 15rem;
-    outline: 0;
-    height: 30px;
-    background: white;
-    border: none;
+ font-size: 20px;
+ border-radius: 20px;
+ width: 15rem;
+ outline: 0;
+ height: 30px;
+ background: white;
+ border: none;
 }
 
 .digitar-chat {
-    display: flex;
-    justify-content: center;
-    margin-top: 31rem;
+ display: flex;
+ justify-content: center;
+ margin-top: 31rem;
 }
 
 /*Tela de Conteúdo */
 .bloco_verDicas {
-    background-color: var(--cor-primaria);
-    padding: 16px;
-    margin-top: 40px;
-    margin-left: 11px;
-    height: 67px;
-    width: 421px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: inherit;
+ background-color: var(--cor-primaria);
+ padding: 16px;
+ margin-top: 40px;
+ margin-left: 11px;
+ height: 67px;
+ width: 421px;
+ border-radius: 15px;
+ display: flex;
+ flex-direction: inherit;
 }
 
 .bloco_verDicas p {
-    color: black;
-    border: none;
+ color: black;
+ border: none;
 }
 
 .bloco_verDicas strong {
-    color: white;
+ color: white;
 }
 
 .ion_verDicas {
-    font-size: 300%;
-    color: var(--cor-primaria);
+ font-size: 300%;
+ color: var(--cor-primaria);
 }
 
 .adicionar_conteudo,
 .button_adicionar {
-    border-radius: 20px;
-    border-color: white;
-    padding: 0%;
-    background-color: white;
-    border: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 7%;
+ border-radius: 20px;
+ border-color: white;
+ padding: 0%;
+ background-color: white;
+ border: none;
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 7%;
+ margin-right: 3%;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 .botaoPreto_conteudo {
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
-    border-radius: 20px;
-    border: none;
-    display: flex;
-    justify-content: flex-end;
+ background-color: var(--cor-primaria);
+ border-color: var(--cor-primaria);
+ border-radius: 20px;
+ border: none;
+ display: flex;
+ justify-content: flex-end;
 }
 
 .ion-icon_botaoPreto {
-    font-size: x-large;
+ font-size: x-large;
 }
 
 /* Tela de Dicas */
 .balao1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: solid;
-    padding: 23px;
-    width: 46%;
-    margin-bottom: 2%;
-    border-radius: 16px;
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ border: solid;
+ padding: 23px;
+ width: 46%;
+ margin-bottom: 2%;
+ border-radius: 16px;
+ background-color: var(--cor-primaria);
+ border-color: var(--cor-primaria);
 }
 
 .balao2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: solid;
-    padding: 23px;
-    width: 46%;
-    margin-bottom: 2%;
-    border-radius: 16px;
-    background-color:var(--cor-primaria);
-    border-color:var(--cor-primaria);
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ border: solid;
+ padding: 23px;
+ width: 46%;
+ margin-bottom: 2%;
+ border-radius: 16px;
+ background-color:var(--cor-primaria);
+ border-color:var(--cor-primaria);
 }
 
 .balao2 a {
-    color: white;
+
 }
 
 .balao3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: solid;
-    padding: 23px;
-    width: 46%;
-    margin-bottom: 2%;
-    border-radius: 16px;
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ border: solid;
+ padding: 23px;
+ width: 46%;
+ margin-bottom: 2%;
+ border-radius: 16px;
+ background-color: var(--cor-primaria);
+ border-color: var(--cor-primaria);
 }
 
 .balao4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: solid;
-    padding: 23px;
-    width: 46%;
-    margin-bottom: 2%;
-    border-radius: 16px;
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ border: solid;
+ padding: 23px;
+ width: 46%;
+ margin-bottom: 2%;
+ border-radius: 16px;
+ background-color: var(--cor-primaria);
+ border-color: var(--cor-primaria);
 }
 
 .main_sugestoes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 21%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-left: 21%;
 }
 
 .branco_sugestoes {
-    color: white;
+ color: white;
 }
 
 /* Tela de Dieta */
+
+.main-telaDieta {
+ display: flex;
+ justify-content: center;
+}
+
 .h1-tela-dieta {
-    margin-left: 1rem;
+ margin-left: 1rem;
 }
 
 .ion-icon_dieta {
-    font-size: 40px;
-    margin-top: 1rem;
-    margin-left: 2rem;
+ font-size: 40px;
+ margin-top: 1rem;
+ margin-left: 2rem;
 }
 
 .garfo-dieta {
-    display: flex;
+ display: flex;
 }
 
 .tabela-tela-dieta {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 700px;
-    margin-left: 26%;
-    margin-bottom: 5rem;
-    border-style: solid;
-    padding-bottom: 1%;
+ display: flex;
+ justify-content: center;
+ width: 700px;
+ margin-bottom: 2rem;
+ border-style: solid;
+ padding-bottom: 1%;
+ padding: 2%;
 }
 
 .th-tabela-dieta {
-    display: flex;
-    justify-content: space-between;
+ display: flex;
+ justify-content: space-between;
 }
 
 .td-tabela-dieta {
-    display: flex;
-    justify-content: space-between;
-    font-style: italic;
-    font-size: large;
+ display: flex;
+ justify-content: space-between;
+ font-style: italic;
+ font-size: large;
 }
 
 .td-tabela-dieta1 {
-    display: flex;
-    justify-content: space-between;
-    font-style: italic;
-    font-size: large;
-    border-bottom: solid;
-    margin-bottom: 3%;
-    padding-bottom: 3%;
+ display: flex;
+ justify-content: space-between;
+ font-style: italic;
+ font-size: large;
+ border-bottom: solid;
+ margin-bottom: 3%;
+ padding-bottom: 3%;
 }
 
 
 .cor-titulo-tabela-dieta {
-    font-size: x-large;
-    color: rgb(242, 10, 10);
-    padding-bottom: 5%;
+ font-size: x-large;
+ color: rgb(242, 10, 10);
+ padding-bottom: 5%;
 }
 
 .dia-da-semana {
-    font-size: larger;
+ font-size: larger;
 }
 
 /* Tela de Diploma */
 .main-diploma {
-    margin: 10% 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ margin: 10% 0 0 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 
 /* Tela de Exercícios */
 .main_exercicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
 .main_exercicios button {
-    width: 200px;
-    padding: 10px;
-    margin: 10px;
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+ width: 200px;
+ padding: 10px;
+ margin: 10px;
+ background-color: var(--cor-primaria);
+ border-color: var(--cor-primaria);
 }
 
 .main_exercicios table {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 27%;
-    font-size: 112%;
+ border: 1px solid black;
+ border-collapse: collapse;
+ width: 27%;
+ font-size: 112%;
 }
 
 .th-tabela-exercicios {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 27%;
-    font-size: 112%;
+ border: 1px solid black;
+ border-collapse: collapse;
+ width: 27%;
+ font-size: 112%;
 }
 
 .td-tela-exercicios {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 27%;
-    font-size: 112%;
+ border: 1px solid black;
+ border-collapse: collapse;
+ width: 27%;
+ font-size: 112%;
 }
 
 .main_exercicios table {
-    margin-top: 3%;
-    margin-bottom: 3%;
+ margin-top: 3%;
+ margin-bottom: 3%;
 }
 
 .barraPesquisa {
-    display: flex;
-    background-color: #fff;
-    border: solid 1px;
-    border-radius: 15px;
-    width: 300px;
-    margin-top: 3%;
-    margin-bottom: 3%;
+ display: flex;
+ background-color: #fff;
+ border: solid 1px;
+ border-radius: 15px;
+ width: 300px;
+ margin-top: 3%;
+ margin-bottom: 3%;
 }
 
 .procurar {
-    background-color: transparent;
-    padding-left: 5px;
-    font-size: 15px;
-    border: none;
-    height: 26px;
-    width: 260px;
-    outline: 0;
+ background-color: transparent;
+ padding-left: 5px;
+ font-size: 15px;
+ border: none;
+ height: 26px;
+ width: 260px;
+ outline: 0;
 }
 
 .ion-icon_procurar {
-    font-size: 20px;
-    padding-top: 4px;
+ font-size: 20px;
+ padding-top: 4px;
 }
 
 .exercicios_voltar {
-    border: none;
-    background-color: #fff;
-    border-radius: 20px;
+ border: none;
+ background-color: #fff;
+ border-radius: 20px;
 }
 
 .exercicios_voltar:hover {
-    background-color: #c7d0d8;
+ background-color: #c7d0d8;
 }
 
 .tabela_exercicios {
-    text-align: center;
-    margin: 40%;
+ text-align: center;
+ margin: 40%;
 }
 
 /* Index */
 .index_body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+ margin: 0;
+ display: flex;
+ flex-direction: column;
 }
 
 .index_header {
-    padding: 3%;
+ padding: 3%;
 }
 
 .index_main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 200px;
-    margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ max-width: 200px;
+ margin: 0 auto;
 }
 
 .index_main img {
-    max-width: 300px;
-    background-color: #f4dfd4;
+ max-width: 300px;
+ background-color: #f4dfd4;
 }
 
 .btn-cadastro {
-    font-size: 100%;
-    color: rgb(0, 0, 0);
-    background-color: #dcd9d9;
-    padding: 8% 20%;
+ font-size: 100%;
+ color: rgb(0, 0, 0);
+ background-color: #dcd9d9;
+ padding: 8% 20%;
 }
 
 .btn-cadastro:hover,
 .cor:hover {
-    background-color: #b3b3b3;
+ background-color: #b3b3b3;
 }
 
 .index_footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .index_footer span {
-    border-right: 2px solid var(--primary-color);
-    padding: 0 2rem;
+ border-right: 2px solid var(--primary-color);
+ padding: 0 2rem;
 }
 
 
 .index_main button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 30px;
-    border: 2px solid #ffffff;
-    margin: 10px auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 250px;
+ height: 30px;
+ border: 2px solid #ffffff;
+ margin: 10px auto;
 }
 
 .cor {
-    color: #1441d5;
-    font-size: 100%;
-    background-color: #dcd9d9;
-    padding: 8% 20%;
+ color: #1441d5;
+ font-size: 100%;
+ background-color: #dcd9d9;
+ padding: 8% 20%;
 }
 
 .index_body a {
-    color: #1441d5;
-    text-decoration: none;
+ color: #1441d5;
+ text-decoration: none;
 }
 
 /* Tela de Login 2 */
 .profissional {
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
-    align-items: center;
-    text-align: center;
-    padding: 8px;
-    margin: 20px;
+ background-color: var(--cor-primaria);
+ border-color: var(--cor-primaria);
+ align-items: center;
+ text-align: center;
+ padding: 8px;
+ margin: 20px;
 }
 
 .login2_footer button {
-    background-color: white;
-    border-radius: 19px;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: none;
+ background-color: white;
+ border-radius: 19px;
+ margin-top: 10px;
+ margin-left: 10px;
+ border: none;
 }
 
 .login2_footer button:hover {
-    background-color: #c7d0d8;
+ background-color: #c7d0d8;
 }
 
 .login2_ion {
-    font-size: 25px;
-    margin: 2px;
+ font-size: 25px;
+ margin: 2px;
 }
 
 .profissional b {
-    margin: 12px;
+ margin: 12px;
 }
 
 .cliente {
-    background-color: var(--cor-secundaria);
-    border-color: var(--cor-secundaria);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 8px;
-    margin: 20px;
+ background-color: var(--cor-secundaria);
+ border-color: var(--cor-secundaria);
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 8px;
+ margin: 20px;
 }
 
 .cliente b {
-    margin: 12px;
+ margin: 12px;
 }
 
 .flex-centro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
 }
 
 .quem {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 40px;
+ text-align: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ margin: 40px;
 }
 
 .botoes button {
-    border-radius: 8px;
-    width: 207px;
-    justify-content: center;
-    margin: 43px;
-    padding: 13px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ border-radius: 8px;
+ width: 207px;
+ justify-content: center;
+ margin: 43px;
+ padding: 13px;
+ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .login_2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ max-width: 500px;
+ margin: 0 auto;
 }
 
 .login_2 a {
-    text-decoration: none;
+ text-decoration: none;
 }
 
 /* Tela Marcar consultas */
 .main-marcar-consulta {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
 }
 
 .horario-marcar-consulta {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
+ display: flex;
+ justify-content: center;
+ font-size: 30px;
 }
 
 .horario-marcar-consulta ion-icon {
-    margin-right: 30px;
+ margin-right: 30px;
 }
 
 .escurecer-botao {
-    background-color: #ccc;
-    border-radius: 22px;
+ background-color: #ccc;
+ border-radius: 22px;
 }
 
 /* Tela de Suas Medidas */
 .body-cadastro-cli-medidas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #f5f3f3;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-color: #f5f3f3;
 }
 
 .main-cadastro-cli-medidas {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    align-items: left;
-    max-width: 500px;
-    margin: 0 auto;
+ display: flex;
+ justify-content: left;
+ flex-direction: column;
+ align-items: left;
+ max-width: 500px;
+ margin: 0 auto;
 }
 
 .main-cadastro-cli-medidas input {
-    width: 260px;
-    background-color: #ccc;
-    border-radius: 22px;
+ width: 260px;
+ background-color: #ccc;
+ border-radius: 22px;
 }
 
 .h1-cadastro-cli-medidas {
-    text-align: center;
+ text-align: center;
 }
 
 .diploma {
-    background-color: rgb(255, 255, 255);
+ background-color: rgb(255, 255, 255);
 }
 
 .bio {
-    height: 100px;
+ height: 100px;
 }
 
 .footer-cadastro-cli {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+ display: flex;
+ justify-content: center;
+ padding-top: 30px;
 }
 
 .footer-cadastro-cli span {
-    padding: 0 1rem;
+ padding: 0 1rem;
 }
 
 .footer-cadastro-cli span:last-child {
-    border: none;
+ border: none;
 }
 
 .footer-cadastro-cli input {
-    width: 120px;
-    background-color:var(--cor-primaria);
+ width: 120px;
+ background-color:var(--cor-primaria);
 }
 
 .footer-cadastro-cli a button {
-    background-color: var(--cor-primaria);
-    border-color:var(--cor-primaria);
-    padding: 1px;
-    width: 84px;
-    border-radius: 8px;
+ background-color: var(--cor-primaria);
+ border-color:var(--cor-primaria);
+ padding: 1px;
+ width: 84px;
+ border-radius: 8px;
 }
 
 .footer-cadastro-cli a button:hover {
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+ background-color: var(--cor-primaria);
+ border-color: var(--cor-primaria);
 }
 
 /* Tela do Perfil do Profissional */
 .h1-perfil-pro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 5%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 0 0 5%;
 }
 
 .alinhar-ion-main-perfil-pro {
-    margin: 2% 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ margin: 2% 0 0 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .person-main-perfil-pro {
-    font-size: larger;
-    font-size: 600%;
+ font-size: larger;
+ font-size: 600%;
 }
 
 .alinhar-main-perfil-pro {
-    display: block;
-    margin: 0 0 0 3%;
+ display: block;
+ margin: 0 0 0 3%;
 }
 
 .h2-main-perifl-pro {
-    margin: 0;
+ margin: 0;
 }
 
 .p-main-perifl-pro {
-    margin: 0;
-    border: 0;
-    display: flex;
-    justify-content: left;
+ margin: 0;
+ border: 0;
+ display: flex;
+ justify-content: left;
 }
 
 .alinhar-informcoes-perfil-pro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
 
 .alinhar-option-perfil-pro {
-    background-color: var(--cor-primaria);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    width: 25%;
+ background-color: var(--cor-primaria);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 40px;
+ width: 25%;
 }
 
 /* Tela do Perfil do Cliente */
 .h1-perfil-cli {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 5%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 0 0 5%;
 }
 
 .alinhar-ion-main-perfil-cli {
-    margin: 3% 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ margin: 3% 0 0 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .person-main-perfil-cli {
-    font-size: larger;
-    font-size: 600%;
+ font-size: larger;
+ font-size: 600%;
 }
 
 .alinhar-main-perfil-cli {
-    display: block;
-    margin: 0 0 0 3%;
+ display: block;
+ margin: 0 0 0 3%;
 }
 
 .h2-main-perifl-cli {
-    margin: 0;
+ margin: 0;
 }
 
 .p-main-perifl-cli {
-    margin: 0;
-    border: 0;
-    display: flex;
-    justify-content: left;
+ margin: 0;
+ border: 0;
+ display: flex;
+ justify-content: left;
 }
 
 .informacoes {
-    margin: 0 70px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ margin: 0 70px 0 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .informacoes-perfil-cli {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1% 0 0 10%;
-    flex-direction: column;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 1% 0 0 10%;
+ flex-direction: column;
 }
 
 .informacoes-perfil-cli1 {
-    display: flex;
-    justify-content: center;
-    margin: 1% 0 0 0;
+ display: flex;
+ justify-content: center;
+ margin: 1% 0 0 0;
 }
 
 .informacoes-perfil-cli2 {
-    display: flex;
-    justify-content: center;
-    margin: 1% 0 0 0;
+ display: flex;
+ justify-content: center;
+ margin: 1% 0 0 0;
 }
 
 .span-perfil-cli1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 0 0 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin: 0 0 0 40px;
 }
 
 .span-perfil-cli2 {
-    margin: 0 0 0 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 0 0 40px;
+ margin: 0 0 0 15px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin: 0 0 0 40px;
 }
 
 .p-perfil-cli1 {
-    width: 100px;
-    background-color:var(--cor-primaria);
-    padding: 10%;
-    margin: 40px 0 0 15px;
-    border-radius: 12px;
+ width: 100px;
+ background-color:var(--cor-primaria);
+ padding: 10%;
+ margin: 40px 0 0 15px;
+ border-radius: 12px;
 }
 
 .p-perfil-cli2 {
-    width: 100px;
-    background-color:var(--cor-primaria);
-    padding: 10%;
-    margin: 40px 0 0 15px;
-    border-radius: 12px;
+ width: 100px;
+ background-color:var(--cor-primaria);
+ padding: 10%;
+ margin: 40px 0 0 15px;
+ border-radius: 12px;
 }
 
 .p-perfil-cli3 {
-    width: 100px;
-    background-color:var(--cor-primaria);
-    padding: 10%;
-    margin: 40px 0 0 15px;
-    border-radius: 12px;
+ width: 100px;
+ background-color:var(--cor-primaria);
+ padding: 10%;
+ margin: 40px 0 0 15px;
+ border-radius: 12px;
 }
 
 .p-perfil-cli4 {
-    width: 100px;
-    background-color:var(--cor-primaria);
-    padding: 7%;
-    margin: 15px 0 0 15px;
-    border-radius: 12px;
+ width: 100px;
+ background-color:var(--cor-primaria);
+ padding: 7%;
+ margin: 15px 0 0 15px;
+ border-radius: 12px;
 }
 
 .h3-img-perfil-cli {
-    text-align: center;
-    display: flow-root;
-    margin: 0 0 0 5%;
+ text-align: center;
+ display: flow-root;
+ margin: 0 0 0 5%;
 }
 
 .h3-perfil-cli {
-    text-align: center;
+ text-align: center;
 }
 
 .calendario-perfil-cli {
-    text-align: center;
-    width: 20%;
+ text-align: center;
+ width: 20%;
 }
 
 /* Tela de Planejamento de Chamadas */
 .section-solicitar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 50px;
 }
 
 .h2-solicitar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--cor-primaria);
-    border-radius: 40px;
-    width: 50%;
-    padding: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: var(--cor-primaria);
+ border-radius: 40px;
+ width: 50%;
+ padding: 10px;
 }
 
 .lista-solicitar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    font-size: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 50px;
+ font-size: 20px;
 }
 
 .section2-solicitar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin-top: 50px;
 }
 
 .div1,
 .div2,
 .div3 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
 }
 
 .icon-solicitar-red {
-    font-size: 30px;
-    background-color: red;
-    color: red;
-    border-radius: 40px;
+ font-size: 30px;
+ background-color: red;
+ color: red;
+ border-radius: 40px;
 }
 
 .icon-solicitar-yellow {
-    font-size: 30px;
-    background-color: yellow;
-    color: yellow;
-    border-radius: 40px;
+ font-size: 30px;
+ background-color: yellow;
+ color: yellow;
+ border-radius: 40px;
 }
 
 .icon-solicitar-green {
-    font-size: 30px;
-    background-color: green;
-    color: green;
-    border-radius: 40px;
+ font-size: 30px;
+ background-color: green;
+ color: green;
+ border-radius: 40px;
 }
 
 .section3-solicitar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 60px;
 }
 
 .h22-solicitar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: greenyellow;
-    border-radius: 40px;
-    width: 15%;
-    padding: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: greenyellow;
+ border-radius: 40px;
+ width: 15%;
+ padding: 10px;
 }
 
 /* Tela dos Planos */
 .planos {
-    text-align: center;
+ text-align: center;
 }
 
 .planos_main {
-    display: flex;
-    justify-content: center;
-    margin-left: -25%;
-    margin-top: 5%;
+ display: flex;
+ justify-content: center;
+ margin-left: -25%;
+ margin-top: 5%;
 }
 
 .basico,
 .premium,
 .familia {
-    margin-left: 19%;
+ margin-left: 19%;
 }
 
 .basico button {
-    background-color: #c7d0d8;
-    border-color: #c7d0d8;
+ background-color: #c7d0d8;
+ border-color: #c7d0d8;
 }
 
 .premium button {
-    background-color: #ff5757;
-    border-color: #ff5757;
+ background-color: #ff5757;
+ border-color: #ff5757;
 }
 
 .conteudo {
-    display: none;
+ display: none;
 }
 
 .oculta {
-    display: block;
+ display: block;
 }
 
 .conteudo1 {
-    display: none;
+ display: none;
 }
 
 .oculta1 {
-    display: block;
+ display: block;
 }
 
 .conteudo2 {
-    display: none;
+ display: none;
 }
 
 .oculta2 {
-    display: block;
+ display: block;
 }
 
 .familia button {
-    background-color: #fac832;
-    border-color: #fac832;
+ background-color: #fac832;
+ border-color: #fac832;
 }
 
 .planos_main button {
-    border-radius: 8px;
-    padding: 10px;
-    width: 85px;
-    margin-bottom: 24px;
+ border-radius: 8px;
+ padding: 10px;
+ width: 85px;
+ margin-bottom: 24px;
 }
 
 .basico button:hover {
-    background-color: #999b9e;
+ background-color: #999b9e;
 }
 
 .premium button:hover {
-    background-color: #eb2727;
+ background-color: #eb2727;
 }
 
 .familia button:hover {
-    background-color: #f0b504;
+ background-color: #f0b504;
 }
 
 .planos2_main {
-    text-align: center;
+ text-align: center;
 }
 
 .planos2_header button {
-    background-color: white;
-    border: none;
-    border-radius: 19px;
-    margin-top: 10px;
-    margin-left: 10px;
+ background-color: white;
+ border: none;
+ border-radius: 19px;
+ margin-top: 10px;
+ margin-left: 10px;
 }
 
 .planos2_ion {
-    text-align: left;
-    font-size: 25px;
+ text-align: left;
+ font-size: 25px;
 }
 
 .planos2_header button:hover {
-    background-color: #999b9e;
+ background-color: #999b9e;
 }
 
 .planos2_header h1,
 h4 {
-    text-align: center;
+ text-align: center;
 }
 
 .planos2_main h1 {
-    font-size: 50px;
-    display: inline;
+ font-size: 50px;
+ display: inline;
 }
 
 .planos2_main button {
-    border-radius: 8px;
-    padding: 10px;
-    width: 85px;
-    margin-bottom: 24px;
+ border-radius: 8px;
+ padding: 10px;
+ width: 85px;
+ margin-bottom: 24px;
 }
 
 .planos2_basico {
-    background-color: #c7d0d8;
-    border-color: #c7d0d8;
+ background-color: #c7d0d8;
+ border-color: #c7d0d8;
 }
 
 .planos2_premium {
-    background-color: #ff5757;
-    border-color: #ff5757;
+ background-color: #ff5757;
+ border-color: #ff5757;
 }
 
 .planos2_familia {
-    background-color: #fac832;
-    border-color: #fac832;
+ background-color: #fac832;
+ border-color: #fac832;
 }
 
 .planos2_basico:hover {
-    background-color: #999b9e;
+ background-color: #999b9e;
 }
 
 .planos2_premium:hover {
-    background-color: #eb2727;
+ background-color: #eb2727;
 }
 
 .planos2_familia:hover {
-    background-color: #f0b504;
+ background-color: #f0b504;
 }
 
 .planos2_main p {
-    font-size: 19px;
+ font-size: 19px;
 }
 
 /* Tela de Solicitar Chamadas */
 .main-solicitar-chamadas {
-    display: flex;
-    flex-direction: column;
+ display: flex;
+ flex-direction: column;
 }
 
 .btn-minhas-consultas {
-    margin-top: 3%;
-    display: flex;
-    justify-content: flex-end;
+ margin-top: 3%;
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 5%;
 }
 
 .minhas-consultas {
-    width: 15rem;
-    border-radius: 40px;
-    background-color: var(--cor-primaria);
-    padding: 10px;
-    margin-right: 2%;
+ width: 15rem;
+ border-radius: 40px;
+ background-color: var(--cor-primaria);
+ padding: 10px;
+ margin-right: 2%;
 }
 
 .div-texto-chamadas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
 
 .hr-solicitar-chamadas {
-    color: black;
-    width: 100%;
-    height: 1%;
+ color: black;
+ width: 100%;
+ height: 1%;
 }
 
 .section-solicitar-chamadas {
-    display: flex;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    justify-content: space-around;
-    align-items: center;
+ display: flex;
+ margin-top: 3%;
+ margin-bottom: 3%;
+ justify-content: space-around;
+ align-items: center;
 }
 
 .section2-solicitar-chamadas {
-    display: flex;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+ display: flex;
+ margin-top: 3%;
+ margin-bottom: 3%;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
 
 .div-calendario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--cor-primaria);
-    border-radius: 40px;
-    margin-right: 1%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-color: var(--cor-primaria);
+ border-radius: 40px;
+ margin-right: 1%;
 }
 
 .div-calendario-red {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: red;
-    border-radius: 40px;
-    margin-right: 1%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-color: red;
+ border-radius: 40px;
+ margin-right: 1%;
 }
 
 .ion-solicitar-chamadas {
-    font-size: 2rem;
-    color: black;
-    align-items: center;
+ font-size: 2rem;
+ color: black;
+ align-items: center;
 }
 
 .btn-confirmar-planejamento {
-    margin-top: 3%;
-    display: flex;
-    justify-content: center;
+ margin-top: 3%;
+ display: flex;
+ justify-content: center;
 }
 
 .confirmar-planejamento {
-    width: 15rem;
-    border-radius: 40px;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-terciaria);
-    padding: 10px;
-    margin-right: 2%;
+ width: 15rem;
+ border-radius: 40px;
+ background-color: var(--cor-secundaria);
+ color: var(--cor-terciaria);
+ padding: 10px;
+ margin-right: 2%;
 }
 
 .div-horario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--cor-primaria);
-    width: 12rem;
-    height: 2rem;
-    margin-right: 10%;
-    margin-left: 10%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-color: var(--cor-primaria);
+ width: 12rem;
+ height: 2rem;
+ margin-right: 10%;
+ margin-left: 10%;
 }
 
 .agrupar-horarios-chamadas {
-    display: flex;
-    margin-top: 3%;
+ display: flex;
+ margin-top: 3%;
 }
 
 /* Tela de Solicitar Chamadas Cliente */
 .div-calendario-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color:var(--cor-primaria);
-    border-radius: 40px;
-    margin-right: 1%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-color:var(--cor-primaria);
+ border-radius: 40px;
+ margin-right: 1%;
 }
 
 .div-horario-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color:var(--cor-primaria);
-    width: 12rem;
-    height: 2rem;
-    margin-right: 10%;
-    margin-left: 10%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-color:var(--cor-primaria);
+ width: 12rem;
+ height: 2rem;
+ margin-right: 10%;
+ margin-left: 10%;
 }
 
 .selecione-profissional {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    display: flex;
-    gap: 32px;
+ margin-top: 2rem;
+ margin-bottom: 3rem;
+ display: flex;
+ gap: 32px;
 }
 
 .div-geral-profissionais {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
 .div-profissional {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cor-primaria);
-    border-radius: 18px;
-    width: 5rem;
-    padding: 1rem;
-    align-items: center;
+ display: flex;
+ flex-direction: column;
+ background-color: var(--cor-primaria);
+ border-radius: 18px;
+ width: 5rem;
+ padding: 1rem;
+ align-items: center;
 }
 
 .div-profissionais {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cor-primaria);
-    border-radius: 18px;
-    width: 5rem;
-    padding: 1rem;
-    align-items: center;
+ display: flex;
+ flex-direction: column;
+ background-color: var(--cor-primaria);
+ border-radius: 18px;
+ width: 5rem;
+ padding: 1rem;
+ align-items: center;
 }
 
 .ion-person-profissionais {
-    font-size: 5rem;
+ font-size: 5rem;
 }
 
 /* Tela de Termos de Uso */
 .header-termos {
-    text-align: center;
-    margin-bottom: 40px;
+ text-align: center;
+ margin-bottom: 40px;
 }
 
 .main-termos p {
-    display: inline;
-    text-align: justify;
-    font-size: 124%;
-    margin-bottom: 50%;
+ display: inline;
+ text-align: justify;
+ font-size: 124%;
+ margin-bottom: 50%;
 }
 
 .footer-termos button {
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
-    padding: 6px;
-    width: 50px;
-    border-radius: 16px;
-    margin-top: 6px;
-    margin-bottom: 10px;
-    margin-left: 48%;
+ background-color: var(--cor-primaria);
+ border-color: var(--cor-primaria);
+ padding: 6px;
+ width: 50px;
+ border-radius: 16px;
+ margin-top: 6px;
+ margin-bottom: 10px;
+ margin-left: 48%;
 }
 
 .main-termos button:hover {
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+ background-color: var(--cor-primaria);
+ border-color: var(--cor-primaria);
 }
 
 /* Tela de Treinos */
 .grupo_treino button {
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 4%;
-    border-radius: 6%;
-    border: solid;
-    border-color: black;
-    background-color: white;
+ align-items: center;
+ justify-content: space-between;
+ margin-top: 4%;
+ border-radius: 6%;
+ border: solid;
+ border-color: black;
+ background-color: white;
 }
 
 .grupo_treino {
-    text-align: center;
+ text-align: center;
 }
 
 .ion-icon_treino {
-    font-size: 40px;
+ font-size: 40px;
 }
 
 .grupo_treino button:hover {
-    background-color: #c7d0d8;
+ background-color: #c7d0d8;
 }
 
 /* Tela de Vídeos de Execução */
 .icones {
-    display: flex;
-    justify-content: center;
-    font-size: 32px;
-    margin-top: 43%;
-    margin-right: 53%;
-    border: #eb2727;
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding-right: 30%;
-    padding-left: 2%;
+ display: flex;
+ justify-content: center;
+ font-size: 32px;
+ margin-top: 43%;
+ margin-right: 53%;
+ border: #eb2727;
+ border-style: solid;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ padding-right: 30%;
+ padding-left: 2%;
 }
 
 .video {
-    border-style: solid;
-    display: flex;
-    justify-content: center;
-    width: 420px;
-    height: 220px;
+ border-style: solid;
+ display: flex;
+ justify-content: center;
+ width: 420px;
+ height: 220px;
 }
 
 .centralizar {
-    display: flex;
-    justify-content: center;
+ display: flex;
+ justify-content: center;
 }
 
 .sumir-embaixo {
-    text-decoration: none;
+ text-decoration: none;
 }
 
 .descer-texto-videos {
-    margin-right: 6%;
-    margin-left: 3%;
+ margin-right: 6%;
+ margin-left: 3%;
 }
 
 .deixar-no-meio {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 5%;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ margin-top: 5%;
 }
 
 .sumir-tudo {
-    display: none;
+ display: none;
 }
 
 .proximos-videos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ flex-direction: column;
 }
 
 .leg-press {
-    border-style: solid;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 130px;
-    height: 80px;
-    margin-right: 20%;
-    margin-top: 3%;
+ border-style: solid;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ width: 130px;
+ height: 80px;
+ margin-right: 20%;
+ margin-top: 3%;
 }
 
 .bulgaro {
-    border-style: solid;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 130px;
-    height: 80px;
-    margin-right: 20%;
-    margin-top: 3%;
+ border-style: solid;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ width: 130px;
+ height: 80px;
+ margin-right: 20%;
+ margin-top: 3%;
 }
 
 .flexora {
-    border-style: solid;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 130px;
-    height: 80px;
-    margin-right: 20%;
-    margin-top: 3%;
-    margin-bottom: 7%;
+ border-style: solid;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ width: 130px;
+ height: 80px;
+ margin-right: 20%;
+ margin-top: 3%;
+ margin-bottom: 7%;
 }
 
 .proximos-videos h5 {
-    margin-left: 170%;
+ margin-left: 170%;
 }
 
 /* Telas Responsivas */
 @media (max-width: 480px) {
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body_verDicas {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .bloco_verDicas {
-        width: 90%;
-    }
+ .bloco_verDicas {
+ width: 90%;
+ }
 
-    .main_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 0 0.5rem;
-    }
+ .main_verDicas {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ padding: 0 0.5rem;
+ }
 
-    .tela-add-Dicas {
-        width: 50%;
-    }
+ .tela-add-Dicas {
+ width: 50%;
+ }
 
-    .div-calendario {
-        width: 30%;
-    }
+ .div-calendario {
+ width: 30%;
+ }
 
-    .div-calendario-red {
-        width: 30%;
-    }
+ .div-calendario-red {
+ width: 30%;
+ }
 
-    .div-calendario-2 {
-        width: 30%;
-    }
+ .div-calendario-2 {
+ width: 30%;
+ }
 
-    .div-calendario {
-        width: 15%;
-    }
+ .div-calendario {
+ width: 15%;
+ }
 
-    .div-calendario-red {
-        width: 15%;
-    }
+ .div-calendario-red {
+ width: 15%;
+ }
 
-    .div-calendario-2 {
-        width: 15%;
-    }
+ .div-calendario-2 {
+ width: 15%;
+ }
 
-    .video-call {
-        margin-left: 0;
-        width: 70%;
-    }
+ .lista_tela_chamadas {
+ width: 140%;
+ }
 
-    .lista_tela_chamadas {
-        width: 140%;
-    }
+ .video-call {
+ margin-left: 0;
+ width: 50%;
+ }
 
-    .video-call {
-        margin-left: 0;
-        width: 50%;
-    }
+ .lista_tela_chamadas {
+ width: 140%;
+ }
 
-    .lista_tela_chamadas {
-        width: 140%;
-    }
+ .tela-add-Dicas1,
+ .tela-add-Dicas2 {
+ width: 180%;
+ }
 
-    .tela-add-Dicas1,
-    .tela-add-Dicas2 {
-        width: 180%;
-    }
+ .tela-add-Dicas1,
+ .tela-add-Dicas2 {
+ width: 80%;
+ }
 
-    .tela-add-Dicas1,
-    .tela-add-Dicas2 {
-        width: 80%;
-    }
+ .index_body {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .index_body {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .login_2 {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .login_2 {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .cadastro-pro_body {
+ display: flex;
+ justify-content: space-evenly;
+ flex-direction: column;
+ }
 
-    .cadastro-pro_body {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
+ .alinhar-option-perfil-pro {
+ width: 60%;
+ }
 
-    .alinhar-option-perfil-pro {
-        width: 50%;
-    }
+ .body-cadastro-cli {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-cadastro-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-menu-cli {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-menu-cli {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-perfil-pro {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-perfil-pro {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-perfil-cli {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-perfil-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-cadastro-cli-medidas {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-cadastro-cli-medidas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-termos {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-termos {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-adicionar-dicas {
+ display: flex;
+ flex-direction: column;
+ }
 
-    .body-adicionar-dicas {
-        display: flex;
-        flex-direction: column;
-    }
+ .body_verDicas {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .planos_main {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .planos_main {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-buscar-profissionais {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-buscar-profissionais {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+ .tabela-tela-dieta {
+ display: flex;
+ justify-content: center;
+ width: 80%;
+ height: 150%;
+ }
+
+}
+
+@media (min-width: 480px) {
+ .tabela-tela-dieta {
+ width: 90%;
+ margin: 0 2rem;
+ }
+
+ .alinhar-option-perfil-pro {
+    width: 40%;
     }
 }
 
 @media (min-width: 768px) {
-    .index_body {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ }
 
-    .tela-add-Dicas1,
-    .tela-add-Dicas2 {
-        width: 40%;
-    }
+ .index_body {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .login_2 {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .tela-add-Dicas1,
+ .tela-add-Dicas2 {
+ width: 40%;
+ }
 
-    .cadastro-pro_body {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
+ .login_2 {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .alinhar-option-perfil-pro {
-        width: 40%;
-    }
+ .cadastro-pro_body {
+ display: flex;
+ justify-content: space-evenly;
+ flex-direction: column;
+ }
 
-    .body-cadastro-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .alinhar-option-perfil-pro {
+ width: 25%;
+ }
 
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-cadastro-cli {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-menu-cli {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-perfil-pro {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-menu-cli {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-perfil-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-perfil-pro {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-cadastro-cli-medidas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-perfil-cli {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-termos {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-cadastro-cli-medidas {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-adicionar-dicas {
-        display: flex;
-        flex-direction: column;
-    }
+ .body-termos {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body-adicionar-dicas {
+ display: flex;
+ flex-direction: column;
+ }
 
-    .planos_main {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body_verDicas {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body-buscar-profissionais {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .planos_main {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 0 0.5rem;
-    }
+ .body-buscar-profissionais {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .main_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+ .body_verDicas {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ padding: 0 0.5rem;
+ }
 
-    .main_verDicas {
-        padding: 0 1rem;
-    }
+ .main_verDicas {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ }
 
-    .tela-add-Dicas1 {
-        width: 50%;
-    }
+ .main_verDicas {
+ padding: 0 1rem;
+ }
 
-    .video-call {
-        width: 40%;
-        margin-left: 25%;
+ .tela-add-Dicas1 {
+ width: 50%;
+ }
+
+ .video-call {
+ width: 40%;
+ margin-left: 25%;
+ }
+
+ .tabela-tela-dieta {
+ width: 60%;
+ padding: 2%;
+ }
+
+ .video-call-box {
+    width: 100%;
     }
 }
 
 /* Tela de Adicionar Dieta */
-.body_adicionarDieta{
-    background-color: #526988;
-}
 
 .color_header{
-    background-color: #fff;
+ background-color: #fff;
 }
 
 .main_adicionarDieta{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 .quadroDieta{
-    display: flex;
-    border: solid;
-    border-radius: 20px;
-    width: 27rem;
-    background: var(--cor-primaria);
-    border-color: var(--cor-primaria);
-    margin: 1rem;
+ display: flex;
+ border: solid;
+ border-radius: 20px;
+ width: 27rem;
+ background: var(--cor-primaria);
+ border-color: var(--cor-primaria);
+ margin: 1rem;
 }
 
 .parte2_adicionarDieta{
-    border: solid;
-    border-radius: 20px;
-    width: 27rem;
-    background:var(--cor-primaria);
-    border-color: var(--cor-primaria);
-    margin-bottom: 1rem;
+ border: solid;
+ border-radius: 20px;
+ width: 27rem;
+ background:var(--cor-primaria);
+ border-color: var(--cor-primaria);
+ margin-bottom: 1rem;
 }
 
 .texto-input input{
-    width: 40%;
-    border-radius: 20px;
-    padding: 2%;
-    outline: 0;
+ width: 40%;
+ border-radius: 20px;
+ padding: 2%;
+ outline: 0;
 }
 
 .main_adicionarDieta button{
-    font-size: large;
-    width: 9rem;
-    height: 3rem;
-    border-radius: 1rem;
-    background:var(--cor-primaria);
-    border: var(--cor-primaria);
+ font-size: large;
+ width: 9rem;
+ height: 3rem;
+ border-radius: 1rem;
+ background:var(--cor-primaria);
+ border: var(--cor-primaria);
 }
