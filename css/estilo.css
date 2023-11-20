@@ -3,8 +3,8 @@
     --cor-primaria: #33a483;
     --cor-secundaria: #021f53;
     --cor-terciaria: #fff;
-    --quartenaria:  #ccc;
-    
+    --quartenaria: #ccc;
+
 }
 
 /* Header */
@@ -39,6 +39,13 @@
 }
 
 /* Main */
+.main-padrao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .main-center {
     text-align: center;
 }
@@ -219,12 +226,6 @@ body {
 }
 
 /* Tela de Buscar Profissionais */
-.body-buscar-profissionais {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .main-buscar-profissionais {
     width: 100%;
     height: 100%;
@@ -250,7 +251,7 @@ body {
 .botao-pesquisar {
     padding: 10px 20px;
     font-size: 16px;
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -332,19 +333,10 @@ body {
 }
 
 /* Tela de Cadastro do Profissional */
-.cadastro-pro_body {
-    display: flex;
-    flex-direction: column;
+.cadastro-pro_main {
+    margin: 0 auto;
     justify-content: space-between;
     text-align: center;
-}
-
-.cadastro-pro_main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
 }
 
 .cadastro-pro_main input {
@@ -371,7 +363,7 @@ body {
 
 .salvar button {
     background-color: var(--cor-primaria);
-    border-color:var(--cor-primaria);
+    border-color: var(--cor-primaria);
     padding: 1px;
     width: 84px;
     border-radius: 8px;
@@ -416,25 +408,17 @@ h4 {
 }
 
 /* Tela de Cadastro do Cliente */
-.body-cadastro-cli {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #f5f3f3;
-}
-
 .main-cadastro-cli {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
     align-items: left;
     max-width: 500px;
     margin: 0 auto;
+    justify-content: space-between;
+    background-color: var(--cor-terciaria);
 }
 
 .main-cadastro-cli input {
     width: 260px;
-    background-color: #ccc;
+    background-color: var(--quartenaria);
     border-radius: 22px;
 }
 
@@ -443,7 +427,7 @@ h4 {
 }
 
 .diploma {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cor-terciaria);
 }
 
 .bio {
@@ -471,7 +455,7 @@ h4 {
 
 .footer-cadastro-cli a button {
     background-color: var(--cor-primaria);
-    border-color:var(--cor-primaria);
+    border-color: var(--cor-primaria);
     padding: 1px;
     width: 84px;
     border-radius: 8px;
@@ -479,7 +463,7 @@ h4 {
 
 .footer-cadastro-cli a button:hover {
     background-color: var(--cor-primaria);
-    border-color:var(--cor-primaria);
+    border-color: var(--cor-primaria);
 }
 
 /* Tela de Chamadas */
@@ -560,10 +544,6 @@ h4 {
 
 .main-chamadas {
     margin: 20px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .p-chamadas {
@@ -578,17 +558,6 @@ h4 {
 .button_clientes {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.body_chat a {
-    text-decoration: none;
-}
-
-.main_chat {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -615,14 +584,6 @@ h4 {
     font-size: 190%;
     margin: 5px 0 0 1%;
     color: black;
-}
-
-.body-chatCli {
-    background-color: #c7f2c8;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .main_chat-cli p {
@@ -738,8 +699,8 @@ h4 {
     width: 46%;
     margin-bottom: 2%;
     border-radius: 16px;
-    background-color:var(--cor-primaria);
-    border-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
 }
 
 .balao2 a {
@@ -773,10 +734,6 @@ h4 {
 }
 
 .main_sugestoes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-left: 21%;
 }
 
@@ -853,12 +810,6 @@ h4 {
 
 
 /* Tela de Exercícios */
-.main_exercicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .main_exercicios button {
     width: 200px;
     padding: 10px;
@@ -934,21 +885,11 @@ h4 {
 }
 
 /* Index */
-.index_body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 .index_header {
     padding: 3%;
 }
 
 .index_main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     max-width: 200px;
     margin: 0 auto;
 }
@@ -983,9 +924,6 @@ h4 {
 
 
 .index_main button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 250px;
     height: 30px;
     border: 2px solid #ffffff;
@@ -999,12 +937,12 @@ h4 {
     padding: 8% 20%;
 }
 
-.index_body a {
-    color: #1441d5;
-    text-decoration: none;
+/* Tela de Login 2 */
+.main-login2 {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-/* Tela de Login 2 */
 .profissional {
     background-color: var(--cor-primaria);
     border-color: var(--cor-primaria);
@@ -1012,18 +950,6 @@ h4 {
     text-align: center;
     padding: 8px;
     margin: 20px;
-}
-
-.login2_footer button {
-    background-color: white;
-    border-radius: 19px;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: none;
-}
-
-.login2_footer button:hover {
-    background-color: #c7d0d8;
 }
 
 .login2_ion {
@@ -1070,27 +996,7 @@ h4 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.login_2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.login_2 a {
-    text-decoration: none;
-}
-
 /* Tela Marcar consultas */
-.main-marcar-consulta {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
 .horario-marcar-consulta {
     display: flex;
     justify-content: center;
@@ -1107,13 +1013,6 @@ h4 {
 }
 
 /* Tela de Suas Medidas */
-.body-cadastro-cli-medidas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #f5f3f3;
-}
-
 .main-cadastro-cli-medidas {
     display: flex;
     justify-content: left;
@@ -1157,12 +1056,12 @@ h4 {
 
 .footer-cadastro-cli input {
     width: 120px;
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
 }
 
 .footer-cadastro-cli a button {
     background-color: var(--cor-primaria);
-    border-color:var(--cor-primaria);
+    border-color: var(--cor-primaria);
     padding: 1px;
     width: 84px;
     border-radius: 8px;
@@ -1307,7 +1206,7 @@ h4 {
 
 .p-perfil-cli1 {
     width: 100px;
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     padding: 10%;
     margin: 40px 0 0 15px;
     border-radius: 12px;
@@ -1315,7 +1214,7 @@ h4 {
 
 .p-perfil-cli2 {
     width: 100px;
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     padding: 10%;
     margin: 40px 0 0 15px;
     border-radius: 12px;
@@ -1323,7 +1222,7 @@ h4 {
 
 .p-perfil-cli3 {
     width: 100px;
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     padding: 10%;
     margin: 40px 0 0 15px;
     border-radius: 12px;
@@ -1331,7 +1230,7 @@ h4 {
 
 .p-perfil-cli4 {
     width: 100px;
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     padding: 7%;
     margin: 15px 0 0 15px;
     border-radius: 12px;
@@ -1579,11 +1478,6 @@ h4 {
 }
 
 /* Tela de Solicitar Chamadas */
-.main-solicitar-chamadas {
-    display: flex;
-    flex-direction: column;
-}
-
 .btn-minhas-consultas {
     margin-top: 3%;
     display: flex;
@@ -1692,7 +1586,7 @@ h4 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     border-radius: 40px;
     margin-right: 1%;
 }
@@ -1702,7 +1596,7 @@ h4 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     width: 12rem;
     height: 2rem;
     margin-right: 10%;
@@ -1895,13 +1789,7 @@ h4 {
 
 /* Telas Responsivas */
 @media (max-width: 480px) {
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .bloco_verDicas {
+   .bloco_verDicas {
         width: 90%;
     }
 
@@ -1968,88 +1856,10 @@ h4 {
         width: 80%;
     }
 
-    .index_body {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .login_2 {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .cadastro-pro_body {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-
     .alinhar-option-perfil-pro {
         width: 50%;
     }
-
-    .body-cadastro-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-perfil-pro {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-perfil-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-cadastro-cli-medidas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-termos {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-adicionar-dicas {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
     .planos_main {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-buscar-profissionais {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -2057,103 +1867,19 @@ h4 {
 }
 
 @media (min-width: 768px) {
-    .index_body {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
     .tela-add-Dicas1,
     .tela-add-Dicas2 {
         width: 40%;
-    }
-
-    .login_2 {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .cadastro-pro_body {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
     }
 
     .alinhar-option-perfil-pro {
         width: 40%;
     }
 
-    .body-cadastro-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-menu-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-perfil-pro {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-perfil-cli {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-cadastro-cli-medidas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-termos {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body-adicionar-dicas {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
     .planos_main {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-    }
-
-    .body-buscar-profissionais {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
-    .body_verDicas {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 0 0.5rem;
     }
 
     .main_verDicas {
@@ -2177,22 +1903,11 @@ h4 {
 }
 
 /* Tela de Adicionar Dieta */
-.body_adicionarDieta{
-    background-color: #526988;
-}
-
-.color_header{
+.color_header {
     background-color: #fff;
 }
 
-.main_adicionarDieta{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.quadroDieta{
+.quadroDieta {
     display: flex;
     border: solid;
     border-radius: 20px;
@@ -2202,27 +1917,27 @@ h4 {
     margin: 1rem;
 }
 
-.parte2_adicionarDieta{
+.parte2_adicionarDieta {
     border: solid;
     border-radius: 20px;
     width: 27rem;
-    background:var(--cor-primaria);
+    background: var(--cor-primaria);
     border-color: var(--cor-primaria);
     margin-bottom: 1rem;
 }
 
-.texto-input input{
+.texto-input input {
     width: 40%;
     border-radius: 20px;
     padding: 2%;
     outline: 0;
 }
 
-.main_adicionarDieta button{
+.main_adicionarDieta button {
     font-size: large;
     width: 9rem;
     height: 3rem;
     border-radius: 1rem;
-    background:var(--cor-primaria);
+    background: var(--cor-primaria);
     border: var(--cor-primaria);
 }
