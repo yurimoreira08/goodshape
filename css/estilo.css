@@ -10,6 +10,11 @@
 /* Header */
 .header {
  display: flex;
+ justify-content: space-between;
+}
+
+.header img{
+    width: 8%;
 }
 
 .div_header {
@@ -103,7 +108,7 @@ body {
  flex-direction: column;
  width: 30%;
  height: 100px;
- margin-left: 30px;
+ margin-left: 2rem;
 }
 
 .tela-add-Dicas2 {
@@ -114,7 +119,7 @@ body {
  height: 150px;
  display: flex;
  justify-content: left;
- margin-left: 30px;
+ margin-left: 2rem;
 }
 
 .crescer {
@@ -130,11 +135,11 @@ body {
  width: 200px;
  height: 100%;
  background-color: var(--cor-primaria);
- margin-right: 3rem;
  font-size: 25px;
  font-style: italic;
  border: none;
  border-radius: 22px;
+ margin-left: 2rem;
 }
 
 /* Tela de Agendamentos Cliente/Profissional */
@@ -742,10 +747,6 @@ h4 {
  border-radius: 16px;
  background-color:var(--cor-primaria);
  border-color:var(--cor-primaria);
-}
-
-.balao2 a {
-
 }
 
 .balao3 {
