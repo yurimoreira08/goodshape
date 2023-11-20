@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000/usuarios/';
+const URL = 'http://localhost:3000/clientes/';
 const tbody = document.querySelector('tbody');
 
 async function carregaUsuarios() {
