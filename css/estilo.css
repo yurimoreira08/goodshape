@@ -1877,6 +1877,17 @@ h4 {
         justify-content: space-between;
         flex-direction: column;
     }
+
+    .balao1, .balao2, .balao3, .balao4 {
+        width: 80%;
+        padding: 5%;
+        margin-left: -1.8rem;
+    }
+
+    .tabela-tela-dieta {
+        width: 90%;
+        padding: 4%;
+    }
 }
 
 @media (min-width: 480px) {
@@ -1887,13 +1898,26 @@ h4 {
     .alinhar-option-perfil-pro {
         width: 110%;
     }
+
+    .balao1, .balao2, .balao3, .balao4 {
+        width: 80%;
+        padding: 5%;
+        margin-left: -1.8rem;
+    }
+
+    .balao2 a {
+        width: 80%;
+    }
+
+    .tabela-tela-dieta {
+        width: 90%;
+        padding: 4%;
+    }
 }
 
 @media (min-width: 768px) {
-    
-
     .header img {
-        width: 10%;
+        width: 7%;
     }
 
     .alinhar-option-perfil-pro {
@@ -1919,6 +1943,15 @@ h4 {
     .video-call {
         width: 40%;
         margin-left: 25%;
+    }
+
+    .balao1, .balao2, .balao3, .balao4 {
+        width: 60%;
+        margin-left: -3.8rem;
+    }
+
+    .tabela-tela-dieta {
+        width: 150%;
     }
 }
 
