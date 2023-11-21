@@ -109,26 +109,27 @@ body a {
 }
 
 .tela-add-Dicas {
- margin-top: 2rem;
+margin-top: 2rem;
 }
 
 .tela-add-Dicas1 {
- border-radius: 20px;
+ border-radius: 22px;
  border: var(--cor-primaria);
  background-color: var(--cor-primaria);
  display: flex;
+ justify-content: left;
  flex-direction: column;
- width: 30%;
- height: 100px;
+ width: 20rem;
+ height: 10rem;
  margin-left: 2rem;
 }
 
 .tela-add-Dicas2 {
- border-radius: 30px;
+ border-radius: 22px;
  border: var(--cor-primaria);
  background-color: var(--cor-primaria);
- width: 30%;
- height: 150px;
+ width: 20rem;
+ height: 8rem;
  display: flex;
  justify-content: left;
  margin-left: 2rem;
@@ -144,14 +145,19 @@ body a {
 }
 
 .botao-add-dicas {
- width: 200px;
+ width: 100%;
  height: 100%;
  background-color: var(--cor-primaria);
- font-size: 25px;
- font-style: italic;
+ font-size: 20px;
  border: none;
- border-radius: 22px;
- margin-left: 2rem;
+ border-radius: 8px;
+ display: flex;
+}
+
+.botao-add-dicas1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
 }
 
 /* Tela de Agendamentos Cliente/Profissional */
@@ -1821,10 +1827,6 @@ h4 {
         padding: 0 0.5rem;
     }
 
-    .tela-add-Dicas {
-        width: 50%;
-    }
-
     .div-calendario {
         width: 30%;
     }
@@ -1867,18 +1869,8 @@ h4 {
         width: 140%;
     }
 
-    .tela-add-Dicas1,
-    .tela-add-Dicas2 {
-        width: 180%;
-    }
-
-    .tela-add-Dicas1,
-    .tela-add-Dicas2 {
-        width: 80%;
-    }
-
     .alinhar-option-perfil-pro {
-        width: 50%;
+        width: 110%;
     }
     .planos_main {
         display: flex;
@@ -1891,20 +1883,21 @@ h4 {
     .header img {
         width: 20%;
     }
+    
+    .alinhar-option-perfil-pro {
+        width: 110%;
+    }
 }
 
 @media (min-width: 768px) {
-    .tela-add-Dicas1,
-    .tela-add-Dicas2 {
-        width: 40%;
-    }
+    
 
     .header img {
         width: 10%;
     }
 
     .alinhar-option-perfil-pro {
-        width: 40%;
+        width: 110%;
     }
 
     .planos_main {
@@ -1921,10 +1914,6 @@ h4 {
 
     .main_verDicas {
         padding: 0 1rem;
-    }
-
-    .tela-add-Dicas1 {
-        width: 50%;
     }
 
     .video-call {
