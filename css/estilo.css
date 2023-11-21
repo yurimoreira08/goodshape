@@ -571,8 +571,11 @@ h4 {
  margin: 11px;
  width: 212px;
 }
-
 /* Tela de Chat do Cliente e Profissional */
+.body_chatCli{
+    background-color: var(--cor-primaria);
+}
+
 .h1-chatCli {
  display: flex;
  justify-content: center;
@@ -933,7 +936,6 @@ h4 {
 
 .index_main button {
     width: 250px;
-    height: 30px;
     border: 2px solid #ffffff;
     margin: 10px auto;
 }
