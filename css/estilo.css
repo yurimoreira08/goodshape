@@ -169,12 +169,13 @@ margin-top: 2rem;
 }
 
 .video-call-box {
- width: 130%;
+ width: 80%;
  height: 210px;
- padding: 20px;
+ padding: 1.5rem;
  background-color: var(--cor-primaria);
  border-radius: 22px;
  margin-left: 10%;
+ margin-top: 5rem;
 }
 
 .horario_consulta {
@@ -202,14 +203,14 @@ margin-top: 2rem;
  padding: 4% 7%;
  border: none;
  margin-left: 70%;
- margin-top: -10%;
+ margin-top: -12%;
  color: #ffffff;
 }
 
 .lista_tela_chamadas {
  width: 150%;
  font-size: 11px;
- margin-left: 5%;
+ margin-left: 70%;
 }
 
 /* Tela de Biografia */
@@ -1739,6 +1740,15 @@ h4 {
  height: 220px;
 }
 
+.btn-proximo-video {
+    width: 100px;
+    background-color: var(--cor-secundaria);
+    padding: 7%;
+    margin: 15px 0 0 15px;
+    border-radius: 12px;
+    color: var(--cor-terciaria);
+}
+
 .centralizar {
  display: flex;
  justify-content: center;
@@ -1750,7 +1760,7 @@ h4 {
 
 .descer-texto-videos {
  margin-right: 6%;
- margin-left: 3%;
+ margin-left: 8%;
 }
 
 .deixar-no-meio {
@@ -1764,11 +1774,15 @@ h4 {
  display: none;
 }
 
+.btn-prox-and-videos {
+ margin-left: 3rem;
+}
+
 .proximos-videos {
  display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
+ justify-content: left;
+ align-items: left;
+ text-align: left;
  flex-direction: column;
 }
 
@@ -1888,6 +1902,33 @@ h4 {
         width: 90%;
         padding: 4%;
     }
+
+    .video {
+        width: 19.8rem;
+        height: auto;
+    }
+
+    .proximos-videos {
+        margin-left: 3rem;
+    }
+
+    .icones {
+        padding-right: 24.3%;
+    }
+
+    .descer-texto-videos {
+        margin-right: -15%;
+        margin-left: 15%;
+    }
+
+    .video-call-box {
+        width: 150%;
+        margin-left: 12rem;
+    }
+
+    .lista_tela_chamadas {
+        margin-left: auto;
+    }
 }
 
 @media (min-width: 480px) {
@@ -1912,6 +1953,16 @@ h4 {
     .tabela-tela-dieta {
         width: 90%;
         padding: 4%;
+    }
+
+    .video-call-box {
+        width: 120%;
+        margin-left: 12rem;
+    }
+
+    .lista_tela_chamadas {
+        width: 120%;
+        margin-left: 7rem;
     }
 }
 
@@ -1953,7 +2004,17 @@ h4 {
     .tabela-tela-dieta {
         width: 150%;
     }
+
+    .video-call-box {
+        width: 110%;
+    }
+
+    .lista_tela_chamadas {
+        margin-left: 1%;
+        width: 110%;
+    }
 }
+
 
 /* Tela de Adicionar Dieta */
 .color_header{

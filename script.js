@@ -22,5 +22,5 @@ botao2.addEventListener('click', () => {
 
 //alert tela das chamadas
 function confirmCall() {
-    alert("Consulta agendada!")
+    alert("Horários confirmados!")
 }
