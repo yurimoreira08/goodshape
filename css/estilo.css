@@ -4,7 +4,7 @@
     --cor-secundaria: #021f53;
     --cor-terciaria: #fff;
     --quartenaria: #ccc;
-
+    --quintenaria: #2250a5;
 }
 
 /* Header */
@@ -379,18 +379,19 @@ body a {
     height: 100px;
 }
 
-.salvar button {
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+.salvar {
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
     padding: 1px;
     width: 84px;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-top: 14px;
 }
 
-.salvar button:hover {
-    background-color: var(--cor-secundaria);
-    border-color: var(--cor-secundaria);
+.salvar:hover {
+    background-color: var(--quintenaria);
+    border-color: var(--quintenaria);
 }
 
 h4 {
@@ -927,7 +928,8 @@ h4 {
     font-size: 100%;
     color: rgb(0, 0, 0);
     background-color: #dcd9d9;
-    padding: 8% 20%;
+    padding: 1rem;
+    border-radius: 4px;
 }
 
 .btn-cadastro:hover,
@@ -954,10 +956,11 @@ h4 {
 }
 
 .cor {
-    color: #1441d5;
+    color: var(--cor-terciaria);
     font-size: 100%;
-    background-color: #dcd9d9;
-    padding: 8% 20%;
+    background-color: var(--cor-secundaria);
+    padding: 1rem;
+    border-radius: 4px;
 }
 
 /* Tela de Login 2 */
@@ -1080,20 +1083,21 @@ h4 {
 
 .footer-cadastro-cli input {
     width: 120px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
 }
 
 .footer-cadastro-cli a button {
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
     padding: 1px;
     width: 84px;
     border-radius: 8px;
 }
 
 .footer-cadastro-cli a button:hover {
-    background-color: var(--cor-primaria);
-    border-color: var(--cor-primaria);
+    background-color: var(--quintenaria);
+    border-color: var(--quintenaria);
 }
 
 /* Tela do Perfil do Profissional */
