@@ -900,7 +900,7 @@ h4 {
 
 .btn-cadastro:hover,
 .cor:hover {
-    background-color: #b3b3b3;
+    background-color: var(--quintenaria);
 }
 
 .index_footer {
