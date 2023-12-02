@@ -352,15 +352,6 @@ body a {
 }
 
 /* Tela de Cadastro do Profissional */
-.input-cadastro-pro{
-    height: 2rem;
-    border-radius: 4px;
-}
-
-.grupo-input-cadastro-pro{
-    font-size:larger;
-}
-
 .checkbox_cadastro_pro{
     display: flex;
     flex-direction: row;
@@ -380,10 +371,13 @@ body a {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    font-size:larger;
 }
 
 .input-cadastro-cli {
     width: 17rem;
+    height: 2rem;
+    border-radius: 4px;
 }
 
 .btn-cadastro-cli {
