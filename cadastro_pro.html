@@ -5,78 +5,72 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/good.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/good.ico" type="image/x-icon"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Cadastro Good Shape</title>
 </head>
 
 <body>
-
-    <header class="cadastro-pro_header">
-        <h1>Cadastro Do Profissional</h1>
+    <header class="header">
+        <div class="div_header">
+            <h1 class="h1Biografia">Cadastro do Profissional</h1>
+        </div>
+        <img src="imagens/good.png" alt="Logo do Good Shape">
     </header>
+    <main class="main-padrao">
+      <form class="main-padrao form-cadastro-cli">
 
-    <main class="cadastro-pro_main main-padrao">
-        <span>
-            <h4 class="cadastro-pro_main-h4">Nome:</h4>
-            <input class="nome" id="nomePro" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Sobrenome:</h4>
-            <input class="sobreNome" id="sobreNomePro" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">CPF:</h4>
-            <input class="cpf" id="cpfPro" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Email profissional:</h4>
-            <input class="email" id="emailPro" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Fale sobre você (Biografia):</h4>
-            <input class="bio" id="bioPro" type="input">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Anexe seu diploma abaixo:</h4>
-            <input class="diploma" id="diplomaPro" type="file">
-        </span>
-        <span>
-            <h4 class="cadastro-pro_main-h4">Qual a sua profissão:</h4>
-            <input class="profissao" id="profissao" type="text">
-        </span>
+        <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+        <label for="nome">Nome:</label>
+        <input class="input-cadastro-cli input-cadastro-pro" type="text" id="nome" name="nome" required>
+    </div>
+    <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+        <label for="sobrenome">Sobrenome:</label>
+        <input class="input-cadastro-cli input-cadastro-pro" type="text" id="sobreNome" name="sobrenome" required>
+    </div>
+        <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+        <label for="data_aniversario">Data de Nascimento:</label>
+        <input class="input-cadastro-cli input-cadastro-pro" type="date" id="nascimento" name="data_aniversario" required>
+    </div>
+        <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+        <label for="cpf">CPF:</label>
+        <input class="input-cadastro-cli input-cadastro-pro" type="text" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" required>
+    </div>
+        <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+        <label for="telefone">Telefone:</label>
+        <input class="input-cadastro-cli input-cadastro-pro" type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX" required>
+    </div>
+        <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+        <label for="email">Email:</label>
+        <input class="input-cadastro-cli input-cadastro-pro" type="email" id="email" name="email" required>
+    </div>
+        <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+            <label for="senha">Senha:</label>
+            <input class="input-cadastro-cli input-cadastro-pro" type="text" id="senha" autocomplete="off"  required>            
+    </div>
 
-        <div class="pagamento">
-            <h4>Forma de pagamento:</h4>
-            <form>
-                <span class="pasgamento">
-                    <label for="Conta"> <h4>Conta bancária</h4> </label>
-                    <input type="radio" name="fav_language" id="Conta" value="Conta bancária">
-                    <label for="pix"> <h4>Pix</h4> </label>
-                    <input type="radio" name="fav_language" id="pix" value="Pix">
-                </span>
-            </form>
-        </div>  
-        <span class="pagar">
-            <p>Nome completo:</p>
-            <input type="text" name="" id="">
-            <p>Código do banco:</p>
-            <input type="text" name="" id="">
-            <p>Agência:</p>
-            <input type="text" name="" id="">
-            <p>Conta:</p>
-            <input type="text" name="" id="">
-        </span>
+    <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+        <label for="msg">Fale sobre você (Biografia):</label><br>
+	    <textarea id="msg" name="msg" rows="10" cols="40" style="background-color: #ccc; border-radius: 4px;"></textarea>
+    </div>
 
-        <a href="menu_pro.html"> <button class="salvar" id="salvarPro">Salvar</button>
-    </a>
-        
+    <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+        <label for="upload">Anexe seu diploma abaixo:</label>
+        <input class="input-cadastro-cli input-cadastro-pro" type="file" id="upload">
+    </div>
+
+    <div class="grupo-input-cadastro-cli grupo-input-cadastro-pro">
+        <label for="profissao">Qual sua profissão:</label>
+        <select id="profissao" name="profissao" class="input-cadastro-cli input-cadastro-pro">
+              <option value="nutricionista">Nutricionista</option>
+              <option value="personal">Personal trainer</option>
+        </select> 
+    </div>
+    
+    </form>
+    <a href="forma_pagamento.html"><button class="btn-cadastro-cli" type="submit" id="salvar">Salvar</button></a>
     </main>
-
-    <footer class="cadastro-pro_footer">
-
-    </footer>
-
-</body>
-<script src="js/account.js"></script>
-</html>
+    <script src="js/account.js"></script>
+      </body>
+    
+    </html>

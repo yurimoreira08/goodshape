@@ -352,84 +352,29 @@ body a {
 }
 
 /* Tela de Cadastro do Profissional */
-.cadastro-pro_main {
-    margin: 0 auto;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.cadastro-pro_main input {
-    width: 260px;
-    background-color: #ccc;
-    border-radius: 22px;
-}
-
-.cadastro-pro_header h1 {
-    text-align: center;
-}
-
-.cadastro-pro_main-h4 {
-    display: flex;
-}
-
-.diploma {
-    background-color: rgb(255, 255, 255);
-}
-
-.bio {
-    height: 100px;
-}
-
-.salvar {
-    background-color: var(--cor-secundaria);
-    border-color: var(--cor-secundaria);
-    color: var(--cor-terciaria);
-    padding: 1px;
-    width: 84px;
+.input-cadastro-pro{
+    height: 2rem;
     border-radius: 4px;
-    margin-top: 14px;
 }
 
-.salvar:hover {
-    background-color: var(--quintenaria);
-    border-color: var(--quintenaria);
+.grupo-input-cadastro-pro{
+    font-size:larger;
 }
 
-h4 {
-    text-align: left;
-}
-
-.pagar p {
+.checkbox_cadastro_pro{
     display: flex;
-    justify-content: left;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    font-size: larger;
 }
 
-.pagar input {
-    display: flex;
-    justify-content: left;
-    width: auto;
-    margin-right: 3.5rem;
-}
-
-.pasgamento {
-    display: flex;
-}
-
-.pasgamento input {
-    width: 20px;
-}
-
-#Conta {
-    margin: 0 1rem;
-}
-
-#pix {
-    margin: 0 1rem;
+.conta_b{
+    margin-right: 2rem;
 }
 
 /* Tela de Cadastro do Cliente */
 .form-cadastro-cli {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .grupo-input-cadastro-cli {
     display: flex;
@@ -438,7 +383,7 @@ h4 {
 }
 
 .input-cadastro-cli {
-    width: 15rem;
+    width: 17rem;
 }
 
 .btn-cadastro-cli {
@@ -1225,21 +1170,25 @@ h4 {
 
 /* Tela dos Planos */
 .planos {
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
     text-align: center;
+    margin-top: 5rem;
+}
+
+.conteudo p,
+.conteudo1 p,
+.conteudo2 p{
+    text-align: justify;
 }
 
 .planos_main {
     display: flex;
     justify-content: center;
-    margin-left: -25%;
-    margin-top: 5%;
+    flex-direction: row;
 }
 
-.basico,
-.premium,
-.familia {
-    margin-left: 19%;
-}
 
 .basico button {
     background-color: #c7d0d8;
@@ -1813,6 +1762,18 @@ h4 {
     .btn-proximo-video {
         margin-left: -20%;
     }
+
+    .planos{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .conteudo p,
+    .conteudo1 p,
+    .conteudo2 p{
+    text-align: center;
+}
 }
 
 @media (min-width: 480px) {
