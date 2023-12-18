@@ -32,6 +32,7 @@ btnSalvar.onclick = async () => {
   console.log('chamada:', chamada);
   if (chamada.status == 201) {
     alert('salvo com sucesso');
+    window.location.href = 'planos.html';
   } else {
     // tratar erro
   }
