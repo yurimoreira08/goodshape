@@ -5,7 +5,7 @@ function login() {
   
     btnLogin.addEventListener('click', async (event) => {
       try {
-        const usuario = {
+        const cliente = {
           email: email.value,
           senha: senha.value,
         };
@@ -14,11 +14,11 @@ function login() {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(usuario),
+          body: JSON.stringify(cliente),
         });
         const dados = await resposta.json();
         localStorage.setItem('token', dados.token);
-        localStorage.setItem('usuario', JSON.stringify(dados.usuario));
+        localStorage.setItem('cliente', JSON.stringify(dados.cliente));
         window.location.href = 'menu_cli.html';
       } catch (erro) {
         console.error(erro);
@@ -28,10 +28,10 @@ function login() {
   }
   
   function verificaUsuarioAutenticado() {
-    const usuarioAutenticado = localStorage.getItem('usuario')
-      ? JSON.parse(localStorage.getItem('usuario'))
+    const usuarioAutenticado = localStorage.getItem('cliente')
+      ? JSON.parse(localStorage.getItem('cliente'))
       : null;
-    const avatar = document.querySelector('#avatar');
+    // const avatar = document.querySelector('#avatar');
   
     if (usuarioAutenticado) {
       window.location.href = 'menu_cli.html';

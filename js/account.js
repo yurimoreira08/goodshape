@@ -1,5 +1,5 @@
 //CADASTRO DO CLIENTE
-const URL = 'http://localhost:3000/clientes/';
+const URL = 'http://localhost:3000/cadastro/';
 const campoNome = document.querySelector('#nome');
 const campoSobreNome = document.querySelector('#sobreNome');
 const campoNascimento = document.querySelector('#nascimento');
@@ -36,6 +36,27 @@ btnSalvar.onclick = async () => {
     // tratar erro
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // //CADASTRO DO PROFISSIONAL
 // const URLPro = 'http://localhost:3000/profissionais/';
