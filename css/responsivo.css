@@ -1,0 +1,220 @@
+/* Telas Responsivas */
+@media (max-width: 480px) {
+    .bloco_verDicas {
+        width: 90%;
+    }
+
+    .header img {
+        width: 25%;
+    }
+
+    .main_verDicas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 0.5rem;
+    }
+
+    .div-calendario {
+        width: 30%;
+    }
+
+    .div-calendario-red {
+        width: 30%;
+    }
+
+    .div-calendario-2 {
+        width: 30%;
+    }
+
+    .div-calendario {
+        width: 15%;
+    }
+
+    .div-calendario-red {
+        width: 15%;
+    }
+
+    .div-calendario-2 {
+        width: 15%;
+    }
+
+    .video-call {
+        margin-left: 0;
+        width: 70%;
+    }
+
+    .lista_tela_chamadas {
+        width: 140%;
+    }
+
+    .video-call {
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .lista_tela_chamadas {
+        width: 140%;
+    }
+
+    .alinhar-option-perfil-pro {
+        width: 110%;
+    }
+
+    .planos_main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .balao1,
+    .balao2,
+    .balao3,
+    .balao4 {
+        width: 80%;
+        padding: 5%;
+        margin-left: -1.8rem;
+    }
+
+    .tabela-tela-dieta {
+        width: 90%;
+        padding: 4%;
+    }
+
+    .video {
+        width: 19.8rem;
+        height: auto;
+    }
+
+    .proximos-videos {
+        margin-left: 3rem;
+    }
+
+    .icones {
+        padding-right: 24.3%;
+    }
+
+    .descer-texto-videos {
+        margin-right: -15%;
+        margin-left: 15%;
+    }
+
+    .video-call-box {
+        width: 150%;
+        margin-left: 12rem;
+    }
+
+    .lista_tela_chamadas {
+        margin-left: auto;
+    }
+
+    .btn-prox-and-videos {
+        margin-right: -20%;
+    }
+    
+    .btn-proximo-video {
+        margin-left: -20%;
+    }
+
+    .planos{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .conteudo p,
+    .conteudo1 p,
+    .conteudo2 p{
+    text-align: center;
+}
+}
+
+@media (min-width: 480px) {
+    .header img {
+        width: 20%;
+    }
+
+    .alinhar-option-perfil-pro {
+        width: 110%;
+    }
+
+    .balao1,
+    .balao2,
+    .balao3,
+    .balao4 {
+        width: 80%;
+        padding: 5%;
+        margin-left: -1.8rem;
+    }
+
+    .balao2 a {
+        width: 80%;
+    }
+
+    .tabela-tela-dieta {
+        width: 90%;
+        padding: 4%;
+    }
+
+    .video-call-box {
+        width: 120%;
+        margin-left: 12rem;
+    }
+
+    .lista_tela_chamadas     {
+        width: 120%;
+        margin-left: 7rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .header img {
+        width: 7%;
+    }
+
+    .alinhar-option-perfil-pro {
+        width: 110%;
+    }
+
+    .planos_main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .main_verDicas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .main_verDicas {
+        padding: 0 1rem;
+    }
+
+    .video-call {
+        width: 40%;
+        margin-left: 25%;
+    }
+
+    .balao1,
+    .balao2,
+    .balao3,
+    .balao4 {
+        width: 60%;
+        margin-left: -3.8rem;
+    }
+
+    .tabela-tela-dieta {
+        width: 150%;
+    }
+
+    .video-call-box {
+        width: 110%;
+    }
+
+    .lista_tela_chamadas {
+        margin-left: 1%;
+        width: 110%;
+    }
+}
