@@ -1,7 +1,7 @@
 ![Logo do goodshape](https://github.com/yurimoreira08/goodshape/blob/main/imagens/good.png?raw=true)
 
 
-<p align="center">
+<p align="center"> 
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
@@ -52,9 +52,19 @@ Para pessoas que sofrem de falta de tempo e necessitam perder peso de forma efic
 
 
 ## Desenvolvedores
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/128076962?v=4" width=115><br><sub>Lorrany Santos</sub>](https://github.com/Lorranyy) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/128077291?v=4" width=115><br><sub>Yuri Moreira</sub>](https://github.com/yurimoreira08) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/127348880?v=4" width=115><br><sub>Matheus Lelis</sub>](https://github.com/leliszx) |
-| :---: | :---: | :---: |
 
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Lorranyy"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/128076962?v=4" width="100px;" alt=""/><br /><sub><b>Lorrany Santos</b></sub></td>
+    <td align="center"><a href="https://github.com/yurimoreira08"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/128077291?v=4" width="100px;" alt=""/><br /><sub><b>Yuri Moreira</b></sub></td>
+    <td align="center"><a href="https://github.com/leliszx"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/127348880?v=4" width="100px;" alt=""/><br /><sub><b>Matheus Lelis</b></sub></td>
+    <td align="center"><a href="https://github.com/Moises1235"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/127400299?v=4" width="100px;" alt=""/><br /><sub><b>Moisés de Moura</b></sub></td>
+</table>
+
+<!--
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/128076962?v=4" width=115><br><sub>Lorrany Santos</sub>](https://github.com/Lorranyy) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/128077291?v=4" width=115><br><sub>Yuri Moreira</sub>](https://github.com/yurimoreira08) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/127348880?v=4" width=115><br><sub>Matheus Lelis</sub>](https://github.com/leliszx) |
+| :---: | :---: | :---: | 
+-->
 
 
 ## Restante da equipe
@@ -62,6 +72,7 @@ Para pessoas que sofrem de falta de tempo e necessitam perder peso de forma efic
   <tr>
     <td align="center"><a href="https://github.com/gustavobml"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/127344837?v=4" width="100px;" alt=""/><br /><sub><b>Gustavo Benício</b></sub></td>
     <td align="center"><a href="https://github.com/Darcigatinha123"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/127349074?v=4" width="100px;" alt=""/><br /><sub><b>Darcielle Silva</b></sub></td>
+    <td align="center"><a href="https://github.com/ErickRyanSF"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/127400109?v=4" width="100px;" alt=""/><br /><sub><b>Erick Ryan</b></sub></td>
     
 </table>
 
