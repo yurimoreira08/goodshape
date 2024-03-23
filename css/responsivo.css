@@ -135,7 +135,7 @@
     }
     
     .texto-input p{
-        margin-left: 0.5rem;
+        margin-left: 1.5rem;
     }
 
     .texto-input span{
@@ -144,19 +144,20 @@
     }
 
     .span_time input {
-        width: 117%;
+        width: 100%;
         padding: 22%;
     }
 
     .span_text input {
-        width: 127%;
+        width: 100%;
         padding: 7%;
     }
 
     .span_time{
         display: flex;
         flex-direction: column;
-        padding-right: 3rem;
+        padding-right: 2rem;
+        padding-left: 1rem;
        
     }
 
