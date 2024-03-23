@@ -1100,6 +1100,18 @@ body a {
     width: 50%;
 }
 
+.sair button{
+    background-color: red;
+    color: white;
+    border-color: #ff0000;
+    border-radius: 8px;
+    font-size: large;
+}
+
+.sair{
+    margin-top: 4rem;
+}
+
 /* Tela de Planejamento de Chamadas */
 .section-solicitar {
     display: flex;
