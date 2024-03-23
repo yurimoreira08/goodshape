@@ -126,7 +126,45 @@
     .conteudo1 p,
     .conteudo2 p{
     text-align: center;
-}
+    }
+
+
+    .parte2_adicionarDieta {
+        width: 21rem;
+        margin-right: 1rem;
+    }
+    
+    .texto-input p{
+        margin-left: 0.5rem;
+    }
+
+    .texto-input span{
+        display: inline-flex;
+        gap: 1rem;
+    }
+
+    .span_time input {
+        width: 117%;
+        padding: 22%;
+    }
+
+    .span_text input {
+        width: 127%;
+        padding: 7%;
+    }
+
+    .span_time{
+        display: flex;
+        flex-direction: column;
+        padding-right: 3rem;
+       
+    }
+
+    .span_text{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media (min-width: 480px) {
