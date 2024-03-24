@@ -1100,6 +1100,20 @@ body a {
     width: 50%;
 }
 
+.evolucao img{
+    height: 1.5rem;
+}
+
+.evolucao button{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: var(--cor-primaria);
+    border-radius: 4px;
+    padding: 0 0.5rem 0 0.5rem;
+    border-color: var(--cor-primaria);
+}
+
 .sair button{
     background-color: red;
     color: white;
