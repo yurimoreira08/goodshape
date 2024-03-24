@@ -1807,3 +1807,14 @@ h4 {
 .main_adicionarTreino h3{
     margin-top: -1rem;
 }
+
+/*Tela de novas medidas*/
+.asterisco{
+    color: orangered;
+}
+
+.organizar{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
