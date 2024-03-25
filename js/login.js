@@ -9,7 +9,7 @@ function login() {
           email: email.value,
           senha: senha.value,
         };
-        const resposta = await fetch('http://localhost:3000/login', {
+        const resposta = await fetch('http://goodshape.netlify.app/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ function login() {
         const dados = await resposta.json();
         localStorage.setItem('token', dados.token);
         localStorage.setItem('cliente', JSON.stringify(dados.cliente));
-        window.location.href = 'https://goodshape.netlify.app/login';
+        // window.location.href = 'http://goodshape.netlify.app/login';
       } catch (erro) {
         console.error(erro);
         alert('Erro ao fazer login!');
@@ -34,7 +34,7 @@ function login() {
     // const avatar = document.querySelector('#avatar');
   
     if (usuarioAutenticado) {
-      window.location.href = 'https://goodshape.netlify.app/menu_cli';
+      // window.location.href = 'http://goodshape.netlify.app/menu_cli';
     }
   }
   
