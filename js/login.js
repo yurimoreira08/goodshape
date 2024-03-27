@@ -9,7 +9,7 @@ function login() {
           email: email.value,
           senha: senha.value,
         };
-        const resposta = await fetch('http://https://back-end-live-in-shape-1.onrender.com/login', {
+        const resposta = await fetch('https://back-end-live-in-shape-1.onrender.com/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
