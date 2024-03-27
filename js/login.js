@@ -9,20 +9,22 @@ function login() {
           email: email.value,
           senha: senha.value,
         };
-        const resposta = await fetch('http://https://back-end-live-in-shape-1.onrender.com/login', {
+        console.log(cliente)
+        const resposta = await fetch('https://back-end-live-in-shape-1.onrender.com/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(cliente),
         });
+        console.log(resposta)
         const dados = await resposta.json();
         localStorage.setItem('token', dados.token);
         localStorage.setItem('cliente', JSON.stringify(dados.cliente));
-        window.location.href = 'https://goodshape.netlify.app/login';
+        window.location.href = 'https://goodshape.netlify.app/menu_cli.html';
       } catch (erro) {
+        console.log(cliente)
         console.error(erro);
-        alert('Erro ao fazer login!');
       }
     });
   }
