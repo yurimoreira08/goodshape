@@ -48,7 +48,7 @@
             <img class="calendario-perfil-cli" src="imagens/calendario-perfil-cli.jpg" alt="calendário">
         </div>
     </main>
-    <button type="button" id="btnSair">logout</button>
+    <button type="button" id="btnSair" onclick="logout()"> sair da conta</button>
 
     <footer class="footer">
         <a href="perfil_cli.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
@@ -61,14 +61,5 @@
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script>
-    function logout() {
-      const btnSair = document.querySelector('#btnSair');
-      btnSair.addEventListener('click', () => {
-        localStorage.removeItem('cliente');
-        localStorage.removeItem('token');
-        window.location.href = 'https://goodshape.netlify.app/login';
-      });
-    }
-  </script>
+<script src="js/usuarios.js"></script>
 </html>

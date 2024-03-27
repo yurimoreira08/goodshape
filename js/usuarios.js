@@ -13,12 +13,12 @@ function verificaUsuarioAutenticado() {
 }
 
 function logout() {
-  const btnSair = document.querySelector('#btnSair');
-  btnSair.addEventListener('click', () => {
+  //const btnSair = document.querySelector('#btnSair');
+  //btnSair.addEventListener('click', () => {
     localStorage.removeItem('cliente');
     localStorage.removeItem('token');
     window.location.href = 'https://goodshape.netlify.app/login';
-  });
+ // });
 }
 
 // async function carregarUsuarios() {
