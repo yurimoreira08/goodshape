@@ -1282,8 +1282,7 @@ body a {
     background-color: #999b9e;
 }
 
-.planos2_header h1,
-h4 {
+.planos2_header h1, .planos2_header h4 {
     text-align: center;
 }
 
@@ -1779,4 +1778,57 @@ h4 {
 
 .main_adicionarTreino h3{
     margin-top: -1rem;
+}
+
+.graficoMassa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#graficoMassa {
+    width: 25%;
+    margin-bottom: 5%;
+}
+
+.divisaoMedidas {
+    background-color: var(--cor-primaria);
+}
+
+.icone_perfil1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icone_foto {
+    width: 7%;
+}
+
+#sobreVC {
+    color: #999b9e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dadosPerfil {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nomeEditavel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.emailEditavel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.senhaEditavel {
+    display: flex;
+    justify-content: space-between;
 }
