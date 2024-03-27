@@ -17,7 +17,7 @@ function logout() {
   btnSair.addEventListener('click', () => {
     localStorage.removeItem('cliente');
     localStorage.removeItem('token');
-    window.location.href = 'https://goodshape.netlify.app/';
+    window.location.href = 'https://goodshape.netlify.app/login';
   });
 }
 
