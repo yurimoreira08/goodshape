@@ -27,8 +27,12 @@
         <input class="input-cadastro-cli" type="text" id="senhaLogin" name="sobrenome" required>
     </div>
   </form>
-<a href=""><button id="btnLogin" class="btn-cadastro-cli" type="submit">Entrar</button></a>
+<a href="l"><button id="btnLogin" class="btn-cadastro-cli" type="submit">Entrar</button></a>
 </main>
 </body>
-<script src="js/index.js"></script>
+  <script async type="module">
+    import login from "./js/login.js";
+    login.login();
+    login.verificaUsuarioAutenticado();
+  </script>
 </html>

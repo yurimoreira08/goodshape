@@ -1100,32 +1100,6 @@ body a {
     width: 50%;
 }
 
-.evolucao img{
-    height: 1.5rem;
-}
-
-.evolucao button{
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    background-color: var(--cor-primaria);
-    border-radius: 4px;
-    padding: 0 0.5rem 0 0.5rem;
-    border-color: var(--cor-primaria);
-}
-
-.sair button{
-    background-color: red;
-    color: white;
-    border-color: #ff0000;
-    border-radius: 8px;
-    font-size: large;
-}
-
-.sair{
-    margin-top: 4rem;
-}
-
 /* Tela de Planejamento de Chamadas */
 .section-solicitar {
     display: flex;
@@ -1715,7 +1689,6 @@ h4 {
     background: var(--cor-primaria);
     border-color: var(--cor-primaria);
     margin-bottom: 1rem;
-    padding: 0 1rem 2rem 1rem;
 }
 
 .texto-input input {
@@ -1806,15 +1779,4 @@ h4 {
 
 .main_adicionarTreino h3{
     margin-top: -1rem;
-}
-
-/*Tela de novas medidas*/
-.asterisco{
-    color: orangered;
-}
-
-.organizar{
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
 }
