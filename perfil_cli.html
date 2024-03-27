@@ -22,7 +22,7 @@
         <div class="alinhar-ion-main-perfil-cli">
             <ion-icon class="person-main-perfil-cli" name="person-circle-outline"></ion-icon>
             <div class="alinhar-main-perfil-cli">
-                <h2 class="h2-main-perifl-cli">EDUARDO SILVA</h2>
+                <h2 class="h2-main-perifl-cli">EDUARDO CUNHA</h2>
                 <a href="medidas.html">
                     <p class="p-main-perifl-cli">Editar dados</p>
                 </a>
@@ -30,7 +30,7 @@
         </div>
         <section class="section-perfil-cli">
             <div class="informacoes-perfil-cli1">
-                <p class="p-perfil-cli1">30</p> 
+                <p class="p-perfil-cli1">300</p> 
                 <p class="p-perfil-cli2">IDADE</p>
                 <p class="p-perfil-cli1">80kg</p> 
                 <p class="p-perfil-cli2">PESO</p>
@@ -48,7 +48,7 @@
             <img class="calendario-perfil-cli" src="imagens/calendario-perfil-cli.jpg" alt="calendário">
         </div>
     </main>
-    <button type="button" id="btnSair" onclick="logout()"> sair da conta</button>
+    <span class="sair" id="btnSair">Sair</span>
 
     <footer class="footer">
         <a href="perfil_cli.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
@@ -61,5 +61,11 @@
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="js/usuarios.js"></script>
+<script async type="module">
+    import usuarios from "./js/usuarios.js";
+    usuarios.verificaUsuarioAutenticado()
+    usuarios.logout();
+    usuarios.carregarUsuarios();
+  </script>
+  
 </html>
