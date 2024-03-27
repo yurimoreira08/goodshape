@@ -21,7 +21,6 @@ function login() {
         localStorage.setItem('cliente', JSON.stringify(dados.cliente));
         window.location.href = 'https://goodshape.netlify.app/login';
       } catch (erro) {
-          console.log(cliente)
         console.error(erro);
         alert('Erro ao fazer login!');
       }
