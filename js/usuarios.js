@@ -6,7 +6,7 @@ function verificaUsuarioAutenticado() {
 //   const avatar = document.querySelector('#avatar');
 
   if (!usuarioAutenticado) {
-    window.location.href = 'https://goodshape.netlify.app/';
+    window.location.href = 'https://goodshape.netlify.app/login';
   } else {
     // avatar.title = usuarioAutenticado.nome;
   }
