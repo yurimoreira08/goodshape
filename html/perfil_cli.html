@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/good.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
+    <title>PERFIL DO CLIENTE</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="div_header">       
+            <h1 class="h1Biografia">Perfil</h1>
+        </div>
+        <img src="/imagens/good.png" alt="">
+    </header> 
+    <main class="main-padrao">
+        <div class="alinhar-ion-main-perfil-cli">
+            <ion-icon class="person-main-perfil-cli" name="person-circle-outline"></ion-icon>
+            <div class="alinhar-main-perfil-cli">
+                <h2 class="h2-main-perifl-cli">EDUARDO CUNHA</h2>
+                <a href="medidas.html">
+                    <p class="p-main-perifl-cli">Editar dados</p>
+                </a>
+            </div>
+        </div>
+        <section class="section-perfil-cli">
+            <div class="informacoes-perfil-cli1">
+                <p class="p-perfil-cli1">300</p> 
+                <p class="p-perfil-cli2">IDADE</p>
+                <p class="p-perfil-cli1">80kg</p> 
+                <p class="p-perfil-cli2">PESO</p>
+             </div>
+
+            <div class="informacoes-perfil-cli2">
+                <p class="p-perfil-cli1">MASCULINO</p>
+                <p class="p-perfil-cli2">SEXO</p>
+                <p class="p-perfil-cli1">1,80m</p> 
+                <p class="p-perfil-cli2">ALTURA</p>
+            </div>
+    </section>
+        <div class="h3-img-perfil-cli">
+            <h3 class="h3-perfil-cli">Dias treinados no mês de SETEMBRO</h3>
+            <img class="calendario-perfil-cli" src="imagens/calendario-perfil-cli.jpg" alt="calendário">
+        </div>
+
+        <div class="sair">
+            <button>Sair</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="perfil_cli.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
+        <a href="dieta.html"><ion-icon name="restaurant" class="ion-footer"></ion-icon></a>
+        <a href="menu_cli.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
+        <a href="treinos.html"><ion-icon name="barbell" class="ion-footer"></ion-icon></a>
+        <a href="buscar_profissionais.html"><ion-icon name="search-outline" class="ion-footer"></ion-icon></a>
+     </footer>
+    
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script async type="module">
+    import usuarios from "./js/usuarios.js";
+    usuarios.verificaUsuarioAutenticado()
+    usuarios.logout();
+    usuarios.carregarUsuarios();
+  </script>
+  
+</html>
