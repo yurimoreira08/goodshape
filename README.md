@@ -1,4 +1,4 @@
-![Logo do goodshape](https://github.com/yurimoreira08/goodshape/blob/main/imagens/good.png?raw=true)
+![Logo do goodshape](https://github.com/yurimoreira08/goodshape/blob/main//imagens/good.png?raw=true)
 
 
 <p align="center"> 
