@@ -1100,6 +1100,18 @@ body a {
     width: 50%;
 }
 
+.sair button{
+    background-color: red;
+    color: white;
+    border-color: #ff0000;
+    border-radius: 8px;
+    font-size: large;
+}
+
+.sair{
+    margin-top: 4rem;
+}
+
 /* Tela de Planejamento de Chamadas */
 .section-solicitar {
     display: flex;
@@ -1664,12 +1676,14 @@ body a {
     background-color: #fff;
 }
 
+
 .main_adicionarDieta {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .quadroDieta {
     display: flex;
@@ -1681,6 +1695,7 @@ body a {
     margin: 1rem;
 }
 
+
 .parte2_adicionarDieta {
     border: solid;
     border-radius: 20px;
@@ -1688,7 +1703,9 @@ body a {
     background: var(--cor-primaria);
     border-color: var(--cor-primaria);
     margin-bottom: 1rem;
+    padding: 0 1rem 2rem 1rem;
 }
+
 
 .texto-input input {
     width: 40%;
@@ -1697,15 +1714,18 @@ body a {
     outline: 0;
 }
 
+
 .texto-input span {
     display: flex;
     margin-top: 1rem;
     gap: 1rem;
 }
 
+
 .texto-input {
     gap: 5rem;
 }
+
 
 .main_adicionarDieta button {
     font-size: large;
@@ -1717,6 +1737,7 @@ body a {
     color: var(--cor-terciaria);
 }
 
+
 .lado-a-lado {
     display: flex;
     flex-wrap: wrap;
@@ -1724,6 +1745,7 @@ body a {
     justify-content: center;
     margin-left: 1rem;
 }
+
 
 /*Tela de Adicionar treino*/
 .gp_exercicio{
@@ -1831,4 +1853,17 @@ body a {
 .senhaEditavel {
     display: flex;
     justify-content: space-between;
+}
+
+
+/*Tela de novas medidas*/
+.asterisco{
+    color: orangered;
+}
+
+
+.organizar{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
 }

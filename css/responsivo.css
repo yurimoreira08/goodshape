@@ -127,6 +127,49 @@
     .conteudo2 p{
     text-align: center;
 }
+
+.parte2_adicionarDieta {
+    width: 21rem;
+    margin-right: 1rem;
+}
+
+.texto-input p{
+    margin-left: 1.5rem;
+}
+
+
+.texto-input span{
+    display: inline-flex;
+    gap: 1rem;
+}
+
+
+.span_time input {
+    width: 100%;
+    padding: 20%;
+}
+
+
+.span_text input {
+    width: 100%;
+    padding: 7%;
+}
+
+
+.span_time{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    padding-left: 1rem;
+   
+}
+
+
+.span_text{
+    display: flex;
+    flex-direction: column;
+}
+
 }
 
 @media (min-width: 480px) {
@@ -165,6 +208,8 @@
         width: 120%;
         margin-left: 7rem;
     }
+
+    
 }
 
 @media (min-width: 768px) {
