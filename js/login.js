@@ -9,7 +9,6 @@ function login() {
           email: email.value,
           senha: senha.value,
         };
-        console.log(cliente)
         const resposta = await fetch('https://back-end-live-in-shape-1.onrender.com/login', {
           method: 'POST',
           headers: {
@@ -23,7 +22,6 @@ function login() {
         localStorage.setItem('cliente', JSON.stringify(dados.cliente));
         window.location.href = 'https://goodshape.netlify.app/cliente/menu_cli.html';
       } catch (erro) {
-        console.log(cliente)
         console.error(erro);
       }
     });
