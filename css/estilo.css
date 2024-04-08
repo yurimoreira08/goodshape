@@ -1867,3 +1867,13 @@ body a {
     flex-direction: row;
     gap: 3rem;
 }
+
+.imagem_evolucao {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dados_evolucao {
+    display: flex;
+    justify-content: space-around;
+}
