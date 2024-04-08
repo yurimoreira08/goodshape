@@ -6,7 +6,7 @@ function verificaUsuarioAutenticado() {
 //   const avatar = document.querySelector('#avatar');
 
   if (!usuarioAutenticado) {
-    window.location.href = 'https://goodshape.netlify.app/html/login';
+    window.location.href = 'https://goodshape.netlify.app/login';
   } else {
     // avatar.title = usuarioAutenticado.nome;
   }
@@ -17,7 +17,7 @@ function logout() {
   btnSair.addEventListener('click', () => {
     localStorage.removeItem('cliente');
     localStorage.removeItem('token');
-    window.location.href = 'https://goodshape.netlify.app/html/login';
+    window.location.href = 'https://goodshape.netlify.app/login';
  });
 }
 

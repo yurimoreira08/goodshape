@@ -21,7 +21,7 @@ function login() {
         const dados = await resposta.json();
         localStorage.setItem('token', dados.token);
         localStorage.setItem('cliente', JSON.stringify(dados.cliente));
-        window.location.href = 'https://goodshape.netlify.app/html/menu_cli.html';
+        window.location.href = 'https://goodshape.netlify.app/cliente/menu_cli.html';
       } catch (erro) {
         console.log(cliente)
         console.error(erro);
@@ -36,7 +36,7 @@ function login() {
     // const avatar = document.querySelector('#avatar');
   
     if (usuarioAutenticado) {
-      window.location.href = 'https://goodshape.netlify.app/html/menu_cli';
+      window.location.href = 'https://goodshape.netlify.app/cliente/menu_cli';
     }
   }
   

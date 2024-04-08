@@ -32,7 +32,7 @@ btnSalvar.onclick = async () => {
   console.log('chamada:', chamada);
   if (chamada.status == 201) {
     alert('salvo com sucesso');
-    window.location.href = 'https://goodshape.netlify.app/html/planos';
+    window.location.href = 'https://goodshape.netlify.app/cliente/planos';
   } else {
     // tratar erro
   }
