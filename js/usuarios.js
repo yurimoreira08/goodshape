@@ -6,19 +6,19 @@ function verificaUsuarioAutenticado() {
 //   const avatar = document.querySelector('#avatar');
 
   if (!usuarioAutenticado) {
-    window.location.href = 'https://goodshape.netlify.app/login';
+    window.location.href = 'https://goodshape.netlify.app/html/login';
   } else {
     // avatar.title = usuarioAutenticado.nome;
   }
 }
 
 function logout() {
-  //const btnSair = document.querySelector('#btnSair');
-  //btnSair.addEventListener('click', () => {
+  const btnSair = document.querySelector('#btnSair');
+  btnSair.addEventListener('click', () => {
     localStorage.removeItem('cliente');
     localStorage.removeItem('token');
-    window.location.href = 'https://goodshape.netlify.app/login';
- // });
+    window.location.href = 'https://goodshape.netlify.app/html/login';
+ });
 }
 
 // async function carregarUsuarios() {
