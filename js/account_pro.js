@@ -35,11 +35,11 @@ btnSalvarPro.onclick = async () => {
   });
 
   console.log('chamada:', chamadaPro);
-  if (chamadaPro.status == 201) {
-    alert('salvo com sucesso');
-  } else {
-    // tratar erro
-    console.log(chamadaPro.statusText)
-  }
+ if (chamadaPro.status == 201) {
+   alert('salvo com sucesso');
+   window.location.href = 'https://goodshape.netlify.app/profissional/menu_pro';
+ } else {
+   // tratar erro
+ }
 };
 
