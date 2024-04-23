@@ -20,7 +20,7 @@ async function handleSignInWithGoogle(response) {
     })
   }
   
-  import crypto from 'crypto'
+  import crypto from 'crypto' 
   
   const nonce = crypto.randomBytes(16).toString('base64') // Generate a random nonce
   const encoder = new TextEncoder()
