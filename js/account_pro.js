@@ -1,5 +1,5 @@
 //CADASTRO DO PROFISSIONAL 
-/*
+
  const URLPro = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
  const campoNomePro = document.querySelector('#nomePro');
  const campoSobreNomePro = document.querySelector('#sobreNomePro');
@@ -21,12 +21,10 @@ btnSalvarPro.onclick = async () => {
   const telefonePro = campoTelefonePro.value;
   const emailPro = campoEmailPro.value;
   const senhaPro = campoSenhaPro.value;
-  const bio = campoBio.value;
-  const diploma = campoDiploma.value;
   const profissao = campoProfissao.value;
 
 
-  const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro, bio, diploma, profissao };
+  const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro, profissao };
 
   const chamadaPro = await fetch(URLPro, {
     method: 'POST',
@@ -44,4 +42,4 @@ btnSalvarPro.onclick = async () => {
     console.log(chamadaPro.statusText)
   }
 };
-*/
+
