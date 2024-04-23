@@ -40,7 +40,8 @@ btnSalvar.onclick = async () => {
 };
 
 
-//CADASTRO DO PROFISSIONAL
+//CADASTRO DO PROFISSIONAL 
+/*
  const URLPro = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
  const campoNomePro = document.querySelector('#nomePro');
  const campoSobreNomePro = document.querySelector('#sobreNomePro');
@@ -85,3 +86,4 @@ btnSalvarPro.onclick = async () => {
     console.log(chamadaPro.statusText)
   }
 };
+*/
