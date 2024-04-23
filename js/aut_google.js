@@ -23,7 +23,7 @@ const hashedNonce = Array.from(bytes)
     .map((b) => b.toString(16).padStart(2, '0')) // Convert the hash to a hexadecimal string
     .join('')
 
- const botaoLoginGoogle = document.getElementById('botaoLoginGoogle');
+ const botaoLoginGoogle = document.getElementById('g_id_onload');
 
     botaoLoginGoogle.addEventListener('click', async () => {
       try {
