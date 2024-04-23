@@ -2,7 +2,7 @@ supabase.auth.signInWithOAuth({
     provider: 'google',
 })
 
-const { data, error } = await supabase.auth.signInWithOAuth({
+const { data, error } = supabase.auth.signInWithOAuth({
     provider: 'google',
     options: {
         queryParams: {
