@@ -1,5 +1,5 @@
 //CADASTRO DO CLIENTE
-/*
+
 const URL = 'https://back-end-live-in-shape-1.onrender.com/cadastro/';
 const campoNome = document.querySelector('#nome');
 const campoSobreNome = document.querySelector('#sobreNome');
@@ -38,7 +38,7 @@ btnSalvar.onclick = async () => {
     // tratar erro
   }
 };
-*/
+
 
 //CADASTRO DO PROFISSIONAL
  const URLPro = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
