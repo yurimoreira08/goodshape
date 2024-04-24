@@ -24,7 +24,7 @@ function login() {
       } catch (erro) {
         console.error(erro);
       }
-    });
+    }); 
   }
   
   function verificaUsuarioAutenticado() {
