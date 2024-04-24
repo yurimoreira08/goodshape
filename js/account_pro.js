@@ -1,6 +1,6 @@
 //CADASTRO DO PROFISSIONAL 
 
- const URL = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
+ const URLpro = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
  const campoNomePro = document.querySelector('#nomePro');
  const campoSobreNomePro = document.querySelector('#sobreNomePro');
  const campoNascimentoPro = document.querySelector('#nascimentoPro');
@@ -26,7 +26,7 @@ btnSalvarPro.onclick = async () => {
 
   const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro, profissao };
 
-  const chamada = await fetch(URL, {
+  const chamada = await fetch(URLpro, {
     method: 'POST',
     body: JSON.stringify(profissional),
     headers: new Headers({
