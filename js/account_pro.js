@@ -24,10 +24,10 @@ btnSalvarPro.onclick = async () => {
  const profissao = campoProfissao.value;
 
 
- const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro, profissao };
+ const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro };
 
  try {
-  const chamada = await fetch(URLpro, {
+  const chamada_pro = await fetch(URLpro, {
     method: 'POST',
     body: JSON.stringify(profissional),
     headers: new Headers({
@@ -35,7 +35,7 @@ btnSalvarPro.onclick = async () => {
     }),
   });
 
-  if (chamada && chamada.status === 201) {
+  if (chamada_pro.status == 201) {
     alert('Salvo com sucesso');
     window.location.href = 'https://goodshape.netlify.app/profissional/menu_pro';
   } else {
