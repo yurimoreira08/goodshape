@@ -1,6 +1,6 @@
 
 //CADASTRO DO PROFISSIONAL
-const URLpro = 'https://back-end-live-in-shape-1.onrender.com/cadastro/';
+const URL = 'https://back-end-live-in-shape-1.onrender.com/cadastro/';
 const campoNomePro = document.querySelector('#nomePro');
 const campoSobreNomePro = document.querySelector('#sobreNomePro');
 const campoNascimentoPro = document.querySelector('#nascimentoPro');
@@ -26,7 +26,7 @@ btnSalvarPro.onclick = async () => {
 
  const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro };
 
- const chamada_pro = await fetch(URLpro, {
+ const chamada = await fetch(URL, {
     method: 'POST',
     body: JSON.stringify(profissional),
     headers: new Headers({
@@ -34,8 +34,8 @@ btnSalvarPro.onclick = async () => {
     }),
   });
 
-  console.log('chamada:', chamada_pro);
-  if (chamada_pro.status == 201) {
+  console.log('chamada:', chamada);
+  if (chamada.status == 201) {
     alert('salvo com sucesso');
     window.location.href = 'https://goodshape.netlify.app/cliente/planos';
   } else {
