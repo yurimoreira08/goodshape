@@ -1,6 +1,6 @@
 
 //CADASTRO DO PROFISSIONAL
-const URL = 'https://back-end-live-in-shape-1.onrender.com/cadastro/';
+const URL = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
 const campoNomePro = document.querySelector('#nomePro');
 const campoSobreNomePro = document.querySelector('#sobreNomePro');
 const campoNascimentoPro = document.querySelector('#nascimentoPro');
