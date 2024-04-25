@@ -1,6 +1,4 @@
-
-//CADASTRO DO PROFISSIONAL
-const URL = 'https://back-end-live-in-shape-1.onrender.com/cadastro/';
+const URLpro = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
 const campoNomePro = document.querySelector('#nomePro');
 const campoSobreNomePro = document.querySelector('#sobreNomePro');
 const campoNascimentoPro = document.querySelector('#nascimentoPro');
@@ -14,31 +12,41 @@ const campoProfissao = document.querySelector('#profissao');
 const btnSalvarPro = document.querySelector('#salvarPro');
 
 btnSalvarPro.onclick = async () => {
- const nomePro = campoNomePro.value;
- const sobreNomePro = campoSobreNomePro.value;
- const nascimentoPro = campoNascimentoPro.value;
- const cpfPro = campoCpfPro.value;
- const telefonePro = campoTelefonePro.value;
- const emailPro = campoEmailPro.value;
- const senhaPro = campoSenhaPro.value;
- const profissao = campoProfissao.value;
+  const nomePro = campoNomePro.value;
+  const sobreNomePro = campoSobreNomePro.value;
+  const nascimentoPro = campoNascimentoPro.value;
+  const cpfPro = campoCpfPro.value;
+  const telefonePro = campoTelefonePro.value;
+  const emailPro = campoEmailPro.value;
+  const senhaPro = campoSenhaPro.value;
+  const profissao = campoProfissao.value;
 
+  // Verifica se todos os campos obrigatórios foram preenchidos
+  if (!nomePro || !sobreNomePro || !nascimentoPro || !cpfPro || !telefonePro || !emailPro || !senhaPro || !profissao) {
+    alert('Por favor, preencha todos os campos obrigatórios.');
+    return;
+  }
 
- const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro };
+  const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro, profissao };
 
- const chamada = await fetch(URL, {
-    method: 'POST',
-    body: JSON.stringify(profissional),
-    headers: new Headers({
-      'Content-Type': 'application/json',
-    }),
-  });
+  try {
+    const chamada = await fetch(URLpro, {
+      method: 'POST',
+      body: JSON.stringify(profissional),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
 
-  console.log('chamada:', chamada);
-  if (chamada.status == 201) {
-    alert('salvo com sucesso');
-    window.location.href = 'https://goodshape.netlify.app/cliente/planos';
-  } else {
-    // tratar erro
+    if (chamada && chamada.status === 201) {
+      alert('Salvo com sucesso');
+      window.location.href = 'https://goodshape.netlify.app/profissional/menu_pro';
+    } else {
+      console.error('Erro durante a requisição:', chamada.status);
+      alert('Ocorreu um erro ao salvar. Por favor, tente novamente.');
+    }
+  } catch (error) {
+    console.error('Erro durante a requisição:', error);
+    alert('Ocorreu um erro ao salvar. Por favor, tente novamente.');
   }
 };
