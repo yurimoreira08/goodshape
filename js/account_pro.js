@@ -30,7 +30,7 @@ btnSalvarPro.onclick = async () => {
   const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro, profissao };
 
   try {
-    const chamada = await fetch(URLpro, {
+    const chamadapro = await fetch(URLpro, {
       method: 'POST',
       body: JSON.stringify(profissional),
       headers: {
@@ -38,11 +38,11 @@ btnSalvarPro.onclick = async () => {
       },
     });
 
-    if (chamada && chamada.status === 201) {
+    if (chamadapro && chamadapro.status === 201) {
       alert('Salvo com sucesso');
       window.location.href = 'https://goodshape.netlify.app/profissional/menu_pro';
     } else {
-      console.error('Erro durante a requisição:', chamada.status);
+      console.error('Erro durante a requisição:', chamadapro.status);
       alert('Ocorreu um erro ao salvar. Por favor, tente novamente.');
     }
   } catch (error) {
