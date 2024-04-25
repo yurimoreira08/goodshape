@@ -1,6 +1,6 @@
 //CADASTRO DO CLIENTE
 
-const URL = 'https://back-end-live-in-shape-1.onrender.com/cadastro/';
+const URL = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
 const campoNome = document.querySelector('#nome');
 const campoSobreNome = document.querySelector('#sobreNome');
 const campoNascimento = document.querySelector('#nascimento');
