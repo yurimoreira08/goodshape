@@ -16,10 +16,10 @@ passport.use(
     async (accessToken, refreshToken, profile, done) => {
         try {
             const user = await auth.signInWithGoogle(accessToken, profile);
-            console.log('Usuário autenticado:', user);
+            alert('Usuário autenticado:', user);
             done(null, user);
         } catch (error) {
-            console.error('Erro na autenticação do Google:', error);
+            alert('Erro na autenticação do Google:', error);
             done(error);
         }
     })
