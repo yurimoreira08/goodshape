@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/imagens/good.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/responsivo.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton"></script>
     <title>Good Shape</title>
 </head>
 
@@ -23,27 +24,7 @@
         </div>
         <span>
             <a href="login2.html"><button class="btn-cadastro"><b>Cadastre-se</b></button></a>
-            <script src="https://accounts.google.com/gsi/client" async></script>
-            <div
-            id="g_id_onload"
-            data-client_id="689853966923-e0boo3ldh7n6371gsu3pl5rrq8qretck.apps.googleusercontent.com"
-            data-context="signin"
-            data-ux_mode="popup"
-            data-callback="handleSignInWithGoogle"
-            data-nonce=""
-            data-auto_select="true"
-            data-itp_support="true"
-          ></div>
-          
-          <div
-            class="g_id_signin"
-            data-type="standard"
-            data-shape="pill"
-            data-theme="outline"
-            data-text="signin_with"
-            data-size="large"
-            data-logo_alignment="left"
-          ></div>
+            <a href="/auth/google">Entrar com Google</a>            
           
             <a href="login.html"><button class="cor"><b>Entrar</b></button></a>
         </span>
