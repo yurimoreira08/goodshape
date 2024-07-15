@@ -82,6 +82,15 @@ body a {
     text-decoration: none;
 }
 
+.autenticacao a{
+    text-decoration: none;
+    color: var(--quintenaria);
+}
+
+.autenticacao a:hover{
+    color: var(--cor-secundaria);
+}
+
 .footer {
     width: 100%;
     bottom: 0rem;
