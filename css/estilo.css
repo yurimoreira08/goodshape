@@ -84,11 +84,13 @@ body a {
 
 .autenticacao a{
     text-decoration: none;
-    color: var(--quintenaria);
+    color: black;
+    font-weight: 900;
 }
 
 .autenticacao a:hover{
     color: var(--cor-secundaria);
+    background-color: var(--quartenaria);
 }
 
 .footer {
@@ -116,6 +118,18 @@ body a {
     font-size: 40px;
     color: black;
 }
+
+.autenticacao img{
+    width: 8%;
+}
+
+.autenticacao button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
 
 /* Tela de Adicionar Dicas */
 .h1-adicionar-dicas {
