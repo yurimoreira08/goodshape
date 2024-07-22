@@ -1900,3 +1900,95 @@ body a {
     display: flex;
     justify-content: space-around;
 }
+
+.fundo {
+    background-color: #33a483;
+}
+
+.confirmacao_consulta {
+    font-size: 18rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 10rem;
+}
+
+.confirm_consulta_txt {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.data_hora {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+.confirm_consulta_txt h1, h4 {
+    font-style: oblique;
+}
+
+.botao_confirmar_consulta {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    border-radius: 4px;
+}
+
+.botao_consulta {
+    width: 14rem;
+    height: 2.5rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #33a483;
+    font-size: 1.5rem;
+    border-color: white;
+    background-color: white;
+}
+
+.header_selecao {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.botoes_profissionais {
+    display: flex;
+    justify-content: center;
+}
+
+.icone_maca {
+    width: 10rem;
+}
+
+.icone_peso {
+    width: 9rem;
+    margin-left: 4rem;
+}
+
+.botoes_agrupados {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #33a483;
+}
+
+.botao_personal {
+    margin-left: 8rem;
+}
+
+.botoes_selecao-lados {
+    display: flex;
+    justify-content: center;
+}
+
+.fundo_botoes_selecao {
+    background: none;
+    border: none;
+}
