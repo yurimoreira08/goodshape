@@ -1992,3 +1992,53 @@ body a {
     background: none;
     border: none;
 }
+
+/*Nutris disponiveis*/
+
+.dani img{
+    height: 5rem;
+    margin-left: 1rem;
+}
+
+.estrelas img{
+    height: 4rem;
+    margin-left: 0rem;
+}
+
+.p1{
+    font-weight: 700;
+    font-size: large;
+}
+
+.p2{
+    font-size: medium;
+    margin-top: 0.5rem;
+}
+
+.parenteses{
+    font-size: small;
+}
+
+.dani{
+    display: flex;
+    justify-content: left;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    gap: 1rem;
+    margin: 1rem 30rem;
+    padding: 1rem 0 0 0;
+    color: black;
+}
+
+.alinhamento{
+    display: flex;
+    flex-direction: column;
+    line-height: 0%;
+}
+
+.estrelas{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -1.5rem;
+}
