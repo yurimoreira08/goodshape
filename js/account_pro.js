@@ -12,24 +12,24 @@ const campoProfissao = document.querySelector('#profissao');
 const btnSalvarPro = document.querySelector('#salvarPro');
 
 btnSalvarPro.onclick = async () => {
-  const nome = campoNomePro.value;
-  const sobreNome = campoSobreNomePro.value;
-  const nascimento = campoNascimentoPro.value;
-  const cpf = campoCpfPro.value;
-  const telefone = campoTelefonePro.value;
-  const email = campoEmailPro.value;
-  const senha = campoSenhaPro.value;
+  const nomePro = campoNomePro.value;
+  const sobreNomePro = campoSobreNomePro.value;
+  const nascimentoPro = campoNascimentoPro.value;
+  const cpfPro = campoCpfPro.value;
+  const telefonePro = campoTelefonePro.value;
+  const emailPro = campoEmailPro.value;
+  const senhaPro = campoSenhaPro.value;
   const bio = campoBio.value;
-  const diploma = campoDiploma.value; // Considerar a maneira correta de lidar com arquivos
+  const diploma = campoDiploma.files[0] ? await toBase64(campoDiploma.files[0]) : null; // Convertendo para base64
   const profissao = campoProfissao.value;
 
   // Verifica se todos os campos obrigatórios foram preenchidos
-  if (!nome || !sobreNome || !nascimento || !cpf || !telefone || !email || !senha || !profissao) {
+  if (!nomePro || !sobreNomePro || !nascimentoPro || !cpfPro || !telefonePro || !emailPro || !senhaPro || !profissao) {
     alert('Por favor, preencha todos os campos obrigatórios.');
     return;
   }
 
-  const profissional = { nome, sobreNome, nascimento, cpf, telefone, email, senha, profissao, bio, diploma };
+  const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro, bio, diploma, profissao };
 
   try {
     const chamadapro = await fetch(URLpro, {
@@ -52,3 +52,13 @@ btnSalvarPro.onclick = async () => {
     alert('Ocorreu um erro ao salvar. Por favor, tente novamente.');
   }
 };
+
+// Função para converter arquivo em base64
+function toBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
+}
