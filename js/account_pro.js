@@ -22,6 +22,7 @@ btnSalvarPro.onclick = async () => {
   const senhaPro = campoSenhaPro.value;
 
   const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro };
+  console.log("profissional" + profissional)
 
   try {
     const chamadapro = await fetch(URL, {
