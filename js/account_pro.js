@@ -1,4 +1,4 @@
-const URLpro = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/ ';
+const URLpro = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
 const campoNomePro = document.querySelector('#nomePro');
 const campoSobreNomePro = document.querySelector('#sobreNomePro');
 const campoNascimentoPro = document.querySelector('#nascimentoPro');
@@ -12,22 +12,24 @@ const campoProfissao = document.querySelector('#profissao');
 const btnSalvarPro = document.querySelector('#salvarPro');
 
 btnSalvarPro.onclick = async () => {
-  const nomePro = campoNomePro.value;
-  const sobreNomePro = campoSobreNomePro.value;
-  const nascimentoPro = campoNascimentoPro.value;
-  const cpfPro = campoCpfPro.value;
-  const telefonePro = campoTelefonePro.value;
-  const emailPro = campoEmailPro.value;
-  const senhaPro = campoSenhaPro.value;
+  const nome = campoNomePro.value;
+  const sobreNome = campoSobreNomePro.value;
+  const nascimento = campoNascimentoPro.value;
+  const cpf = campoCpfPro.value;
+  const telefone = campoTelefonePro.value;
+  const email = campoEmailPro.value;
+  const senha = campoSenhaPro.value;
+  const bio = campoBio.value;
+  const diploma = campoDiploma.value; // Considerar a maneira correta de lidar com arquivos
   const profissao = campoProfissao.value;
 
   // Verifica se todos os campos obrigatórios foram preenchidos
-  if (!nomePro || !sobreNomePro || !nascimentoPro || !cpfPro || !telefonePro || !emailPro || !senhaPro || !profissao) {
+  if (!nome || !sobreNome || !nascimento || !cpf || !telefone || !email || !senha || !profissao) {
     alert('Por favor, preencha todos os campos obrigatórios.');
     return;
   }
 
-  const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro, profissao };
+  const profissional = { nome, sobreNome, nascimento, cpf, telefone, email, senha, profissao, bio, diploma };
 
   try {
     const chamadapro = await fetch(URLpro, {
