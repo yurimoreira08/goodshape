@@ -6,21 +6,22 @@ const campoCpfPro = document.querySelector('#cpfPro');
 const campoTelefonePro = document.querySelector('#telefonePro');
 const campoEmailPro = document.querySelector('#emailPro');
 const campoSenhaPro = document.querySelector('#senhaPro');
-const campoBio = document.querySelector('#bioPro');
-const campoDiploma = document.querySelector('#diplomaPro');
-const campoProfissao = document.querySelector('#profissao');
+// Removido campos não utilizados
+// const campoBio = document.querySelector('#bioPro');
+// const campoDiploma = document.querySelector('#diplomaPro');
+// const campoProfissao = document.querySelector('#profissao');
 const btnSalvarPro = document.querySelector('#salvarPro');
 
 btnSalvarPro.onclick = async () => {
-  const nome = campoNomePro.value;
-  const sobreNome = campoSobreNomePro.value;
-  const nascimento = campoNascimentoPro.value;
-  const cpf = campoCpfPro.value;
-  const telefone = campoTelefonePro.value;
-  const email = campoEmailPro.value;
-  const senha = campoSenhaPro.value;
+  const nomePro = campoNomePro.value;
+  const sobreNomePro = campoSobreNomePro.value;
+  const nascimentoPro = campoNascimentoPro.value;
+  const cpfPro = campoCpfPro.value;
+  const telefonePro = campoTelefonePro.value;
+  const emailPro = campoEmailPro.value;
+  const senhaPro = campoSenhaPro.value;
 
-  const profissional = { nome, sobreNome, nascimento, cpf, telefone, email, senha};
+  const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro };
 
   try {
     const chamadapro = await fetch(URL, {
@@ -31,7 +32,7 @@ btnSalvarPro.onclick = async () => {
       },
     });
 
-    if (chamadapro && chamadapro.status === 201) {
+    if (chamadapro.status === 201) {
       alert('Salvo com sucesso');
       window.location.href = 'https://goodshape.netlify.app/profissional/menu_pro';
     } else {
