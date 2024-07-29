@@ -5,37 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="/imagens/good.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/responsivo.css">
     <title>Meus Agendamentos</title>
-    <script async src="script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Cor de fundo clara */
+        }
+        .header {
+            background-color: #ffffff; /* Cor branca */
+            color: #333; /* Texto escuro */
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            border-bottom: 1px solid #e0e0e0; /* Linha inferior clara */
+        }
+        .header img {
+            max-width: 150px;
+            margin: 10px 0;
+        }
+        .main {
+            padding: 20px;
+            margin-top: 60px; /* Ajuste para não ficar atrás do header */
+        }
+        .agendamentos-container {
+            height: calc(100vh - 120px); /* Ajusta altura para o restante da tela */
+            overflow: hidden;
+            position: relative;
+            background-color: #ffffff; /* Cor de fundo branca */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra clara */
+            padding: 10px;
+        }
+        .agendamentos-inner {
+            height: 100%;
+            overflow-y: auto; /* Permite rolagem vertical */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .video-call-box {
+            background: #ffffff;
+            border: 1px solid #e0e0e0; /* Borda clara */
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background 0.3s ease;
+        }
+        .video-call-box:hover {
+            background: #f1f1f1; /* Cor de fundo ao passar o mouse */
+        }
+        .video-call-button {
+            background-color: #4CAF50; /* Verde padrão */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        .video-call-button:hover {
+            background-color: #45a049; /* Verde mais escuro */
+        }
+        .footer {
+            background-color: #ffffff; /* Cor branca */
+            color: #333; /* Texto escuro */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #e0e0e0; /* Linha superior clara */
+        }
+        .footer a {
+            color: #333;
+            text-decoration: none;
+        }
+        .footer ion-icon {
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
-        <div class="div_header">
-            <a href="solicitar_chamadas_cli.html"><button>
-                <ion-icon name="arrow-back-outline" class="ion_voltar"></ion-icon>
-            </button></a>
+        <div>
+            <a href="solicitar_chamadas_cli.html">
+                <button>
+                    <ion-icon name="arrow-back-outline" class="ion_voltar"></ion-icon>
+                </button>
+            </a>
             <h1>Meus Agendamentos</h1>
         </div>
         <img src="/imagens/good.png" alt="">
     </header> 
     
-    <main class="video-call main-padrao">
-        <div class="video-call-box">
-            <h3 class="consulta">Consulta</ion-icon></h3>
-            <h5 class="horario_consulta"><ion-icon name="time-outline" class="timer"></ion-icon>01/11/2023, ínicio ás 09:00</h5>
-            <h5 class="horario_consulta"><ion-icon name="person-circle-outline" class="timer"></ion-icon>Nutricionista</h5>
-            <div class="profissional_consulta">
-                <h5>Profissional</h5><p class="nome_profissional">: Danielle Silva</p>
+    <main class="main">
+        <div class="agendamentos-container">
+            <div class="agendamentos-inner" id="agendamentos-container">
+                <!-- Agendamentos serão inseridos aqui via JavaScript -->
             </div>
-
-            <a href="chamadas_cli.html"><button class="video-call-button">ATENDER</button></a>
         </div>
-        <ul class="lista_tela_chamadas">
-            <li class="lista_chamadas">Apenas no dia e horário combinado, será possível ATENDER a vídeo chamada</li>
-        </ul>
     </main>
 
     <footer class="footer">
@@ -44,8 +126,76 @@
         <a href="menu_cli.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
         <a href="treinos.html"><ion-icon name="barbell" class="ion-footer"></ion-icon></a>
         <a href="buscar_profissionais.html"><ion-icon name="search-outline" class="ion-footer"></ion-icon></a>
-     </footer>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const agendamentosContainer = document.getElementById('agendamentos-container');
+            const agendamentos = JSON.parse(localStorage.getItem('agendamentos')) || [];
+
+            if (agendamentos.length === 0) {
+                agendamentosContainer.innerHTML = '<p>Nenhum agendamento encontrado.</p>';
+                return;
+            }
+
+            agendamentos.forEach(agendamento => {
+                const div = document.createElement('div');
+                div.className = 'video-call-box';
+                div.innerHTML = `
+                    <h3 class="consulta">Consulta</h3>
+                    <h5 class="horario_consulta"><ion-icon name="time-outline" class="timer"></ion-icon>${agendamento.date}, início às ${agendamento.time}</h5>
+                    <h5 class="horario_consulta"><ion-icon name="person-circle-outline" class="timer"></ion-icon>Nutricionista</h5>
+                    <div class="profissional_consulta">
+                        <h5>Profissional</h5><p class="nome_profissional">: ${agendamento.professional}</p>
+                    </div>
+                    <a href="chamadas_cli.html" class="video-call-button">ATENDER</a>
+                `;
+                agendamentosContainer.appendChild(div);
+            });
+
+            // Touch and mouse support for scrolling
+            const container = document.querySelector('.agendamentos-inner');
+
+            let startY;
+            let scrollTop;
+
+            container.addEventListener('mousedown', (e) => {
+                startY = e.pageY - container.offsetTop;
+                scrollTop = container.scrollTop;
+                container.style.cursor = 'grabbing';
+                e.preventDefault();
+            });
+
+            container.addEventListener('mousemove', (e) => {
+                if (startY !== undefined) {
+                    const y = e.pageY - container.offsetTop;
+                    container.scrollTop = scrollTop - (y - startY);
+                }
+            });
+
+            container.addEventListener('mouseup', () => {
+                startY = undefined;
+                container.style.cursor = 'grab';
+            });
+
+            container.addEventListener('mouseleave', () => {
+                startY = undefined;
+                container.style.cursor = 'grab';
+            });
+
+            container.addEventListener('touchstart', (e) => {
+                startY = e.touches[0].pageY - container.offsetTop;
+                scrollTop = container.scrollTop;
+            });
+
+            container.addEventListener('touchmove', (e) => {
+                const y = e.touches[0].pageY - container.offsetTop;
+                container.scrollTop = scrollTop - (y - startY);
+            });
+        });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
