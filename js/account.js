@@ -20,7 +20,7 @@ btnSalvar.onclick = async () => {
   const email = campoEmail.value;
   const senha = campoSenha.value;
 
-  const cliente = { nome, sobreNome, cpf, telefone, email, senha };
+  const cliente = { nome, sobreNome, nascimento, cpf, telefone, email, senha };
 
   const chamada = await fetch(URL, {
     method: 'POST',
