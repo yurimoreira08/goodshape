@@ -1967,8 +1967,7 @@ body a {
 }
 
 .icone_peso {
-    width: 9rem;
-    margin-left: 4rem;
+    width: 10.3rem;
 }
 
 .botoes_agrupados {
@@ -1979,10 +1978,6 @@ body a {
     color: #33a483;
 }
 
-.botao_personal {
-    margin-left: 8rem;
-}
-
 .botoes_selecao-lados {
     display: flex;
     justify-content: center;
@@ -1990,7 +1985,15 @@ body a {
 
 .fundo_botoes_selecao {
     background: none;
-    border: none;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 0.15rem;
+    border-color: black;
+    margin: 0.5rem;
+}
+
+.botao_personal {
+    margin-left: 5rem;
 }
 
 /*Nutris disponiveis*/
@@ -2041,4 +2044,92 @@ body a {
     align-items: center;
     gap: 0.5rem;
     margin-top: -1.5rem;
+}
+
+.body_quebrado {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Cor de fundo clara */
+}
+.header_quebrado {
+    background-color: #ffffff; /* Cor branca */
+    color: #333; /* Texto escuro */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid #e0e0e0; /* Linha inferior clara */
+}
+.header_quebrado img {
+    max-width: 150px;
+    margin: 10px 0;
+}
+.main_quebrado {
+    padding: 20px;
+    margin-top: 60px; /* Ajuste para não ficar atrás do header */
+}
+.agendamentos-container_quebrado {
+    height: calc(100vh - 120px); /* Ajusta altura para o restante da tela */
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff; /* Cor de fundo branca */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra clara */
+    padding: 10px;
+}
+.agendamentos-inner_quebrado {
+    height: 100%;
+    overflow-y: auto; /* Permite rolagem vertical */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.video-call-box_quebrado {
+    background: #ffffff;
+    border: 1px solid #e0e0e0; /* Borda clara */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+}
+.video-call-box_quebrado:hover {
+    background: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+.video-call-button_quebrado {
+    background-color: #4CAF50; /* Verde padrão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.video-call-button_quebrado:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}
+.footer_quebrado {
+    background-color: #ffffff; /* Cor branca */
+    color: #333; /* Texto escuro */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #e0e0e0; /* Linha superior clara */
+}
+.footer_quebrado a {
+    color: #333;
+    text-decoration: none;
+}
+.footer_quebrado ion-icon {
+    font-size: 24px;
 }
