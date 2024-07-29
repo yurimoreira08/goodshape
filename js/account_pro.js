@@ -22,7 +22,7 @@ btnSalvarPro.onclick = async () => {
   const senhaPro = campoSenhaPro.value;
 
   const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro };
-  console.log("profissional" , profissional)
+  
 
   try {
     const chamadapro = await fetch(URLPro, {
@@ -32,6 +32,7 @@ btnSalvarPro.onclick = async () => {
         'Content-Type': 'application/json',
       },
     });
+    console.log("profissional" , profissional)
       console.log("chamada:" , chamadapro)
     if (chamadapro.status == 201) {
       alert('Salvo com sucesso');
