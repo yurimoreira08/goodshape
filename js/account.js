@@ -29,6 +29,7 @@ btnSalvar.onclick = async () => {
   });
 
   console.log('chamada:', chamada);
+  console.log("cliente" , cliente)
   if (chamada.status == 201) {
     alert('salvo com sucesso');
     window.location.href = 'https://goodshape.netlify.app/cliente/planos';
