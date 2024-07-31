@@ -2134,6 +2134,78 @@ body a {
     font-size: 24px;
 }
 
+.topo_img_pro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .imagem_pro {
     width: 10rem;
+    border-radius: 10rem;
+}
+
+.cep {
+    color: #616264;
+    margin-top: -1rem;
+}
+
+.estrelas_classificacao {
+    display: flex;
+    justify-content: center;
+}
+
+.cor_amarela {
+    color: yellow;
+}
+
+.chamada {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.centralizar_desc {
+    display: flex;
+    justify-content: center;
+}
+
+.descricao_pro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    text-align: left;
+}
+
+.desc {
+    margin-top: -1rem;
+}
+
+.disponibilidade_horarios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horas_possiveis {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.horas_possiveis h2 {
+    background-color: var(--cor-primaria);
+    border-radius: 12px;
+    width: 4rem;
+}
+
+.selecioar_horarios {
+    width: 6rem;
+    margin: auto;
 }
