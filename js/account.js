@@ -1,5 +1,3 @@
-//CADASTRO DO CLIENTE
-
 const URL = 'https://back-end-live-in-shape-1.onrender.com/cadastro/';
 const campoNome = document.querySelector('#nome');
 const campoSobreNome = document.querySelector('#sobreNome');
@@ -31,6 +29,7 @@ btnSalvar.onclick = async () => {
   });
 
   console.log('chamada:', chamada);
+  console.log("cliente" , cliente)
   if (chamada.status == 201) {
     alert('salvo com sucesso');
     window.location.href = 'https://goodshape.netlify.app/cliente/planos';

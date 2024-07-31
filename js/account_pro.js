@@ -28,9 +28,9 @@ btnSalvarPro.onclick = async () => {
     const chamadapro = await fetch(URLPro, {
       method: 'POST',
       body: JSON.stringify(profissional),
-      headers: {
+      headers: new Headers({
         'Content-Type': 'application/json',
-      },
+      }),
     });
     console.log("profissional" , profissional)
       console.log("chamada:" , chamadapro)
