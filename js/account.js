@@ -17,8 +17,9 @@ btnSalvar.onclick = async () => {
   const telefone = campoTelefone.value;
   const email = campoEmail.value;
   const senha = campoSenha.value;
+  const tipo = 'cliente';
 
-  const cliente = { nome, sobreNome, nascimento, cpf, telefone, email, senha };
+  const cliente = { nome, sobreNome, nascimento, cpf, telefone, email, senha, tipo };
 
   const chamada = await fetch(URL, {
     method: 'POST',

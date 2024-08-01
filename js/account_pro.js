@@ -1,4 +1,4 @@
-const URLPro = 'https://back-end-live-in-shape-1.onrender.com/cadastro_pro/';
+const URLPro = 'https://back-end-live-in-shape-1.onrender.com/cadastro/';
 const campoNomePro = document.querySelector('#nomePro');
 const campoSobreNomePro = document.querySelector('#sobreNomePro');
 const campoNascimentoPro = document.querySelector('#nascimentoPro');
@@ -13,15 +13,16 @@ const campoSenhaPro = document.querySelector('#senhaPro');
 const btnSalvarPro = document.querySelector('#salvarPro');
 
 btnSalvarPro.onclick = async () => {
-  const nomePro = campoNomePro.value;
-  const sobreNomePro = campoSobreNomePro.value;
-  const nascimentoPro = campoNascimentoPro.value;
-  const cpfPro = campoCpfPro.value;
-  const telefonePro = campoTelefonePro.value;
-  const emailPro = campoEmailPro.value;
-  const senhaPro = campoSenhaPro.value;
+  const nome = campoNomePro.value;
+  const sobreNome = campoSobreNomePro.value;
+  const nascimento = campoNascimentoPro.value;
+  const cpf = campoCpfPro.value;
+  const telefone = campoTelefonePro.value;
+  const email = campoEmailPro.value;
+  const senha = campoSenhaPro.value;
+  const tipo = 'profissional';
 
-  const profissional = { nomePro, sobreNomePro, nascimentoPro, cpfPro, telefonePro, emailPro, senhaPro };
+  const profissional = { nome, sobreNome, nascimento, cpf, telefone, email, senha, tipo };
   
 
   try {
