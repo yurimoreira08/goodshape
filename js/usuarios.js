@@ -1,25 +1,36 @@
-const usuarioAutenticado = localStorage.getItem('cliente')
-  ? JSON.parse(localStorage.getItem('cliente'))
-  : null;
-
 function verificaUsuarioAutenticado() {
-//   const avatar = document.querySelector('#avatar');
-
+  const usuarioAutenticado = localStorage.getItem('usuario')
+    ? JSON.parse(localStorage.getItem('usuario'))
+    : null;
+  
   if (!usuarioAutenticado) {
     window.location.href = 'https://goodshape.netlify.app/login';
   } else {
-    // avatar.title = usuarioAutenticado.nome;
+    // Opcional: atualizar UI com base no usuário
+    // const avatar = document.querySelector('#avatar');
+    // if (avatar) {
+    //   avatar.title = usuarioAutenticado.nome;
+    // }
   }
 }
 
+
 function logout() {
   const btnSair = document.querySelector('#btnSair');
-  btnSair.addEventListener('click', () => {
-    localStorage.removeItem('cliente');
-    localStorage.removeItem('token');
-    window.location.href = 'https://goodshape.netlify.app/login';
- });
+  
+  if (btnSair) {
+    btnSair.addEventListener('click', () => {
+      // Remover itens do localStorage
+      localStorage.removeItem('usuario');
+      localStorage.removeItem('token');
+      localStorage.removeItem('tipo'); // Opcional, se você estiver armazenando o tipo de usuário separadamente
+
+      // Redirecionar para a página de login
+      window.location.href = 'https://goodshape.netlify.app/login';
+    });
+  }
 }
+
 
 // async function carregarUsuarios() {
 //   if (!usuarioAutenticado) {
