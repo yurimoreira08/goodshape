@@ -1,41 +1,53 @@
 function login() {
-    const email = document.querySelector('#emailLogin');
-    const senha = document.querySelector('#senhaLogin');
-    const btnLogin = document.querySelector('#btnLogin');
-  
-    btnLogin.addEventListener('click', async (event) => {
-      try {
-        const cliente = {
-          email: email.value,
-          senha: senha.value,
-        };
-        const resposta = await fetch('https://back-end-live-in-shape-1.onrender.com/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(cliente),
-        });
-        console.log(resposta)
-        const dados = await resposta.json();
-        localStorage.setItem('token', dados.token);
-        localStorage.setItem('cliente', JSON.stringify(dados.cliente));
+  const email = document.querySelector('#emailLogin');
+  const senha = document.querySelector('#senhaLogin');
+  const btnLogin = document.querySelector('#btnLogin');
+
+  btnLogin.addEventListener('click', async (event) => {
+    try {
+      const cliente = {
+        email: email.value,
+        senha: senha.value,
+      };
+      const resposta = await fetch('https://back-end-live-in-shape-1.onrender.com/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(cliente),
+      });
+      const dados = await resposta.json();
+      localStorage.setItem('token', dados.token);
+      localStorage.setItem('usuario', JSON.stringify(dados.usuario));
+      localStorage.setItem('tipo', dados.tipo);
+
+      // Redirecione com base no tipo de usuário
+      if (dados.tipo === 'cliente') {
         window.location.href = 'https://goodshape.netlify.app/cliente/menu_cli.html';
-      } catch (erro) {
-        console.error(erro);
+      } else if (dados.tipo === 'profissional') {
+        window.location.href = 'https://goodshape.netlify.app/profissional/menu_pro.html';
+      } else {
+        console.error('Tipo de usuário desconhecido');
       }
-    }); 
-  }
-  
-  function verificaUsuarioAutenticado() {
-    const usuarioAutenticado = localStorage.getItem('cliente')
-      ? JSON.parse(localStorage.getItem('cliente'))
-      : null;
-    // const avatar = document.querySelector('#avatar');
-  
-    if (usuarioAutenticado) {
-      window.location.href = 'https://goodshape.netlify.app/cliente/menu_cli';
+    } catch (erro) {
+      console.error(erro);
+    }
+  }); 
+}
+
+function verificaUsuarioAutenticado() {
+  const usuarioAutenticado = localStorage.getItem('usuario')
+    ? JSON.parse(localStorage.getItem('usuario'))
+    : null;
+
+  if (usuarioAutenticado) {
+    const tipo = localStorage.getItem('tipo');
+    if (tipo === 'cliente') {
+      window.location.href = 'https://goodshape.netlify.app/cliente/menu_cli.html';
+    } else if (tipo === 'profissional') {
+      window.location.href = 'https://goodshape.netlify.app/profissional/menu_pro.html';
     }
   }
-  
-  export default { login, verificaUsuarioAutenticado };
+}
+
+export default { login, verificaUsuarioAutenticado };
