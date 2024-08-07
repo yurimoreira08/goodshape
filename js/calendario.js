@@ -66,16 +66,35 @@ document.addEventListener('DOMContentLoaded', function() {
             input.checked = times[input.id] || false;
         });
     }
+    
+   // Save selected times for the selected day
+function saveSelectedTimes() {
+    const times = {};
+    document.querySelectorAll('.time-slot input').forEach(input => {
+        times[input.id] = input.checked;
+    });
+    const timeSlots = JSON.stringify(times);
+    const day = selectedDay.textContent;
 
-    // Save selected times for the selected day
-    function saveSelectedTimes() {
-        const times = {};
-        document.querySelectorAll('.time-slot input').forEach(input => {
-            times[input.id] = input.checked;
-        });
-        selectedDay.setAttribute('data-times', JSON.stringify(times));
-        updateDayAvailability();
-    }
+    selectedDay.setAttribute('data-times', timeSlots);
+    updateDayAvailability();
+
+    // Send data to API
+    fetch('/availability', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            day: new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + day,
+            timeSlots: times
+        })
+    }).then(response => response.json())
+      .then(data => console.log('Success:', data))
+      .catch((error) => {
+          console.error('Error:', error);
+      });
+}
 
     // Update day availability based on selected times
     function updateDayAvailability() {
