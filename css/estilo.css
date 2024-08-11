@@ -82,13 +82,13 @@ body a {
     text-decoration: none;
 }
 
-.autenticacao a{
+.autenticacao a {
     text-decoration: none;
     color: black;
     font-weight: 900;
 }
 
-.autenticacao a:hover{
+.autenticacao a:hover {
     color: var(--cor-secundaria);
     background-color: var(--quartenaria);
 }
@@ -119,11 +119,11 @@ body a {
     color: black;
 }
 
-.autenticacao img{
+.autenticacao img {
     width: 8%;
 }
 
-.autenticacao button{
+.autenticacao button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -394,14 +394,14 @@ body a {
 }
 
 /* Tela de Cadastro do Profissional */
-.checkbox_cadastro_pro{
+.checkbox_cadastro_pro {
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
     font-size: larger;
 }
 
-.conta_b{
+.conta_b {
     margin-right: 2rem;
 }
 
@@ -409,11 +409,12 @@ body a {
 .form-cadastro-cli {
     margin-top: 1rem;
 }
+
 .grupo-input-cadastro-cli {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
-    font-size:larger;
+    font-size: larger;
 }
 
 .input-cadastro-cli {
@@ -1123,7 +1124,7 @@ body a {
     width: 50%;
 }
 
-.sair button{
+.sair button {
     background-color: red;
     color: white;
     border-color: #ff0000;
@@ -1131,7 +1132,7 @@ body a {
     font-size: large;
 }
 
-.sair{
+.sair {
     margin-top: 4rem;
 }
 
@@ -1227,7 +1228,7 @@ body a {
 
 .conteudo p,
 .conteudo1 p,
-.conteudo2 p{
+.conteudo2 p {
     text-align: justify;
 }
 
@@ -1317,7 +1318,8 @@ body a {
     background-color: #999b9e;
 }
 
-.planos2_header h1, .planos2_header h4 {
+.planos2_header h1,
+.planos2_header h4 {
     text-align: center;
 }
 
@@ -1771,14 +1773,14 @@ body a {
 
 
 /*Tela de Adicionar treino*/
-.gp_exercicio{
+.gp_exercicio {
     display: flex;
     flex-direction: column;
     font-weight: bold;
     font-size: large;
 }
 
-.gp_exercicio input{
+.gp_exercicio input {
     border-radius: 20px;
     margin-bottom: 1rem;
     gap: 0.7rem;
@@ -1786,32 +1788,32 @@ body a {
     outline: 0;
 }
 
-.e_treino input{
+.e_treino input {
     width: 13rem;
     height: 2rem;
 }
 
-.sr_treino input{
+.sr_treino input {
     width: 5rem;
     height: 2rem;
 }
 
-.esr_treinos{
+.esr_treinos {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-#musculos{
+#musculos {
     background-color: var(--cor-terciaria);
     height: 2rem;
     width: 6rem;
     border-radius: 20px;
-    border:none;
-    
+    border: none;
+
 }
 
-.montarTreino{
+.montarTreino {
     background-color: var(--cor-primaria);
     border-radius: 8px;
     padding-left: 1rem;
@@ -1821,7 +1823,7 @@ body a {
     margin-bottom: 1rem;
 }
 
-.main_adicionarTreino h3{
+.main_adicionarTreino h3 {
     margin-top: -1rem;
 }
 
@@ -1880,12 +1882,12 @@ body a {
 
 
 /*Tela de novas medidas*/
-.asterisco{
+.asterisco {
     color: orangered;
 }
 
 
-.organizar{
+.organizar {
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -1927,7 +1929,8 @@ body a {
     margin-bottom: 2rem;
 }
 
-.confirm_consulta_txt h1, h4 {
+.confirm_consulta_txt h1,
+h4 {
     font-style: oblique;
 }
 
@@ -1998,31 +2001,31 @@ body a {
 
 /*Nutris disponiveis*/
 
-.dani img{
+.dani img {
     height: 5rem;
     margin-left: 1rem;
 }
 
-.estrelas img{
+.estrelas img {
     height: 4rem;
     margin-left: 0rem;
 }
 
-.p1{
+.p1 {
     font-weight: 700;
     font-size: large;
 }
 
-.p2{
+.p2 {
     font-size: medium;
     margin-top: 0.5rem;
 }
 
-.parenteses{
+.parenteses {
     font-size: small;
 }
 
-.dani{
+.dani {
     display: flex;
     justify-content: left;
     border: 1px solid #ccc;
@@ -2033,13 +2036,13 @@ body a {
     color: black;
 }
 
-.alinhamento{
+.alinhamento {
     display: flex;
     flex-direction: column;
     line-height: 0%;
 }
 
-.estrelas{
+.estrelas {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -2049,56 +2052,76 @@ body a {
 .body_quebrado {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* Cor de fundo clara */
+    background-color: #f5f5f5;
+    /* Cor de fundo clara */
 }
+
 .header_quebrado {
-    background-color: #ffffff; /* Cor branca */
-    color: #333; /* Texto escuro */
+    background-color: #ffffff;
+    /* Cor branca */
+    color: #333;
+    /* Texto escuro */
     padding: 10px 0;
     text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
-    border-bottom: 1px solid #e0e0e0; /* Linha inferior clara */
+    border-bottom: 1px solid #e0e0e0;
+    /* Linha inferior clara */
 }
+
 .header_quebrado img {
     max-width: 150px;
     margin: 10px 0;
 }
+
 .main_quebrado {
     padding: 20px;
-    margin-top: 60px; /* Ajuste para não ficar atrás do header */
+    margin-top: 60px;
+    /* Ajuste para não ficar atrás do header */
 }
+
 .agendamentos-container_quebrado {
-    height: calc(100vh - 120px); /* Ajusta altura para o restante da tela */
+    height: calc(100vh - 120px);
+    /* Ajusta altura para o restante da tela */
     overflow: hidden;
     position: relative;
-    background-color: #ffffff; /* Cor de fundo branca */
+    background-color: #ffffff;
+    /* Cor de fundo branca */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra clara */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra clara */
     padding: 10px;
 }
+
 .agendamentos-inner_quebrado {
     height: 100%;
-    overflow-y: auto; /* Permite rolagem vertical */
+    overflow-y: auto;
+    /* Permite rolagem vertical */
     padding: 10px;
     box-sizing: border-box;
 }
+
 .video-call-box_quebrado {
     background: #ffffff;
-    border: 1px solid #e0e0e0; /* Borda clara */
+    border: 1px solid #e0e0e0;
+    /* Borda clara */
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease;
 }
+
 .video-call-box_quebrado:hover {
-    background: #f1f1f1; /* Cor de fundo ao passar o mouse */
+    background: #f1f1f1;
+    /* Cor de fundo ao passar o mouse */
 }
+
 .video-call-button_quebrado {
-    background-color: #4CAF50; /* Verde padrão */
+    background-color: #4CAF50;
+    /* Verde padrão */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -2111,12 +2134,17 @@ body a {
     margin-top: 10px;
     text-decoration: none;
 }
+
 .video-call-button_quebrado:hover {
-    background-color: #45a049; /* Verde mais escuro */
+    background-color: #45a049;
+    /* Verde mais escuro */
 }
+
 .footer_quebrado {
-    background-color: #ffffff; /* Cor branca */
-    color: #333; /* Texto escuro */
+    background-color: #ffffff;
+    /* Cor branca */
+    color: #333;
+    /* Texto escuro */
     padding: 10px;
     text-align: center;
     position: fixed;
@@ -2124,12 +2152,15 @@ body a {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid #e0e0e0; /* Linha superior clara */
+    border-top: 1px solid #e0e0e0;
+    /* Linha superior clara */
 }
+
 .footer_quebrado a {
     color: #333;
     text-decoration: none;
 }
+
 .footer_quebrado ion-icon {
     font-size: 24px;
 }
@@ -2211,71 +2242,53 @@ body a {
 }
 
 /* Tela de agendamento do profissional */
-#calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    max-width: 600px;
-    margin: 50px auto;
+/* Estilos gerais */
+main_agendamento_pro {
+    background-color: var(--quartenaria);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.day {
+form_agendamento_pro {
+    background-color: var(--cor-terciaria);
     padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--quartenaria);
+    width: 300px;
 }
 
-.day.available {
-    background-color: #90ee90;
+label_agendamento_pro {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--cor-secundaria);
 }
 
-.day:hover {
-    background-color: #f0f0f0;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
+input_agendamento_pro[type="text"],
+input_agendamento_pro[type="number"],
+input_agendamento_pro[type="time"] {
     width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 60px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid var(--quartenaria);
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+button_agendamento_pro {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--quintenaria);
+    border: none;
+    border-radius: 4px;
+    color: var(--cor-terciaria);
+    font-size: 16px;
     cursor: pointer;
 }
 
-.time-slot {
-    margin: 10px 0;
-}
-
-.time-slot input {
-    margin-right: 10px;
+button_agendamento_pro:hover {
+    background-color: var(--quintenaria);
 }

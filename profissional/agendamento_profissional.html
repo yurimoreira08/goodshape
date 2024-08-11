@@ -19,17 +19,23 @@
         </div>
         <img src="/imagens/good.png" alt="">
     </header> 
-    <main>
-        <h2 style="margin-left: 1rem;">Dias e horários disponíveis neste mês</h2>
-        <div id="calendar">
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Selecione os horários disponíveis</h2>
-                    <div id="time-slots"></div>
-                    <button id="save-btn">Salvar</button>
-                </div>
-        </div>
+    <main class="main_agendamento_pro">
+        <h1>Cadastro de Disponibilidade</h1>
+        <form class="form_agendamento_pro" id="form-disponibilidade">
+          <label class="label_agendamento_pro" for="usuarioId">ID do Usuário:</label>
+          <input class="input_agendamento_pro" type="number" id="usuarioId" required><br>
+      
+          <label class="label_agendamento_pro" for="diaSemana">Dia da Semana:</label>
+          <input class="input_agendamento_pro" type="text" id="diaSemana" required><br>
+      
+          <label class="label_agendamento_pro" for="horaInicio">Hora Início:</label>
+          <input class="input_agendamento_pro" type="time" id="horaInicio" required><br>
+      
+          <label class="label_agendamento_pro" for="horaFim">Hora Fim:</label>
+          <input class="input_agendamento_pro" type="time" id="horaFim" required><br>
+      
+          <button class="button_agendamento_pro" type="submit">Cadastrar Disponibilidade</button>
+        </form>
     </main>
     <footer class="footer">
         <a href="perfil_pro.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
@@ -39,7 +45,7 @@
         <a href="chat.html"><ion-icon name="chatbubble-ellipses-outline" class="ion-footer"></ion-icon></a>
 </footer>
 </body>
-<script src="/js/calendario.js"></script>
+<script src="/js/planejamento.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
