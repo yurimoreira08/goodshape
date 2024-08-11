@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="/css/responsivo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.0.2/fullcalendar.min.css" />
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.0.2/fullcalendar.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="/imagens/good.ico" type="image/x-icon">
     <title>PLANEJAMENTO DE CHAMADAS</title>
@@ -75,6 +76,7 @@
         <a href="planejamento_chamadas_pro.html"><ion-icon name="videocam" class="ion-footer"></ion-icon></a>
         <a href="chat.html"><ion-icon name="chatbubble-ellipses-outline" class="ion-footer"></ion-icon></a>
     </footer>
+    <!-- FullCalendar JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.0.2/fullcalendar.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -82,18 +84,20 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Inicializa o calendário
             var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                editable: true,
-                selectable: true,
-                dateClick: function(info) {
-                    alert('Data clicada: ' + info.dateStr);
-                },
-                viewDidMount: function(info) {
-                    document.getElementById('currentMonth').textContent = info.view.title;
-                }
-            });
-            calendar.render();
+            if (calendarEl) {
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    editable: true,
+                    selectable: true,
+                    dateClick: function(info) {
+                        alert('Data clicada: ' + info.dateStr);
+                    },
+                    viewDidMount: function(info) {
+                        document.getElementById('currentMonth').textContent = info.view.title;
+                    }
+                });
+                calendar.render();
+            }
 
             // Adiciona evento para o botão de adicionar horário
             var adicionarHorarioButton = document.getElementById('adicionarHorario');
