@@ -81,14 +81,12 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Inicializa o calendário
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'dayGridMonth',
                 editable: true,
                 selectable: true,
-                events: [
-                    // Eventos iniciais podem ser carregados aqui
-                ],
                 dateClick: function(info) {
                     alert('Data clicada: ' + info.dateStr);
                 },
@@ -97,6 +95,37 @@
                 }
             });
             calendar.render();
+
+            // Adiciona evento para o botão de adicionar horário
+            document.getElementById('adicionarHorario').addEventListener('click', function() {
+                var horarioInicio = document.getElementById('horarioInicio').value;
+                var horarioFim = document.getElementById('horarioFim').value;
+                if (horarioInicio && horarioFim) {
+                    // Adiciona o horário à lista
+                    var listaHorarios = document.getElementById('listaHorarios');
+                    var horarioItem = document.createElement('div');
+                    horarioItem.className = 'hora-item';
+                    horarioItem.innerHTML = `${horarioInicio} - ${horarioFim} <button onclick="this.parentElement.remove()">Remover</button>`;
+                    listaHorarios.appendChild(horarioItem);
+
+                    // Exibe notificação
+                    if (Notification.permission === 'granted') {
+                        new Notification('Horário Adicionado', {
+                            body: `Horário ${horarioInicio} - ${horarioFim} foi adicionado com sucesso.`,
+                        });
+                    } else if (Notification.permission !== 'denied') {
+                        Notification.requestPermission().then(function(permission) {
+                            if (permission === 'granted') {
+                                new Notification('Horário Adicionado', {
+                                    body: `Horário ${horarioInicio} - ${horarioFim} foi adicionado com sucesso.`,
+                                });
+                            }
+                        });
+                    }
+                } else {
+                    alert('Por favor, preencha todos os campos.');
+                }
+            });
         });
     </script>
 </body>
