@@ -18,31 +18,11 @@
     </header> 
     <main class="main-buscar-profissionais main-padrao">
         <div class="barraPesquisa">
-            <input type="text" class="procurar" placeholder="Buscar"/>
-            <ion-icon name="search-outline" class="ion-icon_procurar"></ion-icon>
-          </div>
-        <div class="resultados">
-            <a href="ver_profissionais.html"><button class="button_buscar-profissionais"><div class="profissional-buscar">
-                <div class="ion-alinhar-buscar">
-                    <ion-icon name="person" class="aumentar-person-buscar"></ion-icon></div>
-                    <div class="alinhar-ion-buscar">
-                <h2>Danielle Silva</h2>
-                <p>Nutricionista</p></div>
-            </div></button></a>
-           <a href="ver_profissionais2.html"><button class="button_buscar-profissionais"><div class="profissional-buscar">
-                <div class="ion-alinhar-buscar">
-                    <ion-icon name="person" class="aumentar-person-buscar"></ion-icon></div>
-                    <div class="alinhar-ion-buscar">
-                <h2>Bárbara Santos</h2>
-                <p>Nutricionista</p></div>
-            </div></button></a>
-            <a href="ver_profissionais3.html"><button class="button_buscar-profissionais"><div class="profissional-buscar">
-                <div class="ion-alinhar-buscar">
-                    <ion-icon name="person" class="aumentar-person-buscar"></ion-icon></div>
-                    <div class="alinhar-ion-buscar">
-                <h2>Tiago Alves</h2>
-                <p>Personal</p></div>
-            </div></button></a>
+            <input type="text" class="procurar" placeholder="Buscar" id="searchInput"/>
+            <ion-icon name="search-outline" class="ion-icon_procurar" id="searchIcon"></ion-icon>
+        </div>
+        <div class="resultados" id="resultadosContainer">
+            <!-- Profissionais serão inseridos aqui -->
         </div>
     </main>
     <footer class="footer">
@@ -51,8 +31,9 @@
         <a href="menu_cli.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
         <a href="treinos.html"><ion-icon name="barbell" class="ion-footer"></ion-icon></a>
         <a href="buscar_profissionais.html"><ion-icon name="search-outline" class="ion-footer"></ion-icon></a>
-     </footer>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
