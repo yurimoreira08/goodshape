@@ -83,11 +83,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
-        // Defina a URL do seu backend aqui
-        const URL = 'https://back-end-live-in-shape-1.onrender.com/salvar-horarios';
-
         document.addEventListener('DOMContentLoaded', function() {
-            // Inicializa o calendário
             var calendarEl = document.getElementById('calendar');
             if (calendarEl) {
                 var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -95,7 +91,7 @@
                     editable: true,
                     selectable: true,
                     validRange: {
-                        start: new Date() // Impede a seleção de datas passadas
+                        start: new Date().toISOString().split('T')[0] // Impede a seleção de datas passadas
                     },
                     dateClick: function(info) {
                         document.getElementById('selectedDate').textContent = info.dateStr;
@@ -108,7 +104,6 @@
                 calendar.render();
             }
 
-            // Adiciona evento para o botão de adicionar horário
             var adicionarHorarioButton = document.getElementById('adicionarHorario');
             if (adicionarHorarioButton) {
                 adicionarHorarioButton.addEventListener('click', async function() {
@@ -117,36 +112,19 @@
                     var selectedDate = document.getElementById('selectedDate').textContent;
 
                     if (horarioInicio && horarioFim && selectedDate) {
-                        // Adiciona o horário à lista
                         var listaHorarios = document.getElementById('listaHorarios');
                         var horarioItem = document.createElement('div');
                         horarioItem.className = 'hora-item';
                         horarioItem.innerHTML = `${selectedDate} - ${horarioInicio} a ${horarioFim} <button onclick="this.parentElement.remove()">Remover</button>`;
                         listaHorarios.appendChild(horarioItem);
 
-                        // Exibe notificação
-                        if (Notification.permission === 'granted') {
-                            new Notification('Horário Adicionado', {
-                                body: `Horário ${horarioInicio} - ${horarioFim} para o dia ${selectedDate} foi adicionado com sucesso.`,
-                            });
-                        } else if (Notification.permission !== 'denied') {
-                            Notification.requestPermission().then(function(permission) {
-                                if (permission === 'granted') {
-                                    new Notification('Horário Adicionado', {
-                                        body: `Horário ${horarioInicio} - ${horarioFim} para o dia ${selectedDate} foi adicionado com sucesso.`,
-                                    });
-                                }
-                            });
-                        }
-
-                        // Enviar horários para o backend
                         try {
-                            const response = await fetch(URL, {
+                            const response = await fetch('https://back-end-live-in-shape-1.onrender.com/salvar-horarios', {
                                 method: 'POST',
                                 body: JSON.stringify({
                                     horarios: [
                                         {
-                                            diaSemana: new Date(selectedDate).toLocaleDateString('pt-BR', { weekday: 'long' }), // Convertendo para o dia da semana
+                                            diaSemana: new Date(selectedDate).toLocaleDateString('pt-BR', { weekday: 'long' }),
                                             horaInicio: horarioInicio,
                                             horaFim: horarioFim,
                                             usuarioId: 1 // Substitua pelo ID do usuário logado
