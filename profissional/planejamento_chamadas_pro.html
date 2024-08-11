@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="/css/responsivo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.0.2/fullcalendar.min.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="/imagens/good.ico" type="image/x-icon">
     <title>PLANEJAMENTO DE CHAMADAS</title>
+    <style>
+        .calendario-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hora-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .hora-item button {
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -18,58 +33,71 @@
             <h1>Planejamento de Chamadas</h1>
         </div>
         <img src="/imagens/good.png" alt="">
-    </header> 
+    </header>
     <main class="main-solicitar-chamadas">
         <section class="btn-minhas-consultas">
             <a href="agendamentos_pro.html"><button class="minhas-consultas">Meus Agendamentos</button></a>
-            </section>
+        </section>
         <div class="div-texto-chamadas">
             <h2 class="h2-texto-chamadas">Planejamento de Consultas</h2>
-                <hr class="hr-solicitar-chamadas">
+            <hr class="hr-solicitar-chamadas">
             <div class="div-texto-chamadas">
-            <h2>Selecionar suas datas disponíveis</h2>
-            <br>
-            <h2>Outubro 2023</h2>
+                <h2>Selecionar suas datas disponíveis</h2>
+                <br>
+                <h2 id="currentMonth"></h2>
+            </div>
         </div>
-    </div>
-    <section class="section-solicitar-chamadas">
-            <ion-icon name="chevron-back-outline" class="ion-solicitar-chamadas"></ion-icon>
-            <div class="div-calendario"><h3><strong>SEG</strong></h3><p>01</p></div>
-            <div class="div-calendario"><h3><strong>TER</strong></h3><p>02</p></div>
-            <div class="div-calendario"><h3><strong>QUA</strong></h3><p>03</p></div>
-            <div class="div-calendario"><h3><strong>QUI</strong></h3><p>04</p></div>
-            <div class="div-calendario"><h3><strong>SEX</strong></h3><p>05</p></div>
-            <div class="div-calendario-red"><h3><strong>SAB</strong></h3><p>06</p></div>
-            <ion-icon name="chevron-forward-outline" class="ion-solicitar-chamadas"></ion-icon>
-    </section>
-    <hr class="hr-solicitar-chamadas">
-    <section class="section2-solicitar-chamadas">
-        <h2>Definir horários disponíveis</h2>
-        <div class="horario-marcar-consulta">
-            <ion-icon name="alarm-outline"></ion-icon>
-            <input type="number" class="escurecer-botao">
-        </div>
-        <div class="agrupar-horarios-chamadas">
-        <ion-icon name="chevron-back-outline" class="ion-solicitar-chamadas"></ion-icon>
-        <div class="div-horario"><h3><strong>9:00</strong></h3></div>
-        <div class="div-horario"><h3><strong>14:00</strong></h3></div>
-        <ion-icon name="chevron-forward-outline" class="ion-solicitar-chamadas"></ion-icon>
-    </div>
-    </section>
-    <hr class="hr-solicitar-chamadas">
-    <section class="btn-confirmar-planejamento">
-        <a href="menu_pro.html"><button onclick="confirmCall()" class="confirmar-planejamento">Confirmar Planejamento</button></a>
-    </section>
-</main>
-<footer class="footer">
-    <a href="perfil_pro.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
-    <a href="conteudo.html"><ion-icon name="bulb-outline" class="ion-footer"></ion-icon></a>
-    <a href="menu_pro.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
-    <a href="planejamento_chamadas_pro.html"><ion-icon name="videocam" class="ion-footer"></ion-icon></a>
-    <a href="chat.html"><ion-icon name="chatbubble-ellipses-outline" class="ion-footer"></ion-icon></a>
-</footer>
+        <section class="calendario-container">
+            <div id="calendar"></div>
+        </section>
+        <hr class="hr-solicitar-chamadas">
+        <section class="section2-solicitar-chamadas">
+            <h2>Definir horários disponíveis</h2>
+            <div class="horario-marcar-consulta">
+                <ion-icon name="alarm-outline"></ion-icon>
+                <input type="text" id="horarioInicio" placeholder="Hora Início">
+                <input type="text" id="horarioFim" placeholder="Hora Fim">
+                <button id="adicionarHorario">Adicionar Horário</button>
+            </div>
+            <div id="listaHorarios">
+                <!-- Horários selecionados serão listados aqui -->
+            </div>
+        </section>
+        <hr class="hr-solicitar-chamadas">
+        <section class="btn-confirmar-planejamento">
+            <button id="confirmarPlanejamento" class="confirmar-planejamento">Confirmar Planejamento</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="perfil_pro.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
+        <a href="conteudo.html"><ion-icon name="bulb-outline" class="ion-footer"></ion-icon></a>
+        <a href="menu_pro.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
+        <a href="planejamento_chamadas_pro.html"><ion-icon name="videocam" class="ion-footer"></ion-icon></a>
+        <a href="chat.html"><ion-icon name="chatbubble-ellipses-outline" class="ion-footer"></ion-icon></a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.0.2/fullcalendar.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                editable: true,
+                selectable: true,
+                events: [
+                    // Eventos iniciais podem ser carregados aqui
+                ],
+                dateClick: function(info) {
+                    alert('Data clicada: ' + info.dateStr);
+                },
+                viewDidMount: function(info) {
+                    document.getElementById('currentMonth').textContent = info.view.title;
+                }
+            });
+            calendar.render();
+        });
+    </script>
 </body>
-<script src="script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
