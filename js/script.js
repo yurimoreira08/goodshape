@@ -25,9 +25,9 @@ function confirmCall() {
     alert("Horários confirmados!")
 }
 document.addEventListener('DOMContentLoaded', () => {
-    const resultadosContainer = document.getElementById('resultadosContainer');
-    const searchInput = document.getElementById('searchInput');
-    const searchIcon = document.getElementById('searchIcon');
+    const resultadosContainer = document.querySelector('.resultados');
+    const searchInput = document.querySelector('.barraPesquisa .procurar');
+    const searchIcon = document.querySelector('.barraPesquisa ion-icon[name="search-outline"]');
 
     // URL da API no Render
     const apiUrl = 'https://https://back-end-live-in-shape-1.onrender.com/profissionais';
@@ -36,9 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadProfissionais = async (query = '') => {
         try {
             const response = await fetch(`${apiUrl}?search=${encodeURIComponent(query)}`);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
             const profissionais = await response.json();
 
             resultadosContainer.innerHTML = '';
+
+            if (profissionais.length === 0) {
+                resultadosContainer.innerHTML = '<p>Nenhum profissional encontrado.</p>';
+                return;
+            }
 
             profissionais.forEach(profissional => {
                 const profissionalHTML = `
@@ -74,3 +82,5 @@ document.addEventListener('DOMContentLoaded', () => {
         loadProfissionais(searchInput.value);
     });
 });
+console.log('Search input value:', searchInput.value);
+console.log('Fetching data from:', `${apiUrl}?search=${encodeURIComponent(query)}`);
