@@ -8,7 +8,7 @@ document.getElementById('form-disponibilidade').onsubmit = async function(event)
     const horaInicio = document.getElementById('horaInicio').value;
     const horaFim = document.getElementById('horaFim').value;
 
-    const response = await fetch('http://localhost:3000/disponibilidades', {
+    const response = await fetch('http://goodshape.netlify.app', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
