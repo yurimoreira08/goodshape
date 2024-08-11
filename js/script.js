@@ -20,69 +20,64 @@ botao2.addEventListener('click', () => {
     divConteudo2.classList.toggle('oculta2');
 })
 
-//alert tela das chamadas
-function confirmCall() {
-    alert("Horários confirmados!")
-}
 document.addEventListener('DOMContentLoaded', () => {
-    const resultadosContainer = document.querySelector('#resultadosContainer');
-    const searchInput = document.querySelector('#searchInput');
-    const searchIcon = document.querySelector('#searchIcon');
+    const adicionarHorarioButton = document.querySelector('#adicionarHorario');
+    const confirmarPlanejamentoButton = document.querySelector('#confirmarPlanejamento');
+    const horarioInicioInput = document.querySelector('#horarioInicio');
+    const horarioFimInput = document.querySelector('#horarioFim');
+    const listaHorarios = document.querySelector('#listaHorarios');
+    
+    let horarios = [];
 
-    // URL da API no Render
-    const apiUrl = 'https://back-end-live-in-shape-1.onrender.com/profissionais'; // Atualize com seu URL correto
+    adicionarHorarioButton.addEventListener('click', () => {
+        const horarioInicio = horarioInicioInput.value;
+        const horarioFim = horarioFimInput.value;
 
-    // Função para carregar e exibir os profissionais
-    const loadProfissionais = async (query = '') => {
-        try {
-            console.log('Searching for:', query); // Depuração
-            const response = await fetch(`${apiUrl}?search=${encodeURIComponent(query)}`);
+        if (horarioInicio && horarioFim) {
+            const horario = {
+                inicio: horarioInicio,
+                fim: horarioFim
+            };
             
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
+            horarios.push(horario);
+            atualizarListaHorarios();
             
-            const profissionais = await response.json();
-            console.log('Profissionais:', profissionais); // Depuração
-
-            resultadosContainer.innerHTML = '';
-
-            if (profissionais.length === 0) {
-                resultadosContainer.innerHTML = '<p>Nenhum profissional encontrado.</p>';
-                return;
-            }
-
-            profissionais.forEach(profissional => {
-                const profissionalHTML = `
-                    <a href="ver_profissionais.html?id=${profissional.id}" class="button_buscar-profissionais">
-                        <div class="profissional-buscar">
-                            <div class="ion-alinhar-buscar">
-                                <ion-icon name="person" class="aumentar-person-buscar"></ion-icon>
-                            </div>
-                            <div class="alinhar-ion-buscar">
-                                <h2>${profissional.nome} ${profissional.sobreNome}</h2>
-                                <p>${profissional.tipo}</p>
-                            </div>
-                        </div>
-                    </a>
-                `;
-                resultadosContainer.innerHTML += profissionalHTML;
-            });
-        } catch (error) {
-            console.error('Erro ao buscar profissionais:', error);
+            horarioInicioInput.value = '';
+            horarioFimInput.value = '';
+        } else {
+            alert('Por favor, preencha ambos os campos de horário.');
         }
-    };
-
-    // Carregar profissionais ao iniciar a página
-    loadProfissionais();
-
-    // Função para buscar profissionais ao clicar no ícone de pesquisa
-    searchIcon.addEventListener('click', () => {
-        loadProfissionais(searchInput.value);
     });
 
-    // Função para buscar profissionais ao digitar no campo de pesquisa
-    searchInput.addEventListener('input', () => {
-        loadProfissionais(searchInput.value);
+    function atualizarListaHorarios() {
+        listaHorarios.innerHTML = '';
+        horarios.forEach((horario, index) => {
+            listaHorarios.innerHTML += `<p>Horário ${index + 1}: ${horario.inicio} - ${horario.fim}</p>`;
+        });
+    }
+
+    confirmarPlanejamentoButton.addEventListener('click', async () => {
+        try {
+            const response = await fetch('/api/salvar-horarios', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    horarios: horarios
+                }),
+            });
+
+            if (response.ok) {
+                alert('Horários confirmados!');
+                horarios = [];
+                atualizarListaHorarios();
+            } else {
+                alert('Erro ao salvar horários.');
+            }
+        } catch (error) {
+            console.error('Erro ao confirmar horários:', error);
+            alert('Erro ao confirmar horários.');
+        }
     });
 });
