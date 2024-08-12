@@ -24,12 +24,12 @@ confirmarAgendamento.onclick = async () => {
   }
 
   const agendamento = { diaSemana, horaInicio, horaFim};
-
+  const token = "1skljaksdj9983498327453lsldkjf";
   try {
     const chamada = await fetch(URL2, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${chaveSecretaToken}`,
+        'Authorization': token,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(agendamento),
