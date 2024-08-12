@@ -5,7 +5,7 @@ const horaFimInput = document.getElementById('hora-fim-input');
 const confirmarAgendamento = document.getElementById('confirmar-agendamento');
 
 confirmarAgendamento.onclick = async () => {
-    const diaSemana = dia.value;
+    const diaSemana = dia;
     const horaInicio = horaInicioInput.value;
     const horaFim = horaFimInput.value;
     const usuarioId = localStorage.getItem('usuarioId');
