@@ -27,7 +27,7 @@ confirmarAgendamento.onclick = async () => {
     const resposta = await fetch(URL2, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${token}`, // Inclua "Bearer" antes do token
+        'Authorization': 'Bearer ${token}', // Inclua "Bearer" antes do token
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(agendamento)
