@@ -8,7 +8,7 @@ confirmarAgendamento.onclick = async () => {
   const dia = document.querySelector('.calendar .day.selected')?.dataset.date;
   const horaInicio = horaInicioInput.value;
   const horaFim = horaFimInput.value;
-  const usuarioId = localStorage.getItem('usuarioId');
+ 
  
   console.log("dados", dia, horaInicio, horaFim, usuarioId);
 
@@ -27,7 +27,7 @@ confirmarAgendamento.onclick = async () => {
     return;
   }
 
-  const agendamento = { diaSemana: dia, horaInicio, horaFim, usuarioId };
+  const agendamento = { diaSemana: dia, horaInicio, horaFim};
 
   try {
     const chamada = await fetch(URL2, {
