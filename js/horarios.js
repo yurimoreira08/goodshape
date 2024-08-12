@@ -5,14 +5,31 @@ const horaFimInput = document.getElementById('hora-fim-input');
 const confirmarAgendamento = document.getElementById('confirmar-agendamento');
 
 confirmarAgendamento.onclick = async () => {
-    const diaSemana = dia;
-    const horaInicio = horaInicioInput.value;
-    const horaFim = horaFimInput.value;
-    const usuarioId = localStorage.getItem('usuarioId');
+  const dia = document.querySelector('.calendar .day.selected')?.dataset.date;
+  const horaInicio = horaInicioInput.value;
+  const horaFim = horaFimInput.value;
+  const usuarioId = localStorage.getItem('usuarioId');
  
-console.log("dados" + diaSemana, horaInicio, horaFim, usuarioId)
-   const agendamento = { diaSemana, horaInicio, horaFim, usuarioId };
-  
+  console.log("dados", dia, horaInicio, horaFim, usuarioId);
+
+  if (!dia) {
+    alert('Por favor, selecione um dia no calendário.');
+    return;
+  }
+
+  if (!horaInicio || !horaFim) {
+    alert('Por favor, insira os horários de início e fim.');
+    return;
+  }
+
+  if (horaInicio >= horaFim) {
+    alert('O horário de início deve ser antes do horário de fim.');
+    return;
+  }
+
+  const agendamento = { diaSemana: dia, horaInicio, horaFim, usuarioId };
+
+  try {
     const chamada = await fetch(URL2, {
       method: 'POST',
       body: JSON.stringify(agendamento),
@@ -21,6 +38,15 @@ console.log("dados" + diaSemana, horaInicio, horaFim, usuarioId)
         'Authorization': `Bearer ${localStorage.getItem('token')}`, // Envie o token aqui
       }),
     });
-    console.log('chamada:', chamada);
-}
+    
+    if (!chamada.ok) {
+      throw new Error('Erro ao salvar horário.');
+    }
 
+    console.log('Chamada:', chamada);
+    alert('Horário salvo com sucesso!');
+  } catch (erro) {
+    console.error(erro);
+    alert('Erro ao salvar horário.');
+  }
+}
