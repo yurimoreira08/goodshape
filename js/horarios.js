@@ -36,13 +36,14 @@ confirmarAgendamento.onclick = async () => {
     });
     
     if (!chamada.ok) {
-      throw new Error('Erro ao salvar horário.');
+      throw new Error('Erro ao salvar horário.',);
     }
 
     console.log('Chamada:', chamada);
     alert('Horário salvo com sucesso!');
   } catch (erro) {
     console.error(erro);
+    console.log(erro);
     alert('Erro ao salvar horário.');
   }
 }
