@@ -8,9 +8,10 @@ confirmarAgendamento.onclick = async () => {
     const diaSemana = dia.value;
     const horaInicio = horaInicioInput.value;
     const horaFim = horaFimInput.value;
+    const usuarioId = localStorage.getItem('usuarioId');
  
   
-    const disponibilidade = { diaSemana, horaInicio, horaFim };
+    const disponibilidade = { diaSemana, horaInicio, horaFim, usuarioId };
   
     const chamada = await fetch(URL, {
       method: 'POST',
@@ -19,5 +20,6 @@ confirmarAgendamento.onclick = async () => {
         'Content-Type': 'application/json',
       }),
     });
+    console.log('chamada:', chamada);
 }
 
