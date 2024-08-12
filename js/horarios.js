@@ -8,26 +8,19 @@ confirmarAgendamento.onclick = async () => {
     const diaSemana = dia;
     const horaInicio = horaInicioInput.value;
     const horaFim = horaFimInput.value;
-    const usuarioId = localStorage.getItem('usuarioId'); // Certifique-se de que o 'usuarioId' está armazenado corretamente
+    const usuarioId = localStorage.getItem('usuarioId');
+ 
+console.log("dados" + diaSemana, horaInicio, horaFim, usuarioId)
+   const agendamento = { diaSemana, horaInicio, horaFim, usuarioId };
+  
+    const chamada = await fetch(URL2, {
+      method: 'POST',
+      body: JSON.stringify(agendamento),
+      headers: new Headers({
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`, // Envie o token aqui
+      }),
+    });
+    console.log('chamada:', chamada);
+}
 
-    const agendamento = { diaSemana, horaInicio, horaFim, usuarioId };
-
-    try {
-        const chamada = await fetch(URL2, {
-            method: 'POST',
-            body: JSON.stringify(agendamento),
-            headers: new Headers({
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${localStorage.getItem('token')}`, // Inclua o token de autenticação
-            }),
-        });
-
-        if (!chamada.ok) {
-            throw new Error(`Erro ao enviar solicitação: ${chamada.statusText}`);
-        }
-
-        console.log('Resposta da chamada:', await chamada.text());
-    } catch (erro) {
-        console.error('Erro ao chamar a API:', erro);
-    }
-};
