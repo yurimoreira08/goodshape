@@ -12,10 +12,7 @@ confirmarAgendamento.onclick = async () => {
  
   console.log("dados", diaSemana, horaInicio, horaFim);
 
-  if (!dia) {
-    alert('Por favor, selecione um dia no calendário.');
-    return;
-  }
+
 
   if (!horaInicio || !horaFim) {
     alert('Por favor, insira os horários de início e fim.');
