@@ -18,6 +18,7 @@ confirmarAgendamento.onclick = async () => {
       body: JSON.stringify(agendamento),
       headers: new Headers({
         'Content-Type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`, // Envie o token aqui
       }),
     });
     console.log('chamada:', chamada);
