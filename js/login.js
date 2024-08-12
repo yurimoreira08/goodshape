@@ -4,11 +4,14 @@ function login() {
   const btnLogin = document.querySelector('#btnLogin');
 
   btnLogin.addEventListener('click', async (event) => {
+    event.preventDefault(); // Previne o comportamento padrão do botão
+
     try {
       const cliente = {
         email: email.value,
         senha: senha.value,
       };
+
       const resposta = await fetch('https://back-end-live-in-shape-1.onrender.com/login', {
         method: 'POST',
         headers: {
@@ -16,9 +19,20 @@ function login() {
         },
         body: JSON.stringify(cliente),
       });
+
+      if (!resposta.ok) {
+        throw new Error('Falha na autenticação');
+      }
+
       const dados = await resposta.json();
+
+      // Verifique a estrutura da resposta para garantir que 'id' está presente
+      if (!dados.usuario || !dados.usuario.id) {
+        throw new Error('ID do usuário não encontrado na resposta');
+      }
+
       localStorage.setItem('token', dados.token);
-      localStorage.setItem('usuario', JSON.stringify(dados.usuario));
+      localStorage.setItem('usuario', JSON.stringify(dados.usuario)); // Armazena o usuário completo
       localStorage.setItem('tipo', dados.tipo);
 
       // Redirecione com base no tipo de usuário
@@ -30,9 +44,9 @@ function login() {
         console.error('Tipo de usuário desconhecido');
       }
     } catch (erro) {
-      console.error(erro);
+      console.error('Erro ao fazer login:', erro);
     }
-  }); 
+  });
 }
 
 function verificaUsuarioAutenticado() {
