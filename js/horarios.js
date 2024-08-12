@@ -10,7 +10,7 @@ confirmarAgendamento.onclick = async () => {
   const horaFim = horaFimInput.value;
  
  
-  console.log("dados", dia, horaInicio, horaFim, usuarioId);
+  console.log("dados", dia, horaInicio, horaFim);
 
   if (!dia) {
     alert('Por favor, selecione um dia no calendário.');
