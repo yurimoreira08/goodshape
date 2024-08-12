@@ -1,4 +1,4 @@
-const URL = 'https://back-end-live-in-shape-1.onrender.com/salvarHorarios/';
+const URL = 'https://back-end-live-in-shape-1.onrender.com/horarios/';
 const dia = document.querySelector('.calendar .day.selected')?.dataset.date;
 const horaInicioInput = document.getElementById('hora-inicio-input');
 const horaFimInput = document.getElementById('hora-fim-input');
