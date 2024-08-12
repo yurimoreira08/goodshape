@@ -28,6 +28,10 @@ confirmarAgendamento.onclick = async () => {
   try {
     const chamada = await fetch(URL2, {
       method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${yourToken}`,
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify(agendamento),
       headers: new Headers({
         'Content-Type': 'application/json',
