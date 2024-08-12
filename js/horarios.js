@@ -22,12 +22,12 @@ confirmarAgendamento.onclick = async () => {
   }
 
   const agendamento = { diaSemana, horaInicio, horaFim };
-  const token = "1skljaksdj9983498327453lsldkjf";
+  const chaveSecretaToken = '1skljaksdj9983498327453lsldkjf';
   try {
     const resposta = await fetch(URL2, {
       method: 'POST',
       headers: {
-        'Authorization': token, // Inclua "Bearer" antes do token
+          'Authorization': `Bearer ${chaveSecretaToken}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(agendamento)
@@ -36,13 +36,13 @@ confirmarAgendamento.onclick = async () => {
     if (!resposta.ok) {
       const erroTexto = await resposta.text(); // Obtenha o texto da resposta para mais detalhes
       console.log('Erro:', erroTexto);
-      throw new Error(`Erro ao salvar horário`);
+      throw new Error(`Erro ao salvar horário: ${erroTexto}`);
     }
 
     console.log('Resposta:', await resposta.json()); // Exibe a resposta em formato JSON
     alert('Horário salvo com sucesso!');
   } catch (erro) {
     console.error(erro);
-    alert(`Erro ao salvar horário: ${erro.message}`);
+    alert(`Erro ao salvar horário`);
   }
 };
