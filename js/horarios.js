@@ -1,5 +1,5 @@
 const URL2 = 'https://back-end-live-in-shape-1.onrender.com/salvarHorarios/';
-const diaSemana = document.querySelector('.calendar .day.selected')?.dataset.date;
+const diaSemanaInput = document.querySelector('.calendar .day.selected')?.dataset.date;
 const horaInicioInput = document.getElementById('hora-inicio-input');
 const horaFimInput = document.getElementById('hora-fim-input');
 const confirmarAgendamento = document.getElementById('confirmar-agendamento');
@@ -8,10 +8,8 @@ confirmarAgendamento.onclick = async () => {
   const diaSemana = document.querySelector('.calendar .day.selected')?.dataset.date;
   const horaInicio = horaInicioInput.value;
   const horaFim = horaFimInput.value;
- 
- 
-  console.log("dados", diaSemana, horaInicio, horaFim);
 
+  console.log("Dados:", diaSemana, horaInicio, horaFim);
 
   if (!horaInicio || !horaFim) {
     alert('Por favor, insira os horários de início e fim.');
@@ -23,31 +21,27 @@ confirmarAgendamento.onclick = async () => {
     return;
   }
 
-  const agendamento = { diaSemana, horaInicio, horaFim};
+  const agendamento = { diaSemana, horaInicio, horaFim };
   const token = "1skljaksdj9983498327453lsldkjf";
   try {
-    const chamada = await fetch(URL2, {
+    const resposta = await fetch(URL2, {
       method: 'POST',
       headers: {
-        'Authorization': token,
+        'Authorization': `Bearer ${token}`, // Inclua "Bearer" antes do token
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(agendamento),
-      headers: new Headers({
-        'Content-Type': 'application/json',
-       
-      }),
+      body: JSON.stringify(agendamento)
     });
-    
-    if (!chamada.ok) {
-      throw new Error('Erro ao salvar horário.',);
+
+    if (!resposta.ok) {
+      const erroTexto = await resposta.text(); // Obtenha o texto da resposta para mais detalhes
+      throw new Error(`Erro ao salvar horário: ${erroTexto}`);
     }
 
-    console.log('Chamada:', chamada);
+    console.log('Resposta:', await resposta.json()); // Exibe a resposta em formato JSON
     alert('Horário salvo com sucesso!');
   } catch (erro) {
     console.error(erro);
-    console.log(erro);
-    alert('Erro ao salvar horário.');
+    alert(`Erro ao salvar horário: ${erro.message}`);
   }
-}
+};
