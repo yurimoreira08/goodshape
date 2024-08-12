@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="/imagens/good.ico" type="image/x-icon">
     <title>PLANEJAMENTO DE CHAMADAS</title>
     <style>
-        /* Adicione estilos básicos para o novo layout aqui */
         .calendar-container {
             display: flex;
             flex-direction: column;
@@ -48,6 +47,7 @@
         .time-picker input {
             width: 100px;
             padding: 5px;
+            margin: 0 5px;
         }
     </style>
 </head>
@@ -60,43 +60,44 @@
     <main class="main-solicitar-chamadas">
         <section class="btn-minhas-consultas">
             <a href="agendamentos_pro.html"><button class="minhas-consultas">Meus Agendamentos</button></a>
-            </section>
+        </section>
         <div class="div-texto-chamadas">
-
-                <hr class="hr-solicitar-chamadas">
+            <hr class="hr-solicitar-chamadas">
             <div class="div-texto-chamadas">
-            <h2>Selecionar suas datas disponíveis</h2>
+                <h2>Selecionar suas datas disponíveis</h2>
+            </div>
         </div>
-    </div>
-    <div class="calendar-container">
-        <div id="calendar" class="calendar">
-            <!-- O calendário será gerado aqui -->
+        <div class="calendar-container">
+            <div id="calendar" class="calendar">
+                <!-- O calendário será gerado aqui -->
+            </div>
+            <div class="calendar-header">
+                <button id="prev-month">←</button>
+                <span id="month-year"></span>
+                <button id="next-month">→</button>
+            </div>
+            <div class="time-picker hidden">
+                <h3>Escolha o horário:</h3>
+                <label for="inicio">Início:</label>
+                <input type="time" id="hora-inicio-input">
+                <label for="fim">Fim:</label>
+                <input type="time" id="hora-fim-input">
+            </div>
         </div>
-        <div class="calendar-header">
-            <button id="prev-month">←</button>
-            <span id="month-year"></span>
-            <button id="next-month">→</button>
-        </div>
-        <div class="time-picker hidden">
-            <h3>Escolha o horário:</h3>
-            <input type="time" id="hora-input">
-        </div>
-    </div>
-    <hr class="hr-solicitar-chamadas">
-    <section class="btn-confirmar-planejamento">
-        <button id="confirmar-agendamento" class="confirmar-planejamento">Confirmar horário</button>
-    </section>
-</div>
-</main>
-<footer class="footer">
-    <a href="perfil_pro.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
-    <a href="conteudo.html"><ion-icon name="bulb-outline" class="ion-footer"></ion-icon></a>
-    <a href="menu_pro.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
-    <a href="planejamento_chamadas_pro.html"><ion-icon name="videocam" class="ion-footer"></ion-icon></a>
-    <a href="chat.html"><ion-icon name="chatbubble-ellipses-outline" class="ion-footer"></ion-icon></a>
-</footer>
+        <hr class="hr-solicitar-chamadas">
+        <section class="btn-confirmar-planejamento">
+            <button id="confirmar-agendamento" class="confirmar-planejamento">Confirmar horário</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="perfil_pro.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
+        <a href="conteudo.html"><ion-icon name="bulb-outline" class="ion-footer"></ion-icon></a>
+        <a href="menu_pro.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
+        <a href="planejamento_chamadas_pro.html"><ion-icon name="videocam" class="ion-footer"></ion-icon></a>
+        <a href="chat.html"><ion-icon name="chatbubble-ellipses-outline" class="ion-footer"></ion-icon></a>
+    </footer>
 </body>
-<script src="script.js"></script>
+<script src="../js/horarios.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script>
@@ -106,7 +107,8 @@
         const timePicker = document.querySelector('.time-picker');
         const prevMonthButton = document.getElementById('prev-month');
         const nextMonthButton = document.getElementById('next-month');
-        const horaInput = document.getElementById('hora-input');
+        const horaInicioInput = document.getElementById('hora-inicio-input');
+        const horaFimInput = document.getElementById('hora-fim-input');
         const confirmarAgendamento = document.getElementById('confirmar-agendamento');
 
         let currentDate = new Date();
@@ -179,15 +181,21 @@
         // Confirmar o agendamento
         confirmarAgendamento.addEventListener('click', () => {
             const selectedDate = document.querySelector('.calendar .day.selected')?.dataset.date;
-            const selectedTime = horaInput.value;
-            
+            const selectedHoraInicio = horaInicioInput.value;
+            const selectedHoraFim = horaFimInput.value;
+
             if (!selectedDate) {
                 alert('Por favor, selecione uma data.');
                 return;
             }
 
-            if (!selectedTime) {
-                alert('Por favor, insira um horário.');
+            if (!selectedHoraInicio || !selectedHoraFim) {
+                alert('Por favor, insira os horários de início e fim.');
+                return;
+            }
+
+            if (selectedHoraInicio >= selectedHoraFim) {
+                alert('O horário de início deve ser antes do horário de fim.');
                 return;
             }
 
@@ -195,12 +203,13 @@
             const agendamentos = JSON.parse(localStorage.getItem('agendamentos')) || [];
             agendamentos.push({
                 date: selectedDate,
-                time: selectedTime,
+                inicio: selectedHoraInicio,
+                fim: selectedHoraFim,
                 profissional: 'Danielle Silva'
             });
             localStorage.setItem('agendamentos', JSON.stringify(agendamentos));
 
-            alert(`horário definido para ${selectedDate} às ${selectedTime}`);
+            alert(`Horário definido para ${selectedDate} das ${selectedHoraInicio} às ${selectedHoraFim}`);
         });
     });
 </script>
