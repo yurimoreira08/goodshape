@@ -1,16 +1,16 @@
 const URL2 = 'https://back-end-live-in-shape-1.onrender.com/salvarHorarios/';
-const dia = document.querySelector('.calendar .day.selected')?.dataset.date;
+const diaSemana = document.querySelector('.calendar .day.selected')?.dataset.date;
 const horaInicioInput = document.getElementById('hora-inicio-input');
 const horaFimInput = document.getElementById('hora-fim-input');
 const confirmarAgendamento = document.getElementById('confirmar-agendamento');
 
 confirmarAgendamento.onclick = async () => {
-  const dia = document.querySelector('.calendar .day.selected')?.dataset.date;
+  const diaSemana = document.querySelector('.calendar .day.selected')?.dataset.date;
   const horaInicio = horaInicioInput.value;
   const horaFim = horaFimInput.value;
  
  
-  console.log("dados", dia, horaInicio, horaFim);
+  console.log("dados", diaSemana, horaInicio, horaFim);
 
   if (!dia) {
     alert('Por favor, selecione um dia no calendário.');
@@ -27,7 +27,7 @@ confirmarAgendamento.onclick = async () => {
     return;
   }
 
-  const agendamento = { diaSemana: dia, horaInicio, horaFim};
+  const agendamento = { diaSemana, horaInicio, horaFim};
 
   try {
     const chamada = await fetch(URL2, {
@@ -35,7 +35,7 @@ confirmarAgendamento.onclick = async () => {
       body: JSON.stringify(agendamento),
       headers: new Headers({
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${localStorage.getItem('token')}`, // Envie o token aqui
+       
       }),
     });
     
