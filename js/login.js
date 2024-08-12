@@ -26,10 +26,7 @@ function login() {
 
       const dados = await resposta.json();
 
-      // Verifique a estrutura da resposta para garantir que 'id' está presente
-      if (!dados.usuario || !dados.usuario.id) {
-        throw new Error('ID do usuário não encontrado na resposta');
-      }
+  
 
       localStorage.setItem('token', dados.token);
       localStorage.setItem('usuario', JSON.stringify(dados.usuario)); // Armazena o usuário completo
