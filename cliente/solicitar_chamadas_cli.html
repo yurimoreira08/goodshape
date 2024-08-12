@@ -7,47 +7,23 @@
     <link rel="stylesheet" href="/css/responsivo.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="/imagens/good.ico" type="image/x-icon">
-    <title>SOLICITAR CHAMADAS</title>
+    <title>Horários Disponíveis</title>
     <style>
         /* Adicione estilos básicos para o novo layout aqui */
-        .calendar-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .calendar-header {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
+        .available-times {
             max-width: 600px;
-            margin-bottom: 10px;
+            margin: 0 auto;
+            padding: 20px;
+            list-style-type: none;
         }
-        .calendar {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 5px;
-            max-width: 600px;
-        }
-        .calendar div {
-            text-align: center;
-            padding: 10px;
+        .available-times li {
             border: 1px solid #ccc;
-            cursor: pointer;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
         }
-        .calendar div.selected {
-            background-color: #007bff;
-            color: #fff;
-        }
-        .calendar div.disabled {
-            color: #ccc;
-            cursor: not-allowed;
-        }
-        .time-picker {
-            margin-top: 20px;
-        }
-        .time-picker input {
-            width: 100px;
-            padding: 5px;
+        .available-times li:hover {
+            background-color: #f0f0f0;
         }
     </style>
 </head>
@@ -57,7 +33,7 @@
             <a href="ver_profissionais.html"><button>
                 <ion-icon name="arrow-back-outline" class="ion_voltar"></ion-icon>
             </button></a>
-            <h1>Vídeo Chamada</h1>
+            <h1>Horários Disponíveis</h1>
         </div>
         <img src="/imagens/good.png" alt="">
     </header> 
@@ -66,40 +42,11 @@
             <a href="agendamentos_cli.html"><button class="minhas-consultas">Meus Agendamentos</button></a>
         </section>
         <div class="div-texto-chamadas">
-            <h2 class="h2-texto-chamadas">Solicitar vídeo chamada</h2>
+            <h2 class="h2-texto-chamadas">Horários Disponíveis</h2>
             <hr class="hr-solicitar-chamadas">
-            <div class="div-texto-chamadas">
-                <h2>Profissional selecionado:</h2>
-            </div>
-            <div class="selecione-profissional">
-                <div class="div-geral-profissionais">
-                    <div class="div-profissionais">
-                        <ion-icon name="person-circle" class="ion-person-profissionais"></ion-icon>
-                    </div>
-                    <div class="div-selecione-profissional">
-                        <p>Danielle S.</p>
-                    </div>
-                </div>
-            </div>
-            <h2>Escolha a data e o horário</h2>
-            <div class="calendar-container">
-                <div id="calendar" class="calendar">
-                    <!-- O calendário será gerado aqui -->
-                </div>
-                <div class="calendar-header">
-                    <button id="prev-month">←</button>
-                    <span id="month-year"></span>
-                    <button id="next-month">→</button>
-                </div>
-                <div class="time-picker hidden">
-                    <h3>Escolha o horário:</h3>
-                    <input type="time" id="hora-input">
-                </div>
-            </div>
-            <hr class="hr-solicitar-chamadas">
-            <section class="btn-confirmar-planejamento">
-                <button id="confirmar-agendamento" class="confirmar-planejamento">Confirmar Planejamento</button>
-            </section>
+            <ul id="available-times" class="available-times">
+                <!-- Lista de horários será gerada aqui -->
+            </ul>
         </div>
     </main>
     <footer class="footer">
@@ -113,11 +60,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
-            const calendarContainer = document.getElementById('calendar');
-            const monthYearDisplay = document.getElementById('month-year');
-            const horaInput = document.getElementById('hora-input');
-    
-            let currentDate = new Date();
+            const availableTimesList = document.getElementById('available-times');
     
             async function fetchDisponibilidades() {
                 try {
@@ -126,84 +69,28 @@
                         throw new Error('Erro ao buscar disponibilidades.');
                     }
                     const dados = await resposta.json();
-                    renderCalendar(currentDate, dados.disponibilidades);
+                    renderDisponibilidades(dados.disponibilidades);
                 } catch (erro) {
                     console.error('Erro ao buscar disponibilidades:', erro.message);
                 }
             }
     
-            function renderCalendar(date, disponibilidades) {
-                const year = date.getFullYear();
-                const month = date.getMonth();
-                const firstDayOfMonth = new Date(year, month, 1).getDay();
-                const lastDateOfMonth = new Date(year, month + 1, 0).getDate();
-                const today = new Date();
-                const todayYear = today.getFullYear();
-                const todayMonth = today.getMonth();
-                const todayDate = today.getDate();
+            function renderDisponibilidades(disponibilidades) {
+                availableTimesList.innerHTML = '';
     
-                calendarContainer.innerHTML = '';
+                if (disponibilidades.length === 0) {
+                    availableTimesList.innerHTML = '<li>Nenhum horário disponível.</li>';
+                    return;
+                }
     
-                // Cabeçalho do calendário
-                const daysOfWeek = ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB'];
-                daysOfWeek.forEach(day => {
-                    const div = document.createElement('div');
-                    div.textContent = day;
-                    calendarContainer.appendChild(div);
+                disponibilidades.forEach(d => {
+                    const li = document.createElement('li');
+                    li.textContent = `Data: ${d.diaSemana} - Horário: ${d.horaInicio} - ${d.horaFim}`;
+                    availableTimesList.appendChild(li);
                 });
-    
-                // Espaços em branco antes do primeiro dia do mês
-                for (let i = 0; i < firstDayOfMonth; i++) {
-                    const div = document.createElement('div');
-                    calendarContainer.appendChild(div);
-                }
-    
-                // Dias do mês
-                for (let day = 1; day <= lastDateOfMonth; day++) {
-                    const div = document.createElement('div');
-                    const currentDay = new Date(year, month, day);
-                    div.textContent = day;
-                    div.dataset.date = `${year}-${(month + 1).toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
-                    
-                    if (year < todayYear || (year === todayYear && month < todayMonth) || (year === todayYear && month === todayMonth && day < todayDate)) {
-                        div.classList.add('disabled');
-                    } else {
-                        div.classList.add('day');
-                        div.addEventListener('click', () => {
-                            document.querySelectorAll('.calendar .day').forEach(d => d.classList.remove('selected'));
-                            div.classList.add('selected');
-                            horaInput.classList.remove('hidden');
-                        });
-                    }
-    
-                    // Marcar disponibilidade
-                    const dateStr = div.dataset.date;
-                    const disponibilidade = disponibilidades.find(d => d.diaSemana === dateStr);
-                    if (disponibilidade) {
-                        div.classList.add('available');
-                        div.title = `Horário disponível: ${disponibilidade.horaInicio} - ${disponibilidade.horaFim}`;
-                    }
-    
-                    calendarContainer.appendChild(div);
-                }
-    
-                // Exibir mês e ano
-                monthYearDisplay.textContent = `${date.toLocaleString('default', { month: 'long' })} ${year}`;
             }
     
-            // Navegar para o mês anterior
-            prevMonthButton.addEventListener('click', () => {
-                currentDate.setMonth(currentDate.getMonth() - 1);
-                fetchDisponibilidades();
-            });
-    
-            // Navegar para o próximo mês
-            nextMonthButton.addEventListener('click', () => {
-                currentDate.setMonth(currentDate.getMonth() + 1);
-                fetchDisponibilidades();
-            });
-    
-            // Inicializar o calendário com o mês e ano atuais
+            // Inicializar a lista de horários disponíveis
             fetchDisponibilidades();
         });
     </script>
