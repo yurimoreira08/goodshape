@@ -16,29 +16,73 @@
         <div class="div_header">
             <h1 class="h1Biografia">Dicas e Sugestões</h1>
         </div>
-        <img src="/imagens/good.png" alt="">
-    </header> 
+        <img src="/imagens/good.png" alt="Logo">
+    </header>
 
     <main class="tela-add-Dicas">
         <div class="tela-add-Dicas1">
-            <b class="crescer">Tópico/Assunto da dica:</b>
-            <input type="text" name="" id="" class="conteudo-das-dicas" placeholder="Ex: Alimentação, Rotina etc.">
+            <label for="topico"><b class="crescer">Tópico/Assunto da dica:</b></label>
+            <input type="text" id="topico" class="conteudo-das-dicas" placeholder="Ex: Alimentação, Rotina etc.">
         </div>
-        <h2 class="tela-add-Dicas2"><input type="text" name="" id="" class="conteudo-das-dicas" placeholder="Escreva sua dica"></h2>
+        <div class="tela-add-Dicas2">
+            <label for="conteudo"><b class="crescer">Escreva sua dica:</b></label>
+            <textarea id="conteudo" class="conteudo-das-dicas" placeholder="Escreva sua dica aqui"></textarea>
+        </div>
         <div class="botao-add-dicas1">
-            <a href="conteudo.html" class="add-dicas"><button class="botao-add-dicas">Adicionar</button></a>
+            <button class="botao-add-dicas">Adicionar</button>
         </div>
     </main>
-        
-        <footer class="footer">
+
+    <footer class="footer">
         <a href="perfil_pro.html"><ion-icon name="person" class="ion-footer"></ion-icon></a>
         <a href="conteudo.html"><ion-icon name="bulb-outline" class="ion-footer"></ion-icon></a>
         <a href="menu_pro.html"><ion-icon name="home" class="ion-footer"></ion-icon></a>
         <a href="planejamento_chamadas_pro.html"><ion-icon name="videocam" class="ion-footer"></ion-icon></a>
         <a href="chat.html"><ion-icon name="chatbubble-ellipses-outline" class="ion-footer"></ion-icon></a>
-</footer>
-</body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </footer>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script para conectar o formulário ao backend -->
+    <script>
+        document.querySelector('.botao-add-dicas').addEventListener('click', async (e) => {
+            e.preventDefault();
+
+            // Captura os valores dos campos
+            const topico = document.getElementById('topico').value.trim();
+            const conteudo = document.getElementById('conteudo').value.trim();
+
+            // Valida se os campos estão preenchidos
+            if (!topico || !conteudo) {
+                alert('Por favor, preencha todos os campos!');
+                return;
+            }
+
+            // Envia os dados para o backend
+            try {
+                const response = await fetch('https://goodshape.netlify.app/profissional/adicionar_dicas', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ topico, conteudo }),
+                });
+
+                if (response.ok) {
+                    alert('Dica adicionada com sucesso!');
+                    // Limpa os campos após o sucesso
+                    document.getElementById('topico').value = '';
+                    document.getElementById('conteudo').value = '';
+                } else {
+                    const error = await response.json();
+                    alert(`Erro: ${error.error}`);
+                }
+            } catch (err) {
+                console.error('Erro ao se conectar ao servidor:', err);
+                alert('Erro ao salvar a dica. Tente novamente!');
+            }
+        });
+    </script>
+</body> 
 </html>
