@@ -1,4 +1,4 @@
-const response = await fetch('http://localhost:3000/profissional/adicionar_dicas', {
+const response = await fetch('http://goodshape.netlify.app/profissional/adicionar_dicas', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
