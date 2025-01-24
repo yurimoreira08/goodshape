@@ -11,7 +11,7 @@ passport.use(
     new GoogleOAuth20Strategy({
         clientID: '689853966923-e0boo3ldh7n6371gsu3pl5rrq8qretck.apps.googleusercontent.com',
         clientSecret: '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',
-        callbackURL: 'https://goodshape.netlify.app/profissional/forma_pagamento',
+        callbackURL: 'https://goodshape.netlify.app/profissional/menu_pro',
     },
     async (accessToken, refreshToken, profile, done) => {
         try {
