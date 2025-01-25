@@ -52,7 +52,6 @@
             // Captura os valores dos campos
             const topico = document.getElementById('topico').value.trim();
             const conteudo = document.getElementById('conteudo').value.trim();
-            console.log(topico, conteudo)
 
             // Valida se os campos estão preenchidos
             if (!topico || !conteudo) {
@@ -62,7 +61,6 @@
 
             // Envia os dados para o backend
             try {
-                console.log("Antes")
                 const response = await fetch('https://back-end-live-in-shape-1.onrender.com/dica/adicionar_dicas', {
                     method: 'POST',
                     headers: {
@@ -70,8 +68,6 @@
                     },
                     body: JSON.stringify({ topico, conteudo }),
                 });
-                console.log("Depois")
-
                 if (response.ok) {
                     alert('Dica adicionada com sucesso!');
                     // Limpa os campos após o sucesso
